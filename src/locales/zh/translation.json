@@ -1,0 +1,305 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "articles": "文章与见解",
+    "contact": "联系我们",
+    "terms": "条款与条件",
+    "freeConsultation": "免费咨询"
+  },
+  "footer": {
+    "description": "巴厘岛值得信赖的律师事务所，为个人和公司提供全面的法律解决方案，拥有超过10年的经验。",
+    "navigation": "导航",
+    "mainServices": "主要服务",
+    "civilLaw": "民法",
+    "criminalLaw": "刑法",
+    "businessLaw": "商法",
+    "familyLaw": "家庭法",
+    "propertyLaw": "财产法",
+    "contact": "联系方式",
+    "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
+    "copyright": "© 2024 DrHukum. 版权所有。",
+    "terms": "条款与条件",
+    "privacy": "隐私政策"
+  },
+  "home": {
+    "heroTitle1": "您值得信赖的",
+    "heroTitle2": "法律顾问",
+    "heroTitle3": "在巴厘岛",
+    "heroSubtitle": "全面的法律解决方案，保护您的权利和利益。凭借超过10年的经验，我们随时准备帮助您解决各种法律问题。",
+    "bookConsultation": "预约免费咨询",
+    "ourServices": "查看我们的服务",
+    "mainServicesTitle": "主要法律服务",
+    "mainServicesSubtitle": "我们提供多种专业法律服务以满足客户需求",
+    "learnMore": "了解更多",
+    "whyChooseUsTitle": "为什么选择DrHukum？",
+    "whyChooseUsSubtitle": "使我们成为您法律解决方案首选的优势",
+    "advantages": {
+      "experience": "10年以上经验",
+      "experienceDesc": "经验丰富的律师团队，拥有可靠的往绩",
+      "consultation": "24/7咨询",
+      "consultationDesc": "随时根据您的需求提供咨询服务",
+      "successRate": "高成功率",
+      "successRateDesc": "95%的案件成功解决，结果令人满意"
+    },
+    "testimonialsTitle": "客户推荐",
+    "testimonialsSubtitle": "客户的信任和满意是我们的首要任务",
+    "testimonials": {
+      "budi": "DrHukum专业高效地帮助我们公司解决了合同纠纷。",
+      "sari": "非常满意的服务。团队反应迅速，法律解决方案针对性强。",
+      "made": "全面的商法咨询。对我们的业务发展非常有帮助。"
+    },
+    "articlesTitle": "最新文章与见解",
+    "articlesSubtitle": "从专家那里获取最新的法律见解和实用技巧",
+    "blogPosts": {
+      "post1": "印度尼西亚商法完全指南",
+      "post1Excerpt": "了解商法的重要方面以保护您的公司",
+      "post2": "雇佣合同中的权利与义务",
+      "post2Excerpt": "了解劳资关系中员工和雇主的权利与义务",
+      "post3": "在巴厘岛成立PT公司的程序",
+      "post3Excerpt": "在巴厘省成立有限责任公司的实用步骤"
+    },
+    "readMore": "阅读更多",
+    "viewAllArticles": "查看所有文章",
+    "ctaTitle": "准备好获得最佳法律解决方案了吗？",
+    "ctaSubtitle": "不要让法律问题干扰您的生活或业务。立即咨询我们的专家团队。",
+    "startFreeConsultation": "开始免费咨询",
+    "contactUs": "联系我们"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "随时准备帮助您解决法律问题。为您的案件提供免费的初步评估咨询。",
+    "formTitle": "法律咨询表",
+    "fullName": "全名 *",
+    "fullNamePlaceholder": "请输入您的全名",
+    "email": "电子邮件 *",
+    "emailPlaceholder": "name@email.com",
+    "phone": "电话号码",
+    "phonePlaceholder": "+62 812 3456 7890",
+    "urgency": "紧急程度",
+    "urgencyNormal": "普通",
+    "urgencyUrgent": "紧急",
+    "urgencyEmergency": "非常紧急",
+    "legalField": "法律领域",
+    "selectLegalField": "选择法律领域",
+    "legalFields": {
+      "civil": "民法",
+      "criminal": "刑法",
+      "business": "商业与公司法",
+      "family": "家庭法",
+      "property": "财产法",
+      "labor": "劳动法",
+      "admin": "行政法",
+      "other": "其他"
+    },
+    "subject": "主题",
+    "subjectPlaceholder": "法律问题摘要",
+    "message": "问题描述 *",
+    "messagePlaceholder": "请详细描述您的法律问题...",
+    "sendConsultation": "发送咨询",
+    "contactInfo": "联系信息",
+    "contactInfoSubtitle": "我们全天候准备为您提供帮助。请随时通过可用渠道与我们联系。",
+    "address": "办公室地址",
+    "phoneTitle": "电话",
+    "emailTitle": "电子邮件",
+    "operationalHours": "营业时间",
+    "opHoursDetails": "周一至周五: 08:00 - 17:00<br />周六: 08:00 - 12:00<br />周日: 休息",
+    "directContact": "直接联系",
+    "mapTitle": "我们的办公室位置",
+    "mapSubtitle": "欢迎莅临我们位于巴厘岛战略位置的办公室进行当面咨询",
+    "mapPlaceholder": "此处将显示交互式地图",
+    "faqTitle": "常见问题",
+    "faqSubtitle": "关于我们咨询服务的常见问题解答",
+    "faq1Title": "初次咨询真的免费吗？",
+    "faq1Answer": "是的，我们提供30分钟的免费初步咨询，以评估您的案件并提供初步建议。",
+    "faq2Title": "咨询的响应时间是多久？",
+    "faq2Answer": "我们承诺在24小时内回复正常案件，紧急案件则在2小时内回复。",
+    "faq3Title": "我的信息会保密吗？",
+    "faq3Answer": "当然。我们受职业道德约束，并根据适用法律保证所有客户信息的机密性。",
+    "faq4Title": "可以进行在线咨询吗？",
+    "faq4Answer": "是的，为方便客户，我们通过视频通话、电话或聊天提供在线咨询服务。"
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "一家值得信赖的巴厘岛律师事务所，致力于为客户提供超过15年的最佳和最专业的法律解决方案。",
+    "ourJourneyTitle": "我们的历程",
+    "ourJourneyP1": "DrHukum成立于2009年，其愿景是成为巴厘岛领先的律师事务所，提供高质量的法律服务。从一个只有3名律师的小办公室开始，我们现已发展成为一支拥有经验丰富专业团队的值得信赖的律师事务所。",
+    "ourJourneyP2": "在我们的发展历程中，我们处理了500多起案件，成功率高达95%。客户的信任是我们最大的资产，我们将继续致力于提供最好的服务。",
+    "ourJourneyP3": "我们很自豪能成为巴厘岛及全印度尼西亚个人、跨国公司、中小企业和各种组织的法律合作伙伴。",
+    "yearsServing": "服务年限",
+    "ourMission": "我们的使命",
+    "missionText": "提供人人都能获得的高质量法律服务，优先考虑诚信、专业和客户满意度。我们致力于成为解决各种法律问题的可信赖合作伙伴，提供有效和高效的解决方案。",
+    "ourVision": "我们的愿景",
+    "visionText": "成为印度尼西亚领先的律师事务所，以提供创新的法律解决方案、建立长期信任与客户，并为印度尼西亚法律体系的发展做出积极贡献而闻名。",
+    "ourValues": "我们的价值观",
+    "valuesSubtitle": "我们提供每项服务的基础原则",
+    "values": {
+      "integrity": "诚信",
+      "integrityDesc": "在我们提供的每一项法律服务中都坚持诚实和透明",
+      "professionalism": "专业",
+      "professionalismDesc": "以国际专业标准提供高质量的法律服务",
+      "empathy": "同理心",
+      "empathyDesc": "理解并关心客户的最佳需求和利益",
+      "excellence": "卓越",
+      "excellenceDesc": "致力于始终提供最佳结果和创新的法律解决方案"
+    },
+    "ourTeam": "我们的专业团队",
+    "teamSubtitle": "在各个法律领域拥有专业知识的经验丰富的律师",
+    "team": {
+      "partner1": "管理合伙人",
+      "partner1Spec": "民商法",
+      "partner2": "高级合伙人",
+      "partner2Spec": "刑法与家庭法",
+      "partner3": "合伙人",
+      "partner3Spec": "公司法与财产法",
+      "associate": "协理律师",
+      "associateSpec": "劳动法",
+      "experience": "经验",
+      "education": "教育背景"
+    },
+    "ourAchievements": "我们的成就",
+    "achievementsSubtitle": "展示我们致力于提供最佳服务的数字",
+    "achievements": {
+      "cases": "成功解决的案件",
+      "satisfaction": "客户满意度",
+      "experience": "经验年限",
+      "corporate": "企业客户"
+    }
+  },
+  "services": {
+    "title": "我们的法律服务",
+    "subtitle": "为您的各种法律需求提供全面的法律解决方案。从咨询到法庭代理，我们随时准备提供帮助。",
+    "services": {
+      "civil": { "title": "民法", "desc": "解决民事纠纷、合同、违约和保护公民权利" },
+      "criminal": { "title": "刑法", "desc": "为刑事案件提供法律援助，保护嫌疑人/被告人的权利" },
+      "business": { "title": "商业与公司法", "desc": "为公司、并购和合规提供法律咨询" },
+      "family": { "title": "家庭法", "desc": "处理家庭法问题、离婚和子女监护权" },
+      "property": { "title": "财产法", "desc": "财产交易、土地纠纷和财产文件合法化" },
+      "labor": { "title": "劳动法", "desc": "解决劳动争议和起草雇佣合同" },
+      "admin": { "title": "行政法", "desc": "管理法律文件、许可证和法律行政事务" },
+      "general": { "title": "一般法律咨询", "desc": "为各种日常法律问题提供法律咨询" }
+    },
+    "consultNow": "立即咨询",
+    "ourProcess": "我们的工作流程",
+    "processSubtitle": "确保为客户带来最佳结果的结构化方法",
+    "processSteps": {
+      "step1": "初步咨询",
+      "step1Desc": "深入讨论面临的法律问题",
+      "step2": "案件分析",
+      "step2Desc": "专家团队分析法律方面并制定最佳策略",
+      "step3": "解决方案建议",
+      "step3Desc": "提供包含时间表和费用估算的法律解决方案",
+      "step4": "执行",
+      "step4Desc": "实施法律策略并定期监控",
+      "step5": "跟进",
+      "step5Desc": "评估结果并根据需要提供持续支持"
+    },
+    "whyChoose": "为什么选择我们的服务？",
+    "reasons": {
+      "experience": "值得信赖的经验",
+      "experienceDesc": "超过15年处理各种法律案件的经验，成功率达95%",
+      "team": "专业团队",
+      "teamDesc": "在各个法律领域拥有专业资格的认证律师",
+      "transparency": "费用透明",
+      "transparencyDesc": "清晰透明的费用结构，无隐藏费用"
+    },
+    "ctaTitle": "急需法律帮助？",
+    "ctaSubtitle": "不要拖延您的法律问题。咨询我们的专家团队，为您的案件获得最佳解决方案。",
+    "freeConsultation": "立即免费咨询",
+    "contactUs": "联系我们"
+  },
+  "articles": {
+    "title": "文章与见解",
+    "subtitle": "从经验丰富的法律专家那里获取最新的法律见解、实用技巧和深入分析。",
+    "searchPlaceholder": "搜索文章...",
+    "allCategories": "所有分类",
+    "categories": {
+      "civil": "民法",
+      "criminal": "刑法",
+      "business": "商法",
+      "family": "家庭法",
+      "property": "财产法",
+      "labor": "劳动法",
+      "tips": "法律技巧"
+    },
+    "featuredTitle": "精选文章",
+    "featuredSubtitle": "必读的精选文章，以了解最新的法律发展",
+    "allArticlesTitle": "所有文章",
+    "articlesFound": "篇文章",
+    "noArticlesFound": "未找到分类的文章",
+    "withKeyword": "关键词为",
+    "readTime": "分钟阅读",
+    "readMore": "阅读更多",
+    "newsletterTitle": "获取最新文章更新",
+    "newsletterSubtitle": "订阅我们的新闻通讯，直接在您的收件箱中获取专家的最新法律文章和见解。",
+    "emailPlaceholder": "输入您的电子邮件",
+    "subscribe": "订阅"
+  },
+  "terms": {
+    "title": "条款与条件",
+    "subtitle": "关于服务条款、隐私政策和免责声明的重要信息，以保护各方权益。",
+    "nav": {
+      "terms": "条款与条件",
+      "privacy": "隐私政策",
+      "disclaimer": "免责声明"
+    },
+    "sections": {
+      "terms": {
+        "title": "条款与条件",
+        "content": {
+          "1": { "title": "1. 接受条款", "text": "使用DrHukum的服务，即表示您同意受这些条款和条件的约束。如果您不同意这些条款，请不要使用我们的服务。" },
+          "2": { "title": "2. 法律服务", "text": "DrHukum提供法律咨询、法律代理和其他相关服务。所有服务均符合印度尼西亚适用法律和律师职业道德准则。" },
+          "3": { "title": "3. 律师-客户关系", "text": "律师-客户关系在签署法律服务协议后成立。在此之前，任何沟通均为一般性咨询，不构成具有约束力的法律关系。" },
+          "4": { "title": "4. 保密性", "text": "我们承诺根据律师-客户特权和适用法律法规，对客户提供的所有信息保密。" },
+          "5": { "title": "5. 付款和费用", "text": "费用结构将在服务开始前透明说明。付款根据法律服务协议中的约定进行。" },
+          "6": { "title": "6. 责任限制", "text": "对于因不可抗力或超出我们控制范围的因素导致的服务延迟或失败所造成的损失，DrHukum概不负责。" },
+          "7": { "title": "7. 条款变更", "text": "我们保留随时更改这些条款和条件的权利。更改将通过网站或直接与客户沟通的方式通知。" }
+        }
+      },
+      "privacy": {
+        "title": "隐私政策",
+        "content": {
+          "1": { "title": "1. 信息收集", "text": "我们收集您直接提供的信息，例如姓名、电子邮件地址、电话号码和法律案件详情，以提供最佳服务。" },
+          "2": { "title": "2. 信息使用", "text": "收集的信息用于：提供法律服务、与客户沟通、处理付款和提高服务质量。" },
+          "3": { "title": "3. 数据保护", "text": "我们采取适当的技术和组织安全措施，保护您的个人数据免遭未经授权的访问、使用或披露。" },
+          "4": { "title": "4. 信息共享", "text": "未经您的同意，我们不会与第三方共享您的个人信息，除非法律要求或为执法目的。" },
+          "5": { "title": "5. Cookie和跟踪技术", "text": "我们的网站使用Cookie来增强用户体验。您可以通过浏览器设置管理您的Cookie偏好。" },
+          "6": { "title": "6. 您的权利", "text": "您有权访问、更新、更正或删除您的个人数据。请联系我们行使这些权利。" },
+          "7": { "title": "7. 数据保留", "text": "我们将在提供服务和遵守法律义务所需的时间内保留您的个人数据，通常在律师-客户关系结束后保留7年。" }
+        }
+      },
+      "disclaimer": {
+        "title": "免责声明",
+        "content": {
+          "1": { "title": "1. 信息性质", "text": "本网站提供的信息仅为一般性质，不构成具体的法律建议。每个法律情况都是独特的，需要单独分析。" },
+          "2": { "title": "2. 不保证结果", "text": "我们无法保证法律案件的具体结果。结果取决于多种因素，包括案件事实、适用法律和法院判决。" },
+          "3": { "title": "3. 网站信息", "text": "尽管我们努力保持网站信息的准确性，但我们对可能发生的任何错误、遗漏或不准确之处概不负责。" },
+          "4": { "title": "4. 外部链接", "text": "我们的网站可能包含指向第三方网站的链接。我们对这些网站的内容或隐私做法概不负责。" },
+          "5": { "title": "5. 管辖权", "text": "这些条款和条件受印度尼西亚法律管辖。任何争议将通过印度尼西亚的主管法院解决。" },
+          "6": { "title": "6. 专业咨询", "text": "请务必就您的具体法律问题咨询合格的律师。不要依赖一般信息做出重要的法律决定。" }
+        }
+      }
+    },
+    "importantNotice": "重要通知",
+    "noticeContent": {
+      "effectiveDate": "<strong>生效日期：</strong>这些条款和条件自2024年1月1日起生效，并可随时更新。",
+      "contact": "<strong>问题联系方式：</strong>如果您对这些条款和条件有任何疑问，请通过<span class='text-blue-600 font-medium'>info@drhukum.com</span>或<span class='text-blue-600 font-medium'>+62 81 25 25 25 966</span>与我们联系。",
+      "language": "<strong>语言：</strong>如果印度尼西亚语版本与其他语言版本之间存在任何解释差异，应以印度尼西亚语版本为准。"
+    },
+    "professionalStandards": "我们的专业标准",
+    "standardsSubtitle": "我们对最高道德和专业标准的承诺",
+    "standards": {
+      "ethics": "职业道德准则",
+      "ethicsDesc": "我们在提供法律服务时遵守印度尼西亚律师的职业道德准则和国际标准。",
+      "clientInterest": "客户利益",
+      "clientInterestDesc": "在每一次代理和法律服务中，客户的利益是我们的首要任务。",
+      "transparency": "透明度",
+      "transparencyDesc": "我们承诺在与所有客户的沟通、费用和法律流程中保持透明。"
+    },
+    "ctaTitle": "需要法律澄清吗？",
+    "ctaSubtitle": "如果您对这些条款和条件有任何疑问或需要法律咨询，请随时联系我们的团队。",
+    "contactUs": "立即联系我们",
+    "emailLegal": "发送邮件给法务团队"
+  }
+}

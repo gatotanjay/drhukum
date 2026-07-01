@@ -1,0 +1,337 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "articles": "Artikel & Insight",
+    "contact": "Hubungi Kami",
+    "terms": "Syarat & Ketentuan",
+    "freeConsultation": "Konsultasi Gratis"
+  },
+  "footer": {
+    "description": "Firma hukum terpercaya di Bali yang memberikan solusi hukum komprehensif untuk individu dan perusahaan dengan pengalaman lebih dari 10 tahun.",
+    "navigation": "Navigasi",
+    "mainServices": "Layanan Utama",
+    "civilLaw": "Hukum Perdata",
+    "criminalLaw": "Hukum Pidana",
+    "businessLaw": "Hukum Bisnis",
+    "familyLaw": "Hukum Keluarga",
+    "propertyLaw": "Hukum Properti",
+    "contact": "Kontak",
+    "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
+    "copyright": "© 2024 DrHukum. Semua hak dilindungi undang-undang.",
+    "terms": "Syarat & Ketentuan",
+    "privacy": "Kebijakan Privasi"
+  },
+  "home": {
+    "heroTitle1": "Your Trusted",
+    "heroTitle2": "Legal Advisor",
+    "heroTitle3": "in Bali",
+    "heroSubtitle": "Solusi hukum komprehensif untuk melindungi hak dan kepentingan Anda. Dengan pengalaman lebih dari 10 tahun, kami siap membantu menyelesaikan berbagai permasalahan hukum Anda.",
+    "bookConsultation": "Booking Konsultasi Gratis",
+    "ourServices": "Lihat Layanan Kami",
+    "mainServicesTitle": "Layanan Hukum Utama",
+    "mainServicesSubtitle": "Kami menyediakan berbagai layanan hukum profesional untuk memenuhi kebutuhan klien",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "whyChooseUsTitle": "Mengapa Memilih DrHukum?",
+    "whyChooseUsSubtitle": "Keunggulan yang membuat kami menjadi pilihan utama untuk solusi hukum Anda",
+    "advantages": {
+      "experience": "Pengalaman 10+ Tahun",
+      "experienceDesc": "Tim lawyer berpengalaman dengan track record yang terbukti",
+      "consultation": "Konsultasi 24/7",
+      "consultationDesc": "Layanan konsultasi tersedia kapan saja sesuai kebutuhan Anda",
+      "successRate": "Tingkat Keberhasilan Tinggi",
+      "successRateDesc": "95% kasus berhasil diselesaikan dengan hasil memuaskan"
+    },
+    "testimonialsTitle": "Testimoni Klien",
+    "testimonialsSubtitle": "Kepercayaan dan kepuasan klien adalah prioritas utama kami",
+    "testimonials": {
+      "budi": "DrHukum membantu perusahaan kami menyelesaikan sengketa kontrak dengan profesional dan efisien.",
+      "sari": "Pelayanan yang sangat memuaskan. Tim yang responsif dan solusi hukum yang tepat sasaran.",
+      "made": "Konsultasi hukum bisnis yang komprehensif. Sangat membantu dalam pengembangan usaha kami."
+    },
+    "articlesTitle": "Artikel & Insight Terbaru",
+    "articlesSubtitle": "Dapatkan wawasan hukum terkini dan tips praktis dari para ahli",
+    "blogPosts": {
+      "post1": "Panduan Lengkap Hukum Bisnis di Indonesia",
+      "post1Excerpt": "Memahami aspek-aspek penting dalam hukum bisnis untuk melindungi perusahaan Anda",
+      "post2": "Hak dan Kewajiban dalam Kontrak Kerja",
+      "post2Excerpt": "Mengetahui hak dan kewajiban pekerja serta pemberi kerja dalam hubungan industrial",
+      "post3": "Prosedur Pendirian PT di Bali",
+      "post3Excerpt": "Langkah-langkah praktis untuk mendirikan Perseroan Terbatas di Provinsi Bali"
+    },
+    "readMore": "Baca Selengkapnya",
+    "viewAllArticles": "Lihat Semua Artikel",
+    "ctaTitle": "Siap Mendapatkan Solusi Hukum Terbaik?",
+    "ctaSubtitle": "Jangan biarkan masalah hukum mengganggu hidup atau bisnis Anda. Konsultasikan dengan tim ahli kami sekarang juga.",
+    "startFreeConsultation": "Mulai Konsultasi Gratis",
+    "contactUs": "Hubungi Kami"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Siap membantu menyelesaikan masalah hukum Anda. Konsultasi gratis untuk evaluasi awal kasus Anda.",
+    "formTitle": "Form Konsultasi Hukum",
+    "fullName": "Nama Lengkap *",
+    "fullNamePlaceholder": "Masukkan nama lengkap",
+    "email": "Email *",
+    "emailPlaceholder": "nama@email.com",
+    "phone": "Nomor Telepon",
+    "phonePlaceholder": "+62 812 3456 7890",
+    "urgency": "Tingkat Urgensi",
+    "urgencyNormal": "Normal",
+    "urgencyUrgent": "Mendesak",
+    "urgencyEmergency": "Darurat",
+    "legalField": "Bidang Hukum",
+    "selectLegalField": "Pilih bidang hukum",
+    "legalFields": {
+      "civil": "Hukum Perdata",
+      "criminal": "Hukum Pidana",
+      "business": "Hukum Bisnis & Korporasi",
+      "family": "Hukum Keluarga",
+      "property": "Hukum Properti",
+      "labor": "Hukum Ketenagakerjaan",
+      "admin": "Hukum Administrasi",
+      "other": "Lainnya"
+    },
+    "subject": "Subjek",
+    "subjectPlaceholder": "Ringkasan masalah hukum",
+    "message": "Deskripsi Masalah *",
+    "messagePlaceholder": "Jelaskan masalah hukum Anda secara detail...",
+    "sendConsultation": "Kirim Konsultasi",
+    "contactInfo": "Informasi Kontak",
+    "contactInfoSubtitle": "Kami siap membantu Anda 24/7. Jangan ragu untuk menghubungi kami melalui berbagai channel yang tersedia.",
+    "address": "Alamat Kantor",
+    "phoneTitle": "Telepon",
+    "emailTitle": "Email",
+    "operationalHours": "Jam Operasional",
+    "opHoursDetails": "Senin - Jumat: 08:00 - 17:00<br />Sabtu: 08:00 - 12:00<br />Minggu: Tutup",
+    "directContact": "Kontak Langsung",
+    "mapTitle": "Lokasi Kantor Kami",
+    "mapSubtitle": "Kunjungi kantor kami di lokasi yang strategis di Bali untuk konsultasi langsung",
+    "mapPlaceholder": "Peta interaktif akan ditampilkan di sini",
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "faqSubtitle": "Jawaban untuk pertanyaan umum tentang layanan konsultasi kami",
+    "faq1Title": "Apakah konsultasi awal benar-benar gratis?",
+    "faq1Answer": "Ya, kami menyediakan konsultasi awal gratis selama 30 menit untuk evaluasi kasus Anda dan memberikan saran awal.",
+    "faq2Title": "Berapa lama waktu respons untuk konsultasi?",
+    "faq2Answer": "Kami berkomitmen merespons dalam 24 jam untuk kasus normal, dan dalam 2 jam untuk kasus mendesak.",
+    "faq3Title": "Apakah informasi saya akan dijaga kerahasiaannya?",
+    "faq3Answer": "Tentu saja. Kami terikat kode etik profesi dan menjamin kerahasiaan semua informasi klien sesuai dengan hukum yang berlaku.",
+    "faq4Title": "Bisakah konsultasi dilakukan secara online?",
+    "faq4Answer": "Ya, kami menyediakan layanan konsultasi online melalui video call, telepon, atau chat untuk kemudahan klien."
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "subtitle": "Firma hukum terpercaya di Bali yang telah melayani klien selama lebih dari 15 tahun dengan komitmen memberikan solusi hukum terbaik dan profesional.",
+    "ourJourneyTitle": "Perjalanan Kami",
+    "ourJourneyP1": "DrHukum didirikan pada tahun 2009 dengan visi menjadi firma hukum terdepan di Bali yang memberikan layanan hukum berkualitas tinggi. Berawal dari kantor kecil dengan 3 lawyer, kini kami telah berkembang menjadi firma hukum terpercaya dengan tim profesional yang berpengalaman.",
+    "ourJourneyP2": "Selama perjalanan kami, kami telah menangani lebih dari 500 kasus dengan tingkat keberhasilan 95%. Kepercayaan klien adalah aset terbesar kami, dan kami terus berkomitmen untuk memberikan layanan terbaik.",
+    "ourJourneyP3": "Kami bangga menjadi mitra hukum bagi individu, perusahaan multinasional, UMKM, dan berbagai organisasi di Bali dan seluruh Indonesia.",
+    "yearsServing": "Tahun Melayani",
+    "ourMission": "Misi Kami",
+    "missionText": "Memberikan layanan hukum berkualitas tinggi yang dapat diakses oleh semua kalangan, dengan mengutamakan integritas, profesionalisme, dan kepuasan klien. Kami berkomitmen untuk menjadi mitra terpercaya dalam menyelesaikan berbagai permasalahan hukum dengan solusi yang efektif dan efisien.",
+    "ourVision": "Visi Kami",
+    "visionText": "Menjadi firma hukum terdepan di Indonesia yang dikenal karena keunggulan dalam memberikan solusi hukum inovatif, membangun kepercayaan jangka panjang dengan klien, dan berkontribusi positif terhadap perkembangan sistem hukum di Indonesia.",
+    "ourValues": "Nilai-Nilai Kami",
+    "valuesSubtitle": "Prinsip-prinsip yang menjadi fondasi dalam setiap layanan yang kami berikan",
+    "values": {
+      "integrity": "Integritas",
+      "integrityDesc": "Menjunjung tinggi kejujuran dan transparansi dalam setiap layanan hukum yang kami berikan",
+      "professionalism": "Profesionalisme",
+      "professionalismDesc": "Memberikan layanan hukum berkualitas tinggi dengan standar profesional internasional",
+      "empathy": "Empati",
+      "empathyDesc": "Memahami dan peduli terhadap kebutuhan serta kepentingan terbaik klien",
+      "excellence": "Keunggulan",
+      "excellenceDesc": "Berkomitmen untuk selalu memberikan hasil terbaik dan solusi hukum yang inovatif"
+    },
+    "ourTeam": "Tim Profesional Kami",
+    "teamSubtitle": "Lawyer berpengalaman dengan keahlian di berbagai bidang hukum",
+    "team": {
+      "partner1": "Managing Partner",
+      "partner1Spec": "Hukum Perdata & Bisnis",
+      "partner2": "Senior Partner",
+      "partner2Spec": "Hukum Pidana & Keluarga",
+      "partner3": "Partner",
+      "partner3Spec": "Hukum Korporasi & Properti",
+      "associate": "Associate Lawyer",
+      "associateSpec": "Hukum Ketenagakerjaan",
+      "experience": "Pengalaman",
+      "education": "Pendidikan"
+    },
+    "ourAchievements": "Pencapaian Kami",
+    "achievementsSubtitle": "Angka-angka yang menunjukkan komitmen kami dalam memberikan layanan terbaik",
+    "achievements": {
+      "cases": "Kasus Berhasil Diselesaikan",
+      "satisfaction": "Tingkat Kepuasan Klien",
+      "experience": "Tahun Pengalaman",
+      "corporate": "Perusahaan Klien"
+    }
+  },
+  "services": {
+    "title": "Layanan Hukum Kami",
+    "subtitle": "Solusi hukum komprehensif untuk berbagai kebutuhan legal Anda. Dari konsultasi hingga representasi di pengadilan, kami siap membantu.",
+    "services": {
+      "civil": { 
+        "title": "Hukum Perdata", 
+        "desc": "Penyelesaian sengketa perdata, kontrak, wanprestasi, dan perlindungan hak-hak sipil",
+        "features": ["Pembuatan dan peninjauan kontrak", "Penyelesaian sengketa kontrak", "Gugatan wanprestasi", "Mediasi dan arbitrase", "Pelaksanaan putusan pengadilan"]
+      },
+      "criminal": { 
+        "title": "Hukum Pidana", 
+        "desc": "Pendampingan hukum untuk kasus pidana dan perlindungan hak tersangka/terdakwa",
+        "features": ["Pendampingan penyidikan (BAP)", "Pembelaan di pengadilan", "Konsultasi hukum pidana", "Penanganan kasus korupsi", "Advokasi hak tersangka"]
+      },
+      "business": { 
+        "title": "Hukum Bisnis & Korporasi", 
+        "desc": "Konsultasi hukum perusahaan, merger, akuisisi, dan compliance",
+        "features": ["Pendirian PT/CV", "Merger & akuisisi", "Kepatuhan perusahaan", "Kontrak bisnis", "Restrukturisasi perusahaan"]
+      },
+      "family": { 
+        "title": "Hukum Keluarga", 
+        "desc": "Penanganan masalah hukum keluarga, perceraian, dan hak asuh anak",
+        "features": ["Proses perceraian", "Pembagian harta gono-gini", "Hak asuh anak", "Pengangkatan anak", "Kasus KDRT"]
+      },
+      "property": { 
+        "title": "Hukum Properti", 
+        "desc": "Transaksi properti, sengketa tanah, dan legalisasi dokumen properti",
+        "features": ["Jual beli properti", "Sengketa tanah", "Legalisasi sertifikat", "Pemecahan sertifikat", "Hak Guna Bangunan"]
+      },
+      "labor": { 
+        "title": "Hukum Ketenagakerjaan", 
+        "desc": "Penyelesaian sengketa ketenagakerjaan dan penyusunan kontrak kerja",
+        "features": ["Pembuatan perjanjian kerja", "PHK dan pesangon", "Perselisihan hubungan industrial", "Perlindungan pekerja", "Kepatuhan ketenagakerjaan"]
+      },
+      "admin": { 
+        "title": "Hukum Administrasi", 
+        "desc": "Pengurusan dokumen legal, perizinan, dan administrasi hukum",
+        "features": ["Pengurusan izin usaha", "Legalisasi dokumen", "Notaris dan PPAT", "Surat kuasa", "Administrasi hukum"]
+      },
+      "general": { 
+        "title": "Konsultasi Hukum Umum", 
+        "desc": "Konsultasi hukum untuk berbagai permasalahan hukum sehari-hari",
+        "features": ["Konsultasi online/offline", "Pendapat hukum (Legal Opinion)", "Analisis risiko hukum", "Pendampingan negosiasi", "Opini kedua (Second opinion)"]
+      }
+    },
+    "consultNow": "Konsultasi Sekarang",
+    "ourProcess": "Proses Kerja Kami",
+    "processSubtitle": "Metodologi yang terstruktur untuk memastikan hasil terbaik bagi klien",
+    "processSteps": {
+      "step1": "Konsultasi Awal",
+      "step1Desc": "Diskusi mendalam mengenai permasalahan hukum yang dihadapi",
+      "step2": "Analisis Kasus",
+      "step2Desc": "Tim ahli menganalisis aspek hukum dan menyusun strategi terbaik",
+      "step3": "Proposal Solusi",
+      "step3Desc": "Presentasi solusi hukum dengan timeline dan estimasi biaya",
+      "step4": "Eksekusi",
+      "step4Desc": "Pelaksanaan strategi hukum dengan monitoring berkala",
+      "step5": "Follow Up",
+      "step5Desc": "Evaluasi hasil dan dukungan berkelanjutan sesuai kebutuhan"
+    },
+    "whyChoose": "Mengapa Memilih Layanan Kami?",
+    "reasons": {
+      "experience": "Pengalaman Terpercaya",
+      "experienceDesc": "Lebih dari 15 tahun pengalaman menangani berbagai kasus hukum dengan tingkat keberhasilan 95%",
+      "team": "Tim Profesional",
+      "teamDesc": "Lawyer bersertifikat dengan spesialisasi di berbagai bidang hukum",
+      "transparency": "Transparansi Biaya",
+      "transparencyDesc": "Struktur biaya yang jelas dan transparan tanpa biaya tersembunyi"
+    },
+    "ctaTitle": "Butuh Bantuan Hukum Segera?",
+    "ctaSubtitle": "Jangan tunda masalah hukum Anda. Konsultasikan dengan tim ahli kami dan dapatkan solusi terbaik untuk kasus Anda.",
+    "freeConsultation": "Konsultasi Gratis Sekarang",
+    "contactUs": "Hubungi Kami"
+  },
+  "articles": {
+    "title": "Artikel & Insight",
+    "subtitle": "Dapatkan wawasan hukum terkini, tips praktis, dan analisis mendalam dari para ahli hukum berpengalaman.",
+    "searchPlaceholder": "Cari artikel...",
+    "allCategories": "Semua Kategori",
+    "categories": {
+      "civil": "Hukum Perdata",
+      "criminal": "Hukum Pidana",
+      "business": "Hukum Bisnis",
+      "family": "Hukum Keluarga",
+      "property": "Hukum Properti",
+      "labor": "Hukum Ketenagakerjaan",
+      "tips": "Tips Hukum"
+    },
+    "featuredTitle": "Artikel Pilihan",
+    "featuredSubtitle": "Artikel-artikel terpilih yang wajib dibaca untuk memahami perkembangan hukum terkini",
+    "allArticlesTitle": "Semua Artikel",
+    "articlesFound": "artikel ditemukan",
+    "noArticlesFound": "Tidak ada artikel yang ditemukan untuk kategori",
+    "withKeyword": "dengan kata kunci",
+    "readTime": "menit baca",
+    "readMore": "Baca Selengkapnya",
+    "newsletterTitle": "Dapatkan Update Artikel Terbaru",
+    "newsletterSubtitle": "Berlangganan newsletter kami untuk mendapatkan artikel hukum terbaru dan insight dari para ahli langsung di inbox Anda.",
+    "emailPlaceholder": "Masukkan email Anda",
+    "subscribe": "Berlangganan"
+  },
+  "terms": {
+    "title": "Syarat & Ketentuan",
+    "subtitle": "Informasi penting mengenai syarat penggunaan layanan, kebijakan privasi, dan disclaimer untuk melindungi hak dan kepentingan semua pihak.",
+    "nav": {
+      "terms": "Syarat & Ketentuan",
+      "privacy": "Kebijakan Privasi",
+      "disclaimer": "Disclaimer"
+    },
+    "sections": {
+      "terms": {
+        "title": "Syarat & Ketentuan",
+        "content": {
+          "1": { "title": "1. Penerimaan Syarat", "text": "Dengan menggunakan layanan DrHukum, Anda menyetujui untuk terikat oleh syarat dan ketentuan ini. Jika Anda tidak setuju dengan syarat ini, mohon untuk tidak menggunakan layanan kami." },
+          "2": { "title": "2. Layanan Hukum", "text": "DrHukum menyediakan layanan konsultasi hukum, representasi legal, dan layanan terkait lainnya. Semua layanan diberikan sesuai dengan hukum yang berlaku di Indonesia dan kode etik profesi advokat." },
+          "3": { "title": "3. Hubungan Klien-Advokat", "text": "Hubungan klien-advokat terbentuk setelah penandatanganan perjanjian layanan hukum. Sebelum itu, komunikasi yang terjadi bersifat konsultasi umum dan tidak menciptakan hubungan hukum yang mengikat." },
+          "4": { "title": "4. Kerahasiaan", "text": "Kami berkomitmen menjaga kerahasiaan semua informasi yang diberikan klien sesuai dengan privilege attorney-client dan peraturan perundang-undangan yang berlaku." },
+          "5": { "title": "5. Pembayaran dan Biaya", "text": "Struktur biaya akan dijelaskan secara transparan sebelum layanan dimulai. Pembayaran dilakukan sesuai dengan kesepakatan dalam perjanjian layanan hukum." },
+          "6": { "title": "6. Batasan Tanggung Jawab", "text": "DrHukum tidak bertanggung jawab atas kerugian yang timbul akibat keterlambatan atau kegagalan dalam memberikan layanan yang disebabkan oleh force majeure atau faktor di luar kendali kami." },
+          "7": { "title": "7. Perubahan Syarat", "text": "Kami berhak mengubah syarat dan ketentuan ini sewaktu-waktu. Perubahan akan diberitahukan melalui website atau komunikasi langsung kepada klien." }
+        }
+      },
+      "privacy": {
+        "title": "Kebijakan Privasi",
+        "content": {
+          "1": { "title": "1. Pengumpulan Informasi", "text": "Kami mengumpulkan informasi yang Anda berikan secara langsung, seperti nama, alamat email, nomor telepon, dan detail kasus hukum untuk memberikan layanan yang optimal." },
+          "2": { "title": "2. Penggunaan Informasi", "text": "Informasi yang dikumpulkan digunakan untuk: memberikan layanan hukum, komunikasi dengan klien, pemrosesan pembayaran, dan peningkatan kualitas layanan." },
+          "3": { "title": "3. Perlindungan Data", "text": "Kami menerapkan langkah-langkah keamanan teknis dan organisasi yang sesuai untuk melindungi data pribadi Anda dari akses, penggunaan, atau pengungkapan yang tidak sah." },
+          "4": { "title": "4. Pembagian Informasi", "text": "Kami tidak akan membagikan informasi pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali diwajibkan oleh hukum atau untuk kepentingan penegakan hukum." },
+          "5": { "title": "5. Cookies dan Teknologi Pelacakan", "text": "Website kami menggunakan cookies untuk meningkatkan pengalaman pengguna. Anda dapat mengatur preferensi cookies melalui pengaturan browser Anda." },
+          "6": { "title": "6. Hak Anda", "text": "Anda memiliki hak untuk mengakses, memperbarui, mengoreksi, atau menghapus data pribadi Anda. Hubungi kami untuk menggunakan hak-hak tersebut." },
+          "7": { "title": "7. Retensi Data", "text": "Kami menyimpan data pribadi Anda selama diperlukan untuk memberikan layanan dan mematuhi kewajiban hukum, biasanya selama 7 tahun setelah berakhirnya hubungan klien-advokat." }
+        }
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": {
+          "1": { "title": "1. Sifat Informasi", "text": "Informasi yang disediakan di website ini bersifat umum dan tidak dimaksudkan sebagai nasihat hukum spesifik. Setiap situasi hukum adalah unik dan memerlukan analisis individual." },
+          "2": { "title": "2. Tidak Ada Jaminan Hasil", "text": "Kami tidak dapat menjamin hasil tertentu dalam kasus hukum. Hasil bergantung pada berbagai faktor termasuk fakta kasus, hukum yang berlaku, dan keputusan pengadilan." },
+          "3": { "title": "3. Informasi Website", "text": "Meskipun kami berusaha menjaga keakuratan informasi di website, kami tidak bertanggung jawab atas kesalahan, kelalaian, atau ketidakakuratan informasi yang mungkin terjadi." },
+          "4": { "title": "4. Link Eksternal", "text": "Website kami mungkin berisi link ke website pihak ketiga. Kami tidak bertanggung jawab atas konten atau praktik privasi website tersebut." },
+          "5": { "title": "5. Yurisdiksi", "text": "Syarat dan ketentuan ini diatur oleh hukum Indonesia. Setiap sengketa akan diselesaikan melalui pengadilan yang berwenang di Indonesia." },
+          "6": { "title": "6. Konsultasi Profesional", "text": "Selalu konsultasikan masalah hukum spesifik Anda dengan advokat yang berkualifikasi. Jangan mengandalkan informasi umum untuk mengambil keputusan hukum penting." }
+        }
+      }
+    },
+    "importantNotice": "Pemberitahuan Penting",
+    "noticeContent": {
+      "effectiveDate": "<strong>Tanggal Berlaku:</strong> Syarat dan ketentuan ini berlaku efektif sejak 1 Januari 2024 dan dapat diperbarui sewaktu-waktu.",
+      "contact": "<strong>Kontak untuk Pertanyaan:</strong> Jika Anda memiliki pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi kami di <span class='text-blue-600 font-medium'>info@drhukum.com</span> atau <span class='text-blue-600 font-medium'>+62 81 25 25 25 966</span>.",
+      "language": "<strong>Bahasa:</strong> Dalam hal terdapat perbedaan interpretasi antara versi Bahasa Indonesia dan bahasa lainnya, versi Bahasa Indonesia akan berlaku."
+    },
+    "professionalStandards": "Standar Profesional Kami",
+    "standardsSubtitle": "Komitmen kami terhadap standar etika dan profesionalisme tertinggi",
+    "standards": {
+      "ethics": "Kode Etik Profesi",
+      "ethicsDesc": "Kami mematuhi kode etik advokat Indonesia dan standar internasional dalam memberikan layanan hukum.",
+      "clientInterest": "Kepentingan Klien",
+      "clientInterestDesc": "Kepentingan klien adalah prioritas utama kami dalam setiap representasi dan layanan hukum yang diberikan.",
+      "transparency": "Transparansi",
+      "transparencyDesc": "Kami berkomitmen untuk transparan dalam komunikasi, biaya, dan proses hukum kepada semua klien."
+    },
+    "ctaTitle": "Butuh Klarifikasi Hukum?",
+    "ctaSubtitle": "Jika Anda memiliki pertanyaan tentang syarat dan ketentuan ini atau memerlukan konsultasi hukum, jangan ragu untuk menghubungi tim kami.",
+    "contactUs": "Hubungi Kami Sekarang",
+    "emailLegal": "Email Tim Legal"
+  }
+}
