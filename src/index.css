@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 22 28% 18%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 22 28% 18%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 22 28% 18%;
+
+  --primary: 30 54% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 30 10% 95%;
+  --secondary-foreground: 22 28% 18%;
+
+  --muted: 30 10% 95%;
+  --muted-foreground: 22 28% 45%;
+
+  --accent: 30 10% 95%;
+  --accent-foreground: 22 28% 18%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 30 10% 89%;
+  --input: 30 10% 89%;
+  --ring: 30 54% 45%;
+
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #A87A50 0%, #C39B75 50%, #E3C5A6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(195, 155, 117, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(168, 122, 80, 0.1) 0%, transparent 50%);
+}
+
+.bg-primary {
+    background-color: hsl(var(--primary));
+}
+.hover\:bg-primary\/90:hover {
+    background-color: hsl(var(--primary) / 0.9);
+}
+.text-primary {
+    color: hsl(var(--primary));
+}
+.text-primary-foreground {
+    color: hsl(var(--primary-foreground));
+}
+.border-primary {
+    border-color: hsl(var(--primary));
+}
+.ring-primary {
+    ring-color: hsl(var(--ring));
+}
+.hover\:text-primary:hover {
+    color: hsl(var(--primary));
+}
+.hover\:bg-primary:hover {
+  background-color: hsl(var(--primary));
+}
+.bg-secondary {
+  background-color: hsl(var(--secondary));
+}
+.hover\:bg-accent:hover {
+  background-color: hsl(var(--accent));
+}
+.text-accent-foreground {
+  color: hsl(var(--accent-foreground));
+}
