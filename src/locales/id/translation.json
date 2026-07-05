@@ -259,7 +259,70 @@
           "Pendampingan negosiasi",
           "Opini kedua (Second opinion)"
         ]
-      }
+      },
+      "companyEstablishment": {
+  "title": "Pendirian Perusahaan",
+  "desc": "Pendampingan menyeluruh untuk mendirikan badan usaha legal di Indonesia",
+  "features": [
+    "Saran struktur badan usaha",
+    "Penyusunan akta perusahaan",
+    "Registrasi NIB dan OSS"
+  ]
+},
+"legalConsultation": {
+  "title": "Konsultasi Hukum",
+  "desc": "Arahan hukum praktis untuk kebutuhan bisnis, personal, dan regulasi",
+  "features": [
+    "Penilaian hukum awal",
+    "Pendapat hukum",
+    "Review dokumen"
+  ]
+},
+"corporateLegal": {
+  "title": "Legal Korporasi",
+  "desc": "Dukungan hukum berkelanjutan untuk tata kelola, kontrak, dan transaksi perusahaan",
+  "features": [
+    "Tata kelola perusahaan",
+    "Kontrak komersial",
+    "Restrukturisasi perusahaan"
+  ]
+},
+"taxAccounting": {
+  "title": "Pajak & Akuntansi",
+  "desc": "Dukungan pajak dan akuntansi agar pencatatan bisnis tetap patuh dan rapi",
+  "features": [
+    "Dukungan registrasi pajak",
+    "Pembukuan bulanan",
+    "Laporan keuangan"
+  ]
+},
+"licensingCompliance": {
+  "title": "Perizinan & Kepatuhan",
+  "desc": "Pendampingan perizinan usaha dan kepatuhan untuk kegiatan yang diatur regulasi",
+  "features": [
+    "Pengajuan perizinan",
+    "Kepatuhan OSS",
+    "Perpanjangan izin"
+  ]
+},
+"visaImmigration": {
+  "title": "Visa & Imigrasi",
+  "desc": "Dukungan imigrasi untuk investor asing, tenaga profesional, dan keluarga",
+  "features": [
+    "Konsultasi visa",
+    "Pendampingan KITAS",
+    "Persiapan dokumen"
+  ]
+},
+"lkpmReporting": {
+  "title": "Pelaporan LKPM",
+  "desc": "Dukungan pelaporan kegiatan penanaman modal bagi perusahaan dengan kewajiban LKPM",
+  "features": [
+    "Review kewajiban LKPM",
+    "Pelaporan triwulanan",
+    "Dukungan submit OSS"
+  ]
+}
     },
     "consultNow": "Konsultasi Sekarang",
     "ourProcess": "Proses Kerja Kami",

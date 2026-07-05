@@ -203,7 +203,70 @@
       "general": {
         "title": "一般法律咨询",
         "desc": "为各种日常法律问题提供法律咨询"
-      }
+      },
+      "companyEstablishment": {
+  "title": "公司设立",
+  "desc": "为在印度尼西亚设立合法商业实体提供全流程协助",
+  "features": [
+    "实体结构建议",
+    "公司文件准备",
+    "NIB 和 OSS 注册"
+  ]
+},
+"legalConsultation": {
+  "title": "法律咨询",
+  "desc": "为商业、个人和监管事务提供实用法律指导",
+  "features": [
+    "初步法律评估",
+    "法律意见",
+    "文件审查"
+  ]
+},
+"corporateLegal": {
+  "title": "公司法律服务",
+  "desc": "为公司治理、合同和交易提供持续法律支持",
+  "features": [
+    "公司治理",
+    "商业合同",
+    "公司重组"
+  ]
+},
+"taxAccounting": {
+  "title": "税务与会计",
+  "desc": "提供税务和会计支持，帮助企业保持合规记录",
+  "features": [
+    "税务登记支持",
+    "月度记账",
+    "财务报告"
+  ]
+},
+"licensingCompliance": {
+  "title": "许可与合规",
+  "desc": "为受监管业务活动提供许可办理和合规协助",
+  "features": [
+    "许可证申请支持",
+    "OSS 合规",
+    "许可证续期"
+  ]
+},
+"visaImmigration": {
+  "title": "签证与移民",
+  "desc": "为外国投资者、专业人士和家庭提供移民支持",
+  "features": [
+    "签证咨询",
+    "KITAS 支持",
+    "文件准备"
+  ]
+},
+"lkpmReporting": {
+  "title": "LKPM 报告",
+  "desc": "为有 LKPM 义务的公司提供投资活动报告支持",
+  "features": [
+    "LKPM 义务审查",
+    "季度报告",
+    "OSS 提交支持"
+  ]
+}
     },
     "consultNow": "立即咨询",
     "ourProcess": "我们的工作流程",

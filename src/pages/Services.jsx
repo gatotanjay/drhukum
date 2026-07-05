@@ -66,7 +66,49 @@ const Services = () => {
       title: t('services.services.general.title'),
       description: t('services.services.general.desc'),
       features: t('services.services.general.features', { returnObjects: true }),
-    }
+    },
+{
+  icon: Building,
+  title: t('services.services.companyEstablishment.title'),
+  description: t('services.services.companyEstablishment.desc'),
+  features: t('services.services.companyEstablishment.features', { returnObjects: true }),
+},
+{
+  icon: Scale,
+  title: t('services.services.legalConsultation.title'),
+  description: t('services.services.legalConsultation.desc'),
+  features: t('services.services.legalConsultation.features', { returnObjects: true }),
+},
+{
+  icon: Briefcase,
+  title: t('services.services.corporateLegal.title'),
+  description: t('services.services.corporateLegal.desc'),
+  features: t('services.services.corporateLegal.features', { returnObjects: true }),
+},
+{
+  icon: FileText,
+  title: t('services.services.taxAccounting.title'),
+  description: t('services.services.taxAccounting.desc'),
+  features: t('services.services.taxAccounting.features', { returnObjects: true }),
+},
+{
+  icon: Shield,
+  title: t('services.services.licensingCompliance.title'),
+  description: t('services.services.licensingCompliance.desc'),
+  features: t('services.services.licensingCompliance.features', { returnObjects: true }),
+},
+{
+  icon: Users,
+  title: t('services.services.visaImmigration.title'),
+  description: t('services.services.visaImmigration.desc'),
+  features: t('services.services.visaImmigration.features', { returnObjects: true }),
+},
+{
+  icon: FileText,
+  title: t('services.services.lkpmReporting.title'),
+  description: t('services.services.lkpmReporting.desc'),
+  features: t('services.services.lkpmReporting.features', { returnObjects: true }),
+}
   ];
 
   const processSteps = [
