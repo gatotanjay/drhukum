@@ -2,10 +2,33 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Phone } from 'lucide-react';
+import { AtSign, Facebook, Instagram, MessageCircle, Phone, Youtube } from 'lucide-react';
 
 const ContactInfo = ({ items }) => {
   const { t } = useTranslation();
+
+  const socialLinks = [
+    {
+      name: 'Instagram',
+      icon: Instagram,
+      href: 'https://www.instagram.com/drhukumindonesia/',
+    },
+    {
+      name: 'Threads',
+      icon: AtSign,
+      href: 'https://www.threads.net/@drhukumindonesia',
+    },
+    {
+      name: 'Facebook',
+      icon: Facebook,
+      href: 'https://www.facebook.com/drhukumindonesia',
+    },
+    {
+      name: 'YouTube',
+      icon: Youtube,
+      href: 'https://www.youtube.com/@drhukumindonesia',
+    },
+  ];
 
   return (
     <motion.div
@@ -41,6 +64,25 @@ const ContactInfo = ({ items }) => {
           </motion.div>
         ))}
       </div>
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold text-gray-900">{t('contact.socialMedia')}</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+              className="flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-700 shadow-sm transition-all hover:border-blue-600 hover:text-blue-600 hover:shadow-md"
+            >
+              <social.icon className="h-5 w-5" />
+              {social.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
       <div className="space-y-4">
         <h3 className="text-lg font-semibold text-gray-900">{t('contact.directContact')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

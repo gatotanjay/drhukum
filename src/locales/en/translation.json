@@ -7,7 +7,8 @@
     "articles": "Articles & Insights",
     "contact": "Contact Us",
     "terms": "Terms & Conditions",
-    "freeConsultation": "Free Consultation"
+    "bookConsultation": "Book Consultation",
+    "team": "Our Team"
   },
   "footer": {
     "description": "A trusted law firm in Bali providing comprehensive legal solutions for individuals and companies with over 10 years of experience.",
@@ -119,7 +120,8 @@
     "faq3Title": "Will my information be kept confidential?",
     "faq3Answer": "Of course. We are bound by professional ethics and guarantee the confidentiality of all client information in accordance with applicable law.",
     "faq4Title": "Can consultations be done online?",
-    "faq4Answer": "Yes, we provide online consultation services via video call, phone, or chat for client convenience."
+    "faq4Answer": "Yes, we provide online consultation services via video call, phone, or chat for client convenience.",
+    "socialMedia": "Social Media"
   },
   "about": {
     "title": "About Us",
@@ -261,68 +263,68 @@
         ]
       },
       "companyEstablishment": {
-  "title": "Company Establishment",
-  "desc": "End-to-end assistance for setting up legal business entities in Indonesia",
-  "features": [
-    "Entity structure advice",
-    "Company deed preparation",
-    "NIB and OSS registration"
-  ]
-},
-"legalConsultation": {
-  "title": "Legal Consultation",
-  "desc": "Practical legal guidance for business, personal, and regulatory matters",
-  "features": [
-    "Initial legal assessment",
-    "Legal opinion",
-    "Document review"
-  ]
-},
-"corporateLegal": {
-  "title": "Corporate Legal",
-  "desc": "Ongoing legal support for corporate governance, contracts, and transactions",
-  "features": [
-    "Corporate governance",
-    "Commercial contracts",
-    "Company restructuring"
-  ]
-},
-"taxAccounting": {
-  "title": "Tax & Accounting",
-  "desc": "Tax and accounting support to keep your business records compliant and reliable",
-  "features": [
-    "Tax registration support",
-    "Monthly bookkeeping",
-    "Financial reporting"
-  ]
-},
-"licensingCompliance": {
-  "title": "Licensing & Compliance",
-  "desc": "Business licensing and compliance assistance for regulated activities",
-  "features": [
-    "License application support",
-    "OSS compliance",
-    "Permit renewal"
-  ]
-},
-"visaImmigration": {
-  "title": "Visa & Immigration",
-  "desc": "Immigration support for foreign investors, professionals, and families",
-  "features": [
-    "Visa consultation",
-    "KITAS support",
-    "Document preparation"
-  ]
-},
-"lkpmReporting": {
-  "title": "LKPM Reporting",
-  "desc": "Investment activity reporting support for companies with LKPM obligations",
-  "features": [
-    "LKPM obligation review",
-    "Quarterly reporting",
-    "OSS submission support"
-  ]
-}
+        "title": "Company Establishment",
+        "desc": "End-to-end assistance for setting up legal business entities in Indonesia",
+        "features": [
+          "Entity structure advice",
+          "Company deed preparation",
+          "NIB and OSS registration"
+        ]
+      },
+      "legalConsultation": {
+        "title": "Legal Consultation",
+        "desc": "Practical legal guidance for business, personal, and regulatory matters",
+        "features": [
+          "Initial legal assessment",
+          "Legal opinion",
+          "Document review"
+        ]
+      },
+      "corporateLegal": {
+        "title": "Corporate Legal",
+        "desc": "Ongoing legal support for corporate governance, contracts, and transactions",
+        "features": [
+          "Corporate governance",
+          "Commercial contracts",
+          "Company restructuring"
+        ]
+      },
+      "taxAccounting": {
+        "title": "Tax & Accounting",
+        "desc": "Tax and accounting support to keep your business records compliant and reliable",
+        "features": [
+          "Tax registration support",
+          "Monthly bookkeeping",
+          "Financial reporting"
+        ]
+      },
+      "licensingCompliance": {
+        "title": "Licensing & Compliance",
+        "desc": "Business licensing and compliance assistance for regulated activities",
+        "features": [
+          "License application support",
+          "OSS compliance",
+          "Permit renewal"
+        ]
+      },
+      "visaImmigration": {
+        "title": "Visa & Immigration",
+        "desc": "Immigration support for foreign investors, professionals, and families",
+        "features": [
+          "Visa consultation",
+          "KITAS support",
+          "Document preparation"
+        ]
+      },
+      "lkpmReporting": {
+        "title": "LKPM Reporting",
+        "desc": "Investment activity reporting support for companies with LKPM obligations",
+        "features": [
+          "LKPM obligation review",
+          "Quarterly reporting",
+          "OSS submission support"
+        ]
+      }
     },
     "consultNow": "Consult Now",
     "ourProcess": "Our Work Process",
@@ -564,5 +566,33 @@
     "ctaSubtitle": "If you have questions about these terms and conditions or require legal consultation, do not hesitate to contact our team.",
     "contactUs": "Contact Us Now",
     "emailLegal": "Email Legal Team"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet the professionals behind DrHukum Indonesia, a team committed to practical advice, careful strategy, and reliable legal support.",
+    "emailLabel": "Email team member",
+    "phoneLabel": "Contact team member",
+    "members": [
+      {
+        "name": "Mr1",
+        "role": "Role1",
+        "description": "Leads the firm with a focus on corporate strategy, dispute resolution, and client-centered legal solutions."
+      },
+      {
+        "name": "Mr2",
+        "role": "Role2",
+        "description": "Advises businesses on company establishment, governance, contracts, licensing, and compliance matters."
+      },
+      {
+        "name": "Mr3",
+        "role": "Role3",
+        "description": "Supports clients in civil, commercial, and administrative disputes with clear preparation and practical case handling."
+      },
+      {
+        "name": "Mr4",
+        "role": "Role4",
+        "description": "Assists companies with tax, accounting, LKPM reporting, and regulatory documentation."
+      }
+    ]
   }
 }

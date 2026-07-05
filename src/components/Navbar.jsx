@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: t('nav.about'), path: '/tentang-kami' },
     { name: t('nav.services'), path: '/layanan' },
     { name: t('nav.industries'), path: '/industri' },
+    { name: t('nav.team'), path: '/tim-kami' },
     { name: t('nav.contact'), path: '/kontak' },
     { name: t('nav.terms'), path: '/syarat-ketentuan' }
   ];
@@ -61,7 +62,7 @@ const Navbar = () => {
             ))}
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <a href="http://wa.me/6281252525966" target="_blank" rel="noopener noreferrer">
-                {t('nav.freeConsultation')}
+                {t('nav.bookConsultation')}
               </a>
             </Button>
             <LanguageSwitcher />
@@ -104,7 +105,7 @@ const Navbar = () => {
               <div className="px-3 py-2">
                 <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   <a href="http://wa.me/6281252525966" target="_blank" rel="noopener noreferrer">
-                    {t('nav.freeConsultation')}
+                    {t('nav.bookConsultation')}
                   </a>
                 </Button>
               </div>

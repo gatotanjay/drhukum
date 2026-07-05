@@ -68,11 +68,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <p className="text-stone-300 text-sm">Jl. Padang Galak No.46, Kesiman Petilan, Denpasar Timur, Kota Denpasar, Bali 80237</p>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary" />
-                <p className="text-stone-300">+62 853 5353 6667</p>
+                <p className="text-stone-300 text-sm">Jl Buana Kubu No.47, Kel/Desa Tegal Harum, Kecamatan Denpasar Barat, Kota Denpasar, Provinsi Bali - 80119</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />

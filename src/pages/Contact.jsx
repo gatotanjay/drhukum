@@ -15,7 +15,7 @@ const Contact = () => {
       icon: MapPin,
       title: t('contact.address'),
       details: [
-        "Jl. Padang Galak No.46, Kesiman Petilan, Denpasar Timur, Kota Denpasar, Bali 80237",
+        "Jl Buana Kubu No.47, Kel/Desa Tegal Harum, Kecamatan Denpasar Barat, Kota Denpasar, Provinsi Bali - 80119",
         "Indonesia"
       ]
     },
