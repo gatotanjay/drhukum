@@ -5,10 +5,12 @@ import { Mail, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const teamPhotos = [
-  'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80',
+  '/team1.png',
+  '/team2.png',
+  '/team3.png',
+  '/team4.png',
+  '/team5.png',
+  '/team6.png',
 ];
 
 const Team = () => {
@@ -65,14 +67,6 @@ const Team = () => {
                     <h2 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h2>
                     <p className="text-blue-600 font-medium mb-4">{member.role}</p>
                     <p className="text-gray-600 text-sm leading-relaxed mb-5">{member.description}</p>
-                    <div className="flex items-center gap-3 text-gray-500">
-                      <a href="mailto:info@drhukum.com" aria-label={t('team.emailLabel')} className="w-10 h-10 rounded-lg bg-blue-50 hover:bg-blue-600 flex items-center justify-center transition-colors group/icon">
-                        <Mail className="h-5 w-5 text-blue-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                      <a href="http://wa.me/6281252525966" target="_blank" rel="noopener noreferrer" aria-label={t('team.phoneLabel')} className="w-10 h-10 rounded-lg bg-blue-50 hover:bg-blue-600 flex items-center justify-center transition-colors group/icon">
-                        <Phone className="h-5 w-5 text-blue-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                    </div>
                   </div>
                 </motion.article>
               ))}

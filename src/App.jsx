@@ -7,6 +7,7 @@ import Home from '@/pages/Home.jsx';
 import About from '@/pages/About.jsx';
 import Services from '@/pages/Services.jsx';
 import Industries from '@/pages/Industries.jsx';
+import Resources from '@/pages/Resources.jsx';
 import Contact from '@/pages/Contact.jsx';
 import Terms from '@/pages/Terms.jsx';
 import Team from '@/pages/Team.jsx';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/tentang-kami" element={<About />} />
             <Route path="/layanan" element={<Services />} />
             <Route path="/industri" element={<Industries />} />
+            <Route path="/sumber-daya" element={<Resources />} />
             <Route path="/tim-kami" element={<Team />} />
             <Route path="/kontak" element={<Contact />} />
             <Route path="/syarat-ketentuan" element={<Terms />} />

@@ -11,7 +11,7 @@ const ContactInfo = ({ items }) => {
     {
       name: 'Instagram',
       icon: Instagram,
-      href: 'https://www.instagram.com/drhukumindonesia/',
+      href: 'https://www.instagram.com/drhukumofficial/',
     },
     {
       name: 'Threads',

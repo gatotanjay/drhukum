@@ -49,6 +49,9 @@ const Footer = () => {
               <Link to="/industri" className="block text-stone-300 hover:text-white transition-colors">
                 {t('nav.industries')}
               </Link>
+              <Link to="/sumber-daya" className="block text-stone-300 hover:text-white transition-colors">
+                {t('nav.resources')}
+              </Link>
             </div>
           </div>
 

@@ -8,7 +8,8 @@
     "contact": "Contact Us",
     "terms": "Terms & Conditions",
     "bookConsultation": "Book Consultation",
-    "team": "Our Team"
+    "team": "Our Team",
+    "resources": "Resources"
   },
   "footer": {
     "description": "A trusted law firm in Bali providing comprehensive legal solutions for individuals and companies with over 10 years of experience.",
@@ -23,7 +24,8 @@
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. All rights reserved.",
     "terms": "Terms & Conditions",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "resources": "Resources"
   },
   "home": {
     "heroTitle1": "Your Trusted",
@@ -574,25 +576,182 @@
     "phoneLabel": "Contact team member",
     "members": [
       {
-        "name": "Mr1",
+        "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
         "role": "Role1",
-        "description": "Leads the firm with a focus on corporate strategy, dispute resolution, and client-centered legal solutions."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Mr2",
+        "name": "Tjokorda Alit Budi Wijaya, S.H.",
         "role": "Role2",
-        "description": "Advises businesses on company establishment, governance, contracts, licensing, and compliance matters."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Mr3",
+        "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
         "role": "Role3",
-        "description": "Supports clients in civil, commercial, and administrative disputes with clear preparation and practical case handling."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Mr4",
+        "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
         "role": "Role4",
-        "description": "Assists companies with tax, accounting, LKPM reporting, and regulatory documentation."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
+        "role": "Role5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "Putu Adelia Indirawati, S.H.",
+        "role": "Role6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       }
     ]
+  },
+  "resources": {
+    "title": "Legal Resources",
+    "subtitle": "A collection of articles, regulatory updates, and free guides to help you understand the law in Indonesia.",
+    "tabs": {
+      "blog": "Blog",
+      "legalUpdates": "Legal Updates",
+      "freeGuides": "Free Guides"
+    },
+    "blog": {
+      "sectionTitle": "Blog & Articles",
+      "sectionSubtitle": "Practical insights and legal analysis from the DrHukum expert team.",
+      "viewAll": "View All Articles",
+      "posts": [
+        {
+          "title": "Complete Guide to Business Law in Indonesia",
+          "excerpt": "Understand the important aspects of business law to protect your company.",
+          "category": "Business Law",
+          "date": "January 12, 2026",
+          "readTime": "8 min read"
+        },
+        {
+          "title": "Rights and Obligations in Employment Contracts",
+          "excerpt": "Know the rights and obligations of employees and employers in industrial relations.",
+          "category": "Labor Law",
+          "date": "January 8, 2026",
+          "readTime": "6 min read"
+        },
+        {
+          "title": "Procedure for Establishing a PT in Bali",
+          "excerpt": "Practical steps to establish a Limited Liability Company in Bali Province.",
+          "category": "Business Law",
+          "date": "January 3, 2026",
+          "readTime": "10 min read"
+        },
+        {
+          "title": "Mediation vs Litigation: Which Is Right for Your Dispute?",
+          "excerpt": "Comparing the advantages and drawbacks of mediation and litigation in dispute resolution.",
+          "category": "Legal Tips",
+          "date": "December 20, 2025",
+          "readTime": "7 min read"
+        },
+        {
+          "title": "Understanding Inheritance Rights under Indonesian Law",
+          "excerpt": "A basic guide to the distribution of inheritance and heirs' rights in Indonesia.",
+          "category": "Family Law",
+          "date": "December 12, 2025",
+          "readTime": "9 min read"
+        },
+        {
+          "title": "Property Rental Guide for Expats in Bali",
+          "excerpt": "Key things expats should consider before renting property in Bali.",
+          "category": "Property Law",
+          "date": "November 28, 2025",
+          "readTime": "6 min read"
+        }
+      ]
+    },
+    "legalUpdates": {
+      "sectionTitle": "Latest Regulatory Updates",
+      "sectionSubtitle": "Stay up to date with the latest changes in Indonesian law and regulations.",
+      "readMore": "Read More",
+      "items": [
+        {
+          "title": "Changes to Foreign Worker Visa Requirements 2026",
+          "excerpt": "The government has updated the work visa and residence permit requirements for foreign workers.",
+          "date": "June 15, 2026",
+          "tag": "Immigration"
+        },
+        {
+          "title": "Update to OSS Business Licensing Regulations",
+          "excerpt": "Changes to the business licensing mechanism through the Online Single Submission (OSS) system.",
+          "date": "June 2, 2026",
+          "tag": "Licensing"
+        },
+        {
+          "title": "New Income Tax Rules for SMEs",
+          "excerpt": "Updated tax rates and reporting requirements affecting small and medium enterprises.",
+          "date": "May 20, 2026",
+          "tag": "Taxation"
+        },
+        {
+          "title": "Labor Law Revision: What's Changing?",
+          "excerpt": "A summary of key points in the Labor Law revision that employers and workers should know.",
+          "date": "May 5, 2026",
+          "tag": "Employment"
+        },
+        {
+          "title": "Property Ownership Regulations for Foreign Nationals",
+          "excerpt": "Updated rules on usage rights and property ownership by foreign nationals.",
+          "date": "April 18, 2026",
+          "tag": "Property"
+        },
+        {
+          "title": "Changes to Trademark Registration Procedures",
+          "excerpt": "New procedures for trademark registration and renewal at the Directorate General of Intellectual Property.",
+          "date": "April 1, 2026",
+          "tag": "Intellectual Property"
+        }
+      ]
+    },
+    "freeGuides": {
+      "sectionTitle": "Free Guides & Templates",
+      "sectionSubtitle": "Download practical guides and legal document templates for free.",
+      "downloadLabel": "Free Download",
+      "guides": [
+        {
+          "title": "PT Establishment Checklist for Beginners",
+          "description": "A complete list of documents and steps required to establish a PT.",
+          "fileType": "PDF",
+          "pages": "12 pages"
+        },
+        {
+          "title": "Standard Employment Contract Template",
+          "description": "A sample employment contract format compliant with labor law requirements.",
+          "fileType": "DOCX",
+          "pages": "8 pages"
+        },
+        {
+          "title": "Legal Guide for Expats in Bali",
+          "description": "Essential information on visas, property, and business for expats in Bali.",
+          "fileType": "PDF",
+          "pages": "20 pages"
+        },
+        {
+          "title": "E-Book: Understanding Consumer Rights in Indonesia",
+          "description": "An explanation of consumer rights and how to file a complaint under applicable law.",
+          "fileType": "PDF",
+          "pages": "15 pages"
+        },
+        {
+          "title": "Property Lease Agreement Template",
+          "description": "A sample lease agreement that is legally sound.",
+          "fileType": "DOCX",
+          "pages": "6 pages"
+        },
+        {
+          "title": "Tax Guide for Small Business Owners",
+          "description": "A summary of tax obligations and reporting tips for small businesses.",
+          "fileType": "PDF",
+          "pages": "10 pages"
+        }
+      ]
+    },
+    "ctaTitle": "Need Further Legal Assistance?",
+    "ctaSubtitle": "The DrHukum team is ready to help you with practical legal consultation tailored to your needs.",
+    "ctaButton": "Consult Now"
   }
 }

@@ -8,7 +8,8 @@
     "contact": "联系我们",
     "terms": "条款与条件",
     "bookConsultation": "预约咨询",
-    "team": "我们的团队"
+    "team": "我们的团队",
+    "resources": "资源"
   },
   "footer": {
     "description": "巴厘岛值得信赖的律师事务所，为个人和公司提供全面的法律解决方案，拥有超过10年的经验。",
@@ -23,7 +24,8 @@
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. 版权所有。",
     "terms": "条款与条件",
-    "privacy": "隐私政策"
+    "privacy": "隐私政策",
+    "resources": "资源"
   },
   "home": {
     "heroTitle1": "您值得信赖的",
@@ -518,25 +520,182 @@
     "phoneLabel": "联系团队成员",
     "members": [
       {
-        "name": "Gatot Anjay",
-        "role": "管理合伙人",
-        "description": "专注于公司战略、争议解决以及以客户为中心的法律解决方案。"
+        "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
+        "role": "Role1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Dewi Lestari",
-        "role": "公司法律顾问",
-        "description": "为企业设立、公司治理、合同、许可和合规事务提供法律支持。"
+        "name": "Tjokorda Alit Budi Wijaya, S.H.",
+        "role": "Role2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Made Pratama",
-        "role": "诉讼律师",
-        "description": "协助客户处理民事、商业和行政争议，提供清晰准备和务实案件处理。"
+        "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
+        "role": "Role3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Sinta Maharani",
-        "role": "税务与合规顾问",
-        "description": "协助企业处理税务、会计、LKPM 报告和监管文件。"
+        "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
+        "role": "Role4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
+        "role": "Role5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "Putu Adelia Indirawati, S.H.",
+        "role": "Role6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       }
     ]
+  },
+  "resources": {
+    "title": "法律资源",
+    "subtitle": "汇集文章、法规更新和免费指南，帮助您了解印度尼西亚的法律。",
+    "tabs": {
+      "blog": "博客",
+      "legalUpdates": "法律更新",
+      "freeGuides": "免费指南"
+    },
+    "blog": {
+      "sectionTitle": "博客与文章",
+      "sectionSubtitle": "来自DrHukum专家团队的实用见解和法律分析。",
+      "viewAll": "查看所有文章",
+      "posts": [
+        {
+          "title": "印度尼西亚商法完全指南",
+          "excerpt": "了解商法的重要方面以保护您的公司。",
+          "category": "商法",
+          "date": "2026年1月12日",
+          "readTime": "8分钟阅读"
+        },
+        {
+          "title": "雇佣合同中的权利与义务",
+          "excerpt": "了解劳资关系中员工和雇主的权利与义务。",
+          "category": "劳动法",
+          "date": "2026年1月8日",
+          "readTime": "6分钟阅读"
+        },
+        {
+          "title": "在巴厘岛成立PT公司的程序",
+          "excerpt": "在巴厘省成立有限责任公司的实用步骤。",
+          "category": "商法",
+          "date": "2026年1月3日",
+          "readTime": "10分钟阅读"
+        },
+        {
+          "title": "调解与诉讼：哪种更适合您的纠纷？",
+          "excerpt": "比较调解和诉讼在解决纠纷方面的优缺点。",
+          "category": "法律技巧",
+          "date": "2025年12月20日",
+          "readTime": "7分钟阅读"
+        },
+        {
+          "title": "了解印尼法律下的继承权",
+          "excerpt": "关于印度尼西亚遗产分配和继承人权利的基本指南。",
+          "category": "家庭法",
+          "date": "2025年12月12日",
+          "readTime": "9分钟阅读"
+        },
+        {
+          "title": "巴厘岛外籍人士租赁物业指南",
+          "excerpt": "外籍人士在巴厘岛租赁物业前需要注意的关键事项。",
+          "category": "财产法",
+          "date": "2025年11月28日",
+          "readTime": "6分钟阅读"
+        }
+      ]
+    },
+    "legalUpdates": {
+      "sectionTitle": "最新法规更新",
+      "sectionSubtitle": "及时了解印度尼西亚法律法规的最新变化。",
+      "readMore": "阅读更多",
+      "items": [
+        {
+          "title": "2026年外籍劳工签证规定变更",
+          "excerpt": "政府更新了外籍劳工的工作签证和居留许可要求。",
+          "date": "2026年6月15日",
+          "tag": "移民"
+        },
+        {
+          "title": "OSS营业执照法规更新",
+          "excerpt": "通过在线单一提交（OSS）系统进行营业执照办理机制的变更。",
+          "date": "2026年6月2日",
+          "tag": "许可"
+        },
+        {
+          "title": "中小企业所得税新规定",
+          "excerpt": "影响中小企业的最新税率和申报要求。",
+          "date": "2026年5月20日",
+          "tag": "税务"
+        },
+        {
+          "title": "劳动法修订：有哪些变化？",
+          "excerpt": "雇主和员工应了解的劳动法修订要点摘要。",
+          "date": "2026年5月5日",
+          "tag": "劳动"
+        },
+        {
+          "title": "外籍人士财产所有权法规",
+          "excerpt": "关于外籍人士使用权和财产所有权的最新规定。",
+          "date": "2026年4月18日",
+          "tag": "财产"
+        },
+        {
+          "title": "商标注册程序变更",
+          "excerpt": "知识产权总局商标注册和续展的新程序。",
+          "date": "2026年4月1日",
+          "tag": "知识产权"
+        }
+      ]
+    },
+    "freeGuides": {
+      "sectionTitle": "免费指南与模板",
+      "sectionSubtitle": "免费下载实用指南和法律文件模板。",
+      "downloadLabel": "免费下载",
+      "guides": [
+        {
+          "title": "初学者PT公司设立清单",
+          "description": "设立PT公司所需的完整文件和步骤清单。",
+          "fileType": "PDF",
+          "pages": "12页"
+        },
+        {
+          "title": "标准雇佣合同模板",
+          "description": "符合劳动法要求的雇佣合同格式范例。",
+          "fileType": "DOCX",
+          "pages": "8页"
+        },
+        {
+          "title": "巴厘岛外籍人士法律指南",
+          "description": "关于签证、房产和商业的重要信息，适用于巴厘岛的外籍人士。",
+          "fileType": "PDF",
+          "pages": "20页"
+        },
+        {
+          "title": "电子书：了解印度尼西亚的消费者权利",
+          "description": "消费者权利说明以及根据适用法律提出投诉的方法。",
+          "fileType": "PDF",
+          "pages": "15页"
+        },
+        {
+          "title": "房产租赁协议模板",
+          "description": "具有法律保障的租赁协议范例。",
+          "fileType": "DOCX",
+          "pages": "6页"
+        },
+        {
+          "title": "小型企业主税务指南",
+          "description": "小型企业的税务义务和申报技巧摘要。",
+          "fileType": "PDF",
+          "pages": "10页"
+        }
+      ]
+    },
+    "ctaTitle": "需要进一步的法律协助吗？",
+    "ctaSubtitle": "DrHukum团队随时准备为您提供符合您需求的实用法律咨询。",
+    "ctaButton": "立即咨询"
   }
 }

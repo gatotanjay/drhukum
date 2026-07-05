@@ -8,7 +8,8 @@
     "contact": "Hubungi Kami",
     "terms": "Syarat & Ketentuan",
     "bookConsultation": "Buat Janji Konsultasi",
-    "team": "Tim Kami"
+    "team": "Tim Kami",
+    "resources": "Sumber Daya"
   },
   "footer": {
     "description": "Firma hukum terpercaya di Bali yang memberikan solusi hukum komprehensif untuk individu dan perusahaan dengan pengalaman lebih dari 10 tahun.",
@@ -23,7 +24,8 @@
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. Semua hak dilindungi undang-undang.",
     "terms": "Syarat & Ketentuan",
-    "privacy": "Kebijakan Privasi"
+    "privacy": "Kebijakan Privasi",
+    "resources": "Sumber Daya"
   },
   "home": {
     "heroTitle1": "Your Trusted",
@@ -568,31 +570,188 @@
     "emailLegal": "Email Tim Legal"
   },
   "team": {
-    "title": "Tim Kami",
-    "subtitle": "Kenali profesional di balik DrHukum Indonesia, tim yang berkomitmen memberikan arahan praktis, strategi matang, dan dukungan hukum yang dapat diandalkan.",
-    "emailLabel": "Email anggota tim",
-    "phoneLabel": "Hubungi anggota tim",
+    "title": "Our Team",
+    "subtitle": "Meet the professionals behind DrHukum Indonesia, a team committed to practical advice, careful strategy, and reliable legal support.",
+    "emailLabel": "Email team member",
+    "phoneLabel": "Contact team member",
     "members": [
       {
-        "name": "Gatot Anjay",
-        "role": "Managing Partner",
-        "description": "Memimpin firma dengan fokus pada strategi korporasi, penyelesaian sengketa, dan solusi hukum yang berorientasi pada klien."
+        "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
+        "role": "Role1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Dewi Lestari",
-        "role": "Corporate Legal Counsel",
-        "description": "Mendampingi bisnis dalam pendirian perusahaan, tata kelola, kontrak, perizinan, dan kepatuhan."
+        "name": "Tjokorda Alit Budi Wijaya, S.H.",
+        "role": "Role2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Made Pratama",
-        "role": "Litigation Associate",
-        "description": "Membantu klien dalam sengketa perdata, komersial, dan administrasi dengan persiapan yang jelas dan penanganan perkara yang praktis."
+        "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
+        "role": "Role3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       },
       {
-        "name": "Sinta Maharani",
-        "role": "Tax & Compliance Advisor",
-        "description": "Mendukung perusahaan dalam pajak, akuntansi, pelaporan LKPM, dan dokumentasi regulasi."
+        "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
+        "role": "Role4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
+        "role": "Role5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "Putu Adelia Indirawati, S.H.",
+        "role": "Role6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       }
     ]
+  },
+  "resources": {
+    "title": "Sumber Daya Hukum",
+    "subtitle": "Kumpulan artikel, update regulasi, dan panduan gratis untuk membantu Anda memahami hukum di Indonesia.",
+    "tabs": {
+      "blog": "Blog",
+      "legalUpdates": "Update Hukum",
+      "freeGuides": "Panduan Gratis"
+    },
+    "blog": {
+      "sectionTitle": "Blog & Artikel",
+      "sectionSubtitle": "Wawasan praktis dan analisis hukum dari tim ahli DrHukum.",
+      "viewAll": "Lihat Semua Artikel",
+      "posts": [
+        {
+          "title": "Panduan Lengkap Hukum Bisnis di Indonesia",
+          "excerpt": "Memahami aspek-aspek penting dalam hukum bisnis untuk melindungi perusahaan Anda.",
+          "category": "Hukum Bisnis",
+          "date": "12 Januari 2026",
+          "readTime": "8 menit baca"
+        },
+        {
+          "title": "Hak dan Kewajiban dalam Kontrak Kerja",
+          "excerpt": "Mengetahui hak dan kewajiban pekerja serta pemberi kerja dalam hubungan industrial.",
+          "category": "Hukum Ketenagakerjaan",
+          "date": "8 Januari 2026",
+          "readTime": "6 menit baca"
+        },
+        {
+          "title": "Prosedur Pendirian PT di Bali",
+          "excerpt": "Langkah-langkah praktis untuk mendirikan Perseroan Terbatas di Provinsi Bali.",
+          "category": "Hukum Bisnis",
+          "date": "3 Januari 2026",
+          "readTime": "10 menit baca"
+        },
+        {
+          "title": "Mediasi vs Litigasi: Mana yang Tepat untuk Sengketa Anda?",
+          "excerpt": "Membandingkan keuntungan dan kekurangan mediasi dan litigasi dalam penyelesaian sengketa.",
+          "category": "Tips Hukum",
+          "date": "20 Desember 2025",
+          "readTime": "7 menit baca"
+        },
+        {
+          "title": "Memahami Hak Waris menurut Hukum Indonesia",
+          "excerpt": "Panduan dasar mengenai pembagian warisan dan hak-hak ahli waris di Indonesia.",
+          "category": "Hukum Keluarga",
+          "date": "12 Desember 2025",
+          "readTime": "9 menit baca"
+        },
+        {
+          "title": "Panduan Sewa Properti untuk Ekspatriat di Bali",
+          "excerpt": "Hal-hal penting yang perlu diperhatikan ekspatriat sebelum menyewa properti di Bali.",
+          "category": "Hukum Properti",
+          "date": "28 November 2025",
+          "readTime": "6 menit baca"
+        }
+      ]
+    },
+    "legalUpdates": {
+      "sectionTitle": "Update Regulasi Terbaru",
+      "sectionSubtitle": "Tetap up-to-date dengan perubahan hukum dan regulasi yang berlaku di Indonesia.",
+      "readMore": "Baca Selengkapnya",
+      "items": [
+        {
+          "title": "Perubahan Ketentuan Visa Kerja bagi Warga Negara Asing 2026",
+          "excerpt": "Pemerintah memperbarui ketentuan visa kerja dan izin tinggal bagi tenaga kerja asing.",
+          "date": "15 Juni 2026",
+          "tag": "Imigrasi"
+        },
+        {
+          "title": "Update Peraturan OSS dan Perizinan Berusaha",
+          "excerpt": "Perubahan mekanisme perizinan berusaha melalui sistem Online Single Submission (OSS).",
+          "date": "2 Juni 2026",
+          "tag": "Perizinan"
+        },
+        {
+          "title": "Aturan Baru Pajak Penghasilan untuk UMKM",
+          "excerpt": "Ketentuan tarif dan pelaporan pajak terbaru yang berdampak pada pelaku UMKM.",
+          "date": "20 Mei 2026",
+          "tag": "Perpajakan"
+        },
+        {
+          "title": "Revisi Undang-Undang Ketenagakerjaan: Apa yang Berubah?",
+          "excerpt": "Ringkasan poin-poin penting revisi UU Ketenagakerjaan yang perlu diketahui pengusaha dan pekerja.",
+          "date": "5 Mei 2026",
+          "tag": "Ketenagakerjaan"
+        },
+        {
+          "title": "Regulasi Kepemilikan Properti bagi Warga Negara Asing",
+          "excerpt": "Pembaruan aturan mengenai hak pakai dan kepemilikan properti oleh warga negara asing.",
+          "date": "18 April 2026",
+          "tag": "Properti"
+        },
+        {
+          "title": "Perubahan Prosedur Pendaftaran Merek Dagang",
+          "excerpt": "Prosedur baru pendaftaran dan perpanjangan merek dagang di Direktorat Jenderal Kekayaan Intelektual.",
+          "date": "1 April 2026",
+          "tag": "Kekayaan Intelektual"
+        }
+      ]
+    },
+    "freeGuides": {
+      "sectionTitle": "Panduan & Template Gratis",
+      "sectionSubtitle": "Unduh panduan praktis dan template dokumen hukum secara gratis.",
+      "downloadLabel": "Unduh Gratis",
+      "guides": [
+        {
+          "title": "Checklist Pendirian PT untuk Pemula",
+          "description": "Daftar lengkap dokumen dan langkah yang diperlukan untuk mendirikan PT.",
+          "fileType": "PDF",
+          "pages": "12 halaman"
+        },
+        {
+          "title": "Template Kontrak Kerja Standar",
+          "description": "Contoh format kontrak kerja yang sesuai dengan ketentuan hukum ketenagakerjaan.",
+          "fileType": "DOCX",
+          "pages": "8 halaman"
+        },
+        {
+          "title": "Panduan Hukum bagi Ekspatriat di Bali",
+          "description": "Informasi penting seputar visa, properti, dan bisnis bagi ekspatriat di Bali.",
+          "fileType": "PDF",
+          "pages": "20 halaman"
+        },
+        {
+          "title": "E-Book: Memahami Hak Konsumen di Indonesia",
+          "description": "Penjelasan hak-hak konsumen dan cara mengajukan keluhan sesuai hukum yang berlaku.",
+          "fileType": "PDF",
+          "pages": "15 halaman"
+        },
+        {
+          "title": "Template Perjanjian Sewa Properti",
+          "description": "Contoh perjanjian sewa-menyewa properti yang aman secara hukum.",
+          "fileType": "DOCX",
+          "pages": "6 halaman"
+        },
+        {
+          "title": "Panduan Pajak untuk Pelaku Usaha Kecil",
+          "description": "Ringkasan kewajiban pajak dan tips pelaporan bagi usaha kecil.",
+          "fileType": "PDF",
+          "pages": "10 halaman"
+        }
+      ]
+    },
+    "ctaTitle": "Butuh Bantuan Hukum Lebih Lanjut?",
+    "ctaSubtitle": "Tim DrHukum siap membantu Anda dengan konsultasi hukum yang praktis dan sesuai kebutuhan Anda.",
+    "ctaButton": "Konsultasi Sekarang"
   }
 }
