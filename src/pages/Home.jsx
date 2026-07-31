@@ -102,46 +102,6 @@ const Home = () => {
           <div className="absolute bottom-20 right-10 w-32 h-32 bg-amber-200/50 rounded-full opacity-20 animate-pulse delay-1000"></div>
         </section>
 
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
-                {t('home.mainServicesTitle')}
-              </h2>
-              <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-                {t('home.mainServicesSubtitle')}
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
-                  className="bg-secondary p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group"
-                >
-                  <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h2 className="text-xl font-bold text-stone-800 mb-4">{service.title}</h2>
-                  <p className="text-stone-600 mb-6">{service.description}</p>
-                  <Link to="/layanan" className="text-primary font-semibold flex items-center hover:text-primary/90">
-                    {t('home.learnMore')}
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="py-20 bg-secondary">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div

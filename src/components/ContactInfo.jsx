@@ -87,13 +87,13 @@ const ContactInfo = ({ items }) => {
         <h3 className="text-lg font-semibold text-gray-900">{t('contact.directContact')}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Button asChild className="bg-green-600 hover:bg-green-700">
-            <a href="http://wa.me/6281252525966" target="_blank" rel="noopener noreferrer">
+            <a href="http://wa.me/6285353536667" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-4 w-4" />
               WhatsApp
             </a>
           </Button>
           <Button asChild variant="outline">
-            <a href="tel:+6281252525966">
+            <a href="tel:+6285353536667">
               <Phone className="mr-2 h-4 w-4" />
               {t('contact.phoneTitle')}
             </a>

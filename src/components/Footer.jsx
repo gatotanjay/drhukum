@@ -6,8 +6,8 @@ const Footer = () => {
   const {
     t
   } = useTranslation();
+  const logoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/79508917299208f90763978c11ce766e.png";
   const drHukumLogoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/93e5181bbaca672fac9d44dedeb58e0d.png";
-  const kenariLogoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/c80c0daf69da5fec73fc3ccfd2cb3a6f.png";
   const handleSocialClick = url => {
     window.open(url, '_blank');
   };
@@ -16,21 +16,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <img src={drHukumLogoUrl} alt="Logo DrHukum" className="h-20" />
+              <img src={logoUrl} alt="Logo DrHukum" className="h-20" />
             </Link>
             <p className="text-stone-300 text-sm">
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-5 w-5 text-stone-400 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.facebook.com/drhukumindonesia')} // Assuming a Facebook link
-            />
-              <Instagram className="h-5 w-5 text-stone-400 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.instagram.com/drhukumindonesia/')} />
-              <Linkedin className="h-5 w-5 text-stone-400 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.linkedin.com/company/drhukum')} // Assuming a LinkedIn link
-            />
-            </div>
-            <div className="pt-4">
-              <p className="text-sm text-stone-400 mb-2">Supported by:</p>
-              <img src={kenariLogoUrl} alt="Logo Kenari Office" className="h-16" />
+              <Instagram className="h-5 w-5 text-stone-400 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.instagram.com/drhukumofficial/')} />
             </div>
           </div>
 
@@ -58,7 +50,7 @@ const Footer = () => {
           <div className="space-y-4">
             <span className="text-lg font-semibold">{t('footer.mainServices')}</span>
             <div className="space-y-2">
-              <p className="text-stone-300">{t('footer.civilLaw')}</p>
+              <p className="text-stone-300">{t('asdas')}</p>
               <p className="text-stone-300">{t('footer.criminalLaw')}</p>
               <p className="text-stone-300">{t('footer.businessLaw')}</p>
               <p className="text-stone-300">{t('footer.familyLaw')}</p>
