@@ -11,6 +11,9 @@ const teamPhotos = [
   '/team4.png',
   '/team5.png',
   '/team6.png',
+  '/team7.png',
+  '/team8.png',
+  '/team9.png',
 ];
 
 const About = () => {
