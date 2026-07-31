@@ -9,7 +9,7 @@
     "terms": "Terms & Conditions",
     "bookConsultation": "Book Consultation",
     "team": "Our Team",
-    "resources": "Resources"
+    "resources": "Insight"
   },
   "footer": {
     "description": "A trusted law firm in Bali providing comprehensive legal solutions for individuals and companies with over 10 years of experience.",
@@ -108,7 +108,7 @@
     "phoneTitle": "Phone",
     "emailTitle": "Email",
     "operationalHours": "Operational Hours",
-    "opHoursDetails": "Monday - Friday: 08:00 - 17:00<br />Saturday: 08:00 - 12:00<br />Sunday: Closed",
+    "opHoursDetails": "Monday - Friday: 08:00 - 17:00<br />Saturday - Sunday: Closed",
     "directContact": "Direct Contact",
     "mapTitle": "Our Office Location",
     "mapSubtitle": "Visit our strategically located office in Bali for a direct consultation",
@@ -604,11 +604,26 @@
         "name": "Putu Adelia Indirawati, S.H.",
         "role": "Role6",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "Ni Ketut Dewi Alda Parwati, S.H.",
+        "role": "Role7",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "Komang D. Satria Wiguna, S.H.",
+        "role": "Role8",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      },
+      {
+        "name": "I Gusti Ayu Putu Audrey Frangipani, S.H.",
+        "role": "Role9",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       }
     ]
   },
   "resources": {
-    "title": "Legal Resources",
+    "title": "Insight ",
     "subtitle": "A collection of articles, regulatory updates, and free guides to help you understand the law in Indonesia.",
     "tabs": {
       "blog": "Blog",

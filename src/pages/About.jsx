@@ -167,13 +167,7 @@ const About = () => {
           </div>
         </section>
       </div>
-      
-      <Helmet>
-              <title>Our Team | DrHukum Indonesia</title>
-              <meta name="description" content="Meet the DrHukum Indonesia team providing legal services and strategic counsel for individuals and businesses." />
-              <meta property="og:title" content="Our Team | DrHukum Indonesia" />
-              <meta property="og:description" content="Meet the DrHukum Indonesia team providing legal services and strategic counsel for individuals and businesses." />
-            </Helmet>
+
       
             <div className="pt-16">
               <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">

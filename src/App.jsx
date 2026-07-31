@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import Home from '@/pages/Home.jsx';
 import About from '@/pages/About.jsx';
 import Services from '@/pages/Services.jsx';
-import Resources from '@/pages/Resources.jsx';
+import Insight from '@/pages/Insight.jsx';
 import Contact from '@/pages/Contact.jsx';
 import Terms from '@/pages/Terms.jsx';
 
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/tentang-kami" element={<About />} />
             <Route path="/layanan" element={<Services />} />
-            <Route path="/sumber-daya" element={<Resources />} />
+            <Route path="/wawasan" element={<Insight />} />
             <Route path="/kontak" element={<Contact />} />
             <Route path="/syarat-ketentuan" element={<Terms />} />
           </Routes>

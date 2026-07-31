@@ -25,13 +25,13 @@ const Navbar = () => {
     { name: t('nav.about'), path: '/tentang-kami' },
     { name: t('nav.services'), path: '/layanan' },
     //{ name: t('nav.industries'), path: '/industri' },
-    { name: t('nav.resources'), path: '/sumber-daya' },
+    { name: t('nav.resources'), path: '/wawasan' },
     //{ name: t('nav.team'), path: '/tim-kami' },
     { name: t('nav.contact'), path: '/kontak' },
     //{ name: t('nav.terms'), path: '/syarat-ketentuan' }
   ];
 
-  const logoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/79508917299208f90763978c11ce766e.png";
+  const logoUrl = '/logo.png';
 
   return (
     <motion.nav

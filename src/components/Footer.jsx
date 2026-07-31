@@ -6,7 +6,7 @@ const Footer = () => {
   const {
     t
   } = useTranslation();
-  const logoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/79508917299208f90763978c11ce766e.png";
+  const logoUrl = '/logo.png';
   const drHukumLogoUrl = "https://horizons-cdn.hostinger.com/e7ed38b8-8ccd-40b5-adee-dcefd1dbddc9/93e5181bbaca672fac9d44dedeb58e0d.png";
   const handleSocialClick = url => {
     window.open(url, '_blank');
