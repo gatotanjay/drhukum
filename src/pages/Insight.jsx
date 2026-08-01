@@ -36,12 +36,10 @@ const Resources = () => {
   const tabs = [
     { id: 'blog', label: t('resources.tabs.blog'), icon: BookOpen },
     { id: 'legalUpdates', label: t('resources.tabs.legalUpdates'), icon: Scale },
-    { id: 'freeGuides', label: t('resources.tabs.freeGuides'), icon: Download }
   ];
 
   const blogPosts = t('resources.blog.posts', { returnObjects: true }) || [];
   const legalUpdateItems = t('resources.legalUpdates.items', { returnObjects: true }) || [];
-  const guideItems = t('resources.freeGuides.guides', { returnObjects: true }) || [];
 
   return (
     <>
