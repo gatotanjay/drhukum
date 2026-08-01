@@ -15,11 +15,11 @@
     "description": "A trusted law firm in Bali providing comprehensive legal solutions for individuals and companies with over 10 years of experience.",
     "navigation": "Navigation",
     "mainServices": "Main Services",
-    "civilLaw": "Civil Law",
-    "criminalLaw": "Criminal Law",
-    "businessLaw": "Business Law",
-    "familyLaw": "Family Law",
-    "propertyLaw": "Property Law",
+    "legalService": "Legal Service",
+    "visaImmigration":"Visa & Immigration",
+    "taxAccounting":"Tax & Accounting",
+    "permit":"Permit",
+    "retainerLawyer":"Retainer Lawyer",
     "contact": "Contact",
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. All rights reserved.",
@@ -254,7 +254,7 @@
         ]
       },
       "general": {
-        "title": "General Legal Consultation",
+        "title": "Legal Service",
         "desc": "Legal consultation for various daily legal problems",
         "features": [
           "Online/offline consultation",
@@ -325,6 +325,27 @@
           "LKPM obligation review",
           "Quarterly reporting",
           "OSS submission support"
+        ]
+      },
+      "permit": {
+        "title": "Permit",
+        "desc": "Comprehensive support for obtaining necessary business licenses and regulatory permits to ensure your company operates legally",
+        "features": [
+          "Business license registration",
+          "Regulatory compliance check",
+          "Permit renewal & extension",
+          "Document preparation & submission"
+        ]
+      },
+      "retainerLawyer": {
+        "title": "Retainer Lawyer",
+        "desc": "Ongoing, dedicated legal support to safeguard your business operations and mitigate long-term legal risks",
+        "features": [
+          "Dedicated legal counsel",
+          "Contract drafting & review",
+          "Priority legal consultation",
+          "Routine compliance monitoring",
+          "Dispute resolution support"
         ]
       }
     },

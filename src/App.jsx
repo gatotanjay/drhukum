@@ -9,6 +9,7 @@ import Services from '@/pages/Services.jsx';
 import Insight from '@/pages/Insight.jsx';
 import Contact from '@/pages/Contact.jsx';
 import Terms from '@/pages/Terms.jsx';
+import Articles from '@/pages/Articles.jsx';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/wawasan" element={<Insight />} />
             <Route path="/kontak" element={<Contact />} />
             <Route path="/syarat-ketentuan" element={<Terms />} />
+            <Route path="/artikel" element={<Articles />} />
           </Routes>
         </main>
         <Footer />

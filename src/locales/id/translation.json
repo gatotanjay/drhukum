@@ -15,11 +15,11 @@
     "description": "Firma hukum terpercaya di Bali yang memberikan solusi hukum komprehensif untuk individu dan perusahaan dengan pengalaman lebih dari 10 tahun.",
     "navigation": "Navigasi",
     "mainServices": "Layanan Utama",
-    "civilLaw": "Hukum Perdata",
-    "criminalLaw": "Hukum Pidana",
-    "businessLaw": "Hukum Bisnis",
-    "familyLaw": "Hukum Keluarga",
-    "propertyLaw": "Hukum Properti",
+    "legalService": "Konsultasi Hukum Umum",
+    "visaImmigration":"Visa & Imigrasi",
+    "taxAccounting":"Pajak & Akuntansi",
+    "permit":"Perizinan",
+    "retainerLawyer":"Pengacara Retainer",
     "contact": "Kontak",
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. Semua hak dilindungi undang-undang.",
@@ -325,6 +325,27 @@
           "Review kewajiban LKPM",
           "Pelaporan triwulanan",
           "Dukungan submit OSS"
+        ]
+      },
+        "permit": {
+        "title": "Perizinan",
+        "desc":"Bantuan menyeluruh dalam pengurusan izin usaha dan regulasi untuk memastikan legalitas operasional perusahaan Anda",
+        "features": [
+          "Pendaftaran izin usaha",
+          "Pemeriksaan kepatuhan regulasi",
+          "Pembaruan & perpanjangan izin",
+          "Persiapan & pengajuan dokumen"
+        ]
+      },
+      "retainerLawyer": {
+        "title": "Pengacara Retainer",
+        "desc": "Layanan pendampingan hukum berkelanjutan untuk melindungi operasional bisnis dan memitigasi risiko hukum jangka panjang Anda",
+        "features": [
+          "Penasihat hukum khusus/dedikasi",
+          "Penyusunan & peninjauan kontrak",
+          "Konsultasi hukum prioritas",
+          "Pemantauan kepatuhan rutin",
+          "Dukungan penyelesaian sengketa"
         ]
       }
     },

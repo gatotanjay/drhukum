@@ -15,11 +15,11 @@
     "description": "巴厘岛值得信赖的律师事务所，为个人和公司提供全面的法律解决方案，拥有超过10年的经验。",
     "navigation": "导航",
     "mainServices": "主要服务",
-    "civilLaw": "民法",
-    "criminalLaw": "刑法",
-    "businessLaw": "商法",
-    "familyLaw": "家庭法",
-    "propertyLaw": "财产法",
+    "legalService": "般法律咨询",
+    "visaImmigration":"签证与移民",
+    "taxAccounting":"税务与会计",
+    "permit":"许可证",
+    "retainerLawyer":"常年法律顾问",
     "contact": "联系方式",
     "address": "Jl. Pertanian No.12, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80364",
     "copyright": "© 2024 DrHukum. 版权所有。",
@@ -269,6 +269,27 @@
           "LKPM 义务审查",
           "季度报告",
           "OSS 提交支持"
+        ]
+      },
+      "permit": {
+        "title": "许可证",
+        "desc":"全面协助获取必要的营业执照和监管许可证，以确保您的公司合法运营",
+        "features": [
+          "营业执照注册",
+          "合规性审查",
+          "许可证更新与延期",
+          "文件准备与提交"
+        ]
+      },
+      "retainerLawyer": {
+        "title": "常年法律顾问 ",
+        "desc": "持续、专属的法律支持，以保障您的业务运营并降低长期法律风险",
+        "features": [
+          "专属法律顾问",
+          "合同起草与审查",
+          "优先法律咨询",
+          "日常合规监控",
+          "争议解决支持"
         ]
       }
     },

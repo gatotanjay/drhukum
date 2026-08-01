@@ -50,11 +50,11 @@ const Footer = () => {
           <div className="space-y-4">
             <span className="text-lg font-semibold">{t('footer.mainServices')}</span>
             <div className="space-y-2">
-              <p className="text-stone-300">{t('asdas')}</p>
-              <p className="text-stone-300">{t('footer.criminalLaw')}</p>
-              <p className="text-stone-300">{t('footer.businessLaw')}</p>
-              <p className="text-stone-300">{t('footer.familyLaw')}</p>
-              <p className="text-stone-300">{t('footer.propertyLaw')}</p>
+              <p className="text-stone-300">{t('footer.legalService')}</p>
+              <p className="text-stone-300">{t('footer.visaImmigration')}</p>
+              <p className="text-stone-300">{t('footer.taxAccounting')}</p>
+              <p className="text-stone-300">{t('footer.permit')}</p>
+              <p className="text-stone-300">{t('footer.retainerLawyer')}</p>
             </div>
           </div>
 
@@ -81,12 +81,6 @@ const Footer = () => {
           <p className="text-stone-400 text-sm">
             {t('footer.copyright')}
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/syarat-ketentuan" className="text-stone-400 hover:text-white text-sm transition-colors">
-              {t('footer.terms')}
-            </Link>
-            <span className="text-stone-400 text-sm cursor-pointer hover:text-white transition-colors">{t('footer.privacy')}</span>
-          </div>
         </div>
       </div>
     </footer>;
