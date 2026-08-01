@@ -37,10 +37,6 @@ const ContactForm = () => {
     setFormData({ name: '', email: '', phone: '', subject: '', legalIssue: '', message: '', urgency: 'normal' });
   };
 
-  const legalIssues = [
-    "Hukum Perdata", "Hukum Pidana", "Hukum Bisnis & Korporasi", "Hukum Keluarga",
-    "Hukum Properti", "Hukum Ketenagakerjaan", "Hukum Administrasi", "Lainnya"
-  ];
 
   return (
     <motion.div
@@ -74,13 +70,6 @@ const ContactForm = () => {
               <option value="emergency">{t('contact.urgencyEmergency')}</option>
             </select>
           </div>
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.legalField')}</label>
-          <select name="legalIssue" value={formData.legalIssue} onChange={handleInputChange} className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">{t('contact.selectLegalField')}</option>
-            {legalIssues.map(issue => (<option key={issue} value={issue}>{issue}</option>))}
-          </select>
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.subject')}</label>
