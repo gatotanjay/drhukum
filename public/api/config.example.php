@@ -1,11 +1,19 @@
 <?php
 /**
- * SALIN file ini menjadi "config.php" di folder yang sama, lalu isi
- * dengan data akun email Hostinger kamu yang sebenarnya.
+ * ============================================================
+ *  PERINGATAN: JANGAN ISI FILE INI DENGAN DATA ASLI!
+ *  File ini (config.example.php) IKUT TER-COMMIT ke git/GitHub
+ *  dan akan terlihat PUBLIK. Isi hanya boleh berupa placeholder.
+ * ============================================================
  *
- * JANGAN commit config.php ke git (sudah otomatis di-ignore lewat .gitignore).
- * Isi file ini hanya lewat File Manager cPanel/hPanel langsung di server,
- * atau upload manual via FTP/SFTP.
+ * Cara pakai yang BENAR:
+ * 1. SALIN (bukan edit langsung) file ini menjadi "config.php"
+ *    di folder yang sama: public/api/config.php
+ * 2. Isi "config.php" itu dengan data akun email Hostinger asli kamu
+ * 3. "config.php" sudah otomatis di-ignore oleh .gitignore, jadi
+ *    TIDAK akan ikut ter-commit/ter-push ke GitHub
+ * 4. Upload "config.php" ke server HANYA lewat File Manager
+ *    cPanel/hPanel atau FTP/SFTP langsung — jangan lewat git sama sekali
  */
 
 return [
@@ -18,21 +26,21 @@ return [
     'smtp_secure' => 'ssl', // 'ssl' untuk port 465, 'tls' untuk port 587
 
     // Akun email yang dibuat di hPanel Hostinger, contoh: info@drhukum.id
-    'smtp_username' => 'info@drhukum.com',
+    'smtp_username' => 'info@drhukum.id',
 
     // Password akun email tersebut (BUKAN password akun hosting Hostinger kamu)
-    'smtp_password' => 'pasword',
+    'smtp_password' => 'ISI_PASSWORD_EMAIL_DI_SINI',
 
     // Email pengirim (biasanya sama dengan smtp_username)
-    'from_email' => 'info@drhukum.com',
+    'from_email' => 'info@drhukum.id',
     'from_name' => 'DrHukum Website',
 
     // Email tujuan yang akan menerima notifikasi konsultasi baru
     // Bisa email yang sama atau email lain, misal: konsultasi@drhukum.id
-    'to_email' => 'info@drhukum.com',
+    'to_email' => 'info@drhukum.id',
     'to_name' => 'Tim DrHukum',
 
     // Domain frontend kamu (untuk keamanan CORS), contoh: https://drhukum.id
     // Isi "*" kalau mau izinkan semua origin (tidak disarankan untuk produksi)
-    'allowed_origin' => 'https://drhukum.com',
+    'allowed_origin' => 'https://drhukum.id',
 ];
