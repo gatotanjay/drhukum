@@ -21,7 +21,7 @@ return [
     'smtp_username' => 'info@drhukum.com',
 
     // Password akun email tersebut (BUKAN password akun hosting Hostinger kamu)
-    'smtp_password' => 'Bumibulat@123',
+    'smtp_password' => 'pasword',
 
     // Email pengirim (biasanya sama dengan smtp_username)
     'from_email' => 'info@drhukum.com',
