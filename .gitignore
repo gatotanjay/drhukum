@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment & secrets
+.env
+.env.local
+public/api/config.php
+
+# Editor/OS
+.DS_Store
+*.log

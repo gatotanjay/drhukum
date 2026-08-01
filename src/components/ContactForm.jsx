@@ -19,24 +19,54 @@ const ContactForm = () => {
     urgency: 'normal'
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       toast({ title: "Mohon lengkapi semua field yang wajib diisi", variant: "destructive" });
       return;
     }
-    const consultations = JSON.parse(localStorage.getItem('consultations') || '[]');
-    consultations.push({ id: Date.now(), ...formData, date: new Date().toISOString(), status: 'pending' });
-    localStorage.setItem('consultations', JSON.stringify(consultations));
-    toast({ title: "Formulir berhasil dikirim!", description: "Tim kami akan menghubungi Anda dalam 24 jam." });
-    setFormData({ name: '', email: '', phone: '', subject: '', legalIssue: '', message: '', urgency: 'normal' });
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/send-consultation.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok || !result?.success) {
+        throw new Error(result?.message || 'Gagal mengirim formulir');
+      }
+
+      toast({
+        title: "Formulir berhasil dikirim!",
+        description: result.message || "Tim kami akan menghubungi Anda dalam 24 jam.",
+      });
+      setFormData({ name: '', email: '', phone: '', subject: '', legalIssue: '', message: '', urgency: 'normal' });
+    } catch (error) {
+      toast({
+        title: "Gagal mengirim formulir",
+        description: error.message || "Silakan coba lagi atau hubungi kami via WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
+  const legalIssues = [
+    "Hukum Perdata", "Hukum Pidana", "Hukum Bisnis & Korporasi", "Hukum Keluarga",
+    "Hukum Properti", "Hukum Ketenagakerjaan", "Hukum Administrasi", "Lainnya"
+  ];
 
   return (
     <motion.div
@@ -72,6 +102,13 @@ const ContactForm = () => {
           </div>
         </div>
         <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.legalField')}</label>
+          <select name="legalIssue" value={formData.legalIssue} onChange={handleInputChange} className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">{t('contact.selectLegalField')}</option>
+            {legalIssues.map(issue => (<option key={issue} value={issue}>{issue}</option>))}
+          </select>
+        </div>
+        <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.subject')}</label>
           <input type="text" name="subject" value={formData.subject} onChange={handleInputChange} className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder={t('contact.subjectPlaceholder')} />
         </div>
@@ -79,9 +116,9 @@ const ContactForm = () => {
           <label className="block text-sm font-medium text-gray-700 mb-2">{t('contact.message')}</label>
           <textarea name="message" value={formData.message} onChange={handleInputChange} required rows={5} className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder={t('contact.messagePlaceholder')} />
         </div>
-        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+        <Button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3 disabled:opacity-70">
           <Send className="mr-2 h-5 w-5" />
-          {t('contact.sendConsultation')}
+          {isSubmitting ? 'Mengirim...' : t('contact.sendConsultation')}
         </Button>
       </form>
     </motion.div>
