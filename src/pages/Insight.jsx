@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -7,24 +7,50 @@ import {
   Calendar,
   User,
   ChevronRight,
-  ArrowRight
+  ArrowRight,
+  Loader2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { publicApi } from '@/lib/adminApi';
 
-// Thumbnail sementara untuk semua blog & legal update.
-// TODO: ganti per-item nanti dengan menambahkan field "thumbnail" di masing-masing
-// post/item pada file locale (src/locales/*/translation.json), lalu pakai
-// post.thumbnail di bawah sebagai pengganti DEFAULT_THUMBNAIL.
+// Thumbnail sementara untuk post yang belum diisi thumbnail lewat admin panel.
 const DEFAULT_THUMBNAIL = 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80';
 
 const Insight = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('blog');
+  const [blogPosts, setBlogPosts] = useState([]);
+  const [legalUpdateItems, setLegalUpdateItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const locale = ['id', 'en', 'zh'].includes(i18n.language) ? i18n.language : 'id';
+
+  useEffect(() => {
+    let cancelled = false;
+    setIsLoading(true);
+    Promise.all([
+      publicApi.getPosts('blog', locale),
+      publicApi.getPosts('legal_update', locale),
+    ])
+      .then(([blogRes, legalRes]) => {
+        if (cancelled) return;
+        setBlogPosts(blogRes.posts);
+        setLegalUpdateItems(legalRes.posts);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setBlogPosts([]);
+          setLegalUpdateItems([]);
+        }
+      })
+      .finally(() => !cancelled && setIsLoading(false));
+    return () => { cancelled = true; };
+  }, [locale]);
 
   const handleUnimplemented = () => {
     toast({
@@ -41,9 +67,6 @@ const Insight = () => {
     { id: 'blog', label: t('resources.tabs.blog'), icon: BookOpen },
     { id: 'legalUpdates', label: t('resources.tabs.legalUpdates'), icon: Scale },
   ];
-
-  const blogPosts = t('resources.blog.posts', { returnObjects: true }) || [];
-  const legalUpdateItems = t('resources.legalUpdates.items', { returnObjects: true }) || [];
 
   return (
     <>
@@ -121,10 +144,17 @@ const Insight = () => {
                   </p>
                 </div>
 
+                {isLoading ? (
+                  <div className="flex justify-center py-16">
+                    <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+                  </div>
+                ) : blogPosts.length === 0 ? (
+                  <p className="text-center text-gray-500 py-16">Belum ada artikel blog.</p>
+                ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {blogPosts.map((post, index) => (
                     <motion.article
-                      key={index}
+                      key={post.id}
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
@@ -143,7 +173,7 @@ const Insight = () => {
                           <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                             {post.category}
                           </span>
-                          <span className="text-gray-500 text-xs">{post.readTime}</span>
+                          <span className="text-gray-500 text-xs">{post.read_time}</span>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
                           {post.title}
@@ -152,7 +182,7 @@ const Insight = () => {
                         <div className="flex items-center justify-between text-sm text-gray-500">
                           <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4" />
-                            <span>{post.date}</span>
+                            <span>{post.post_date}</span>
                           </div>
                           <Button
                             variant="ghost"
@@ -168,6 +198,7 @@ const Insight = () => {
                     </motion.article>
                   ))}
                 </div>
+                )}
 
                 <div className="text-center mt-12">
                   <Button
@@ -203,10 +234,17 @@ const Insight = () => {
                   </p>
                 </div>
 
+                {isLoading ? (
+                  <div className="flex justify-center py-16">
+                    <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+                  </div>
+                ) : legalUpdateItems.length === 0 ? (
+                  <p className="text-center text-gray-500 py-16">Belum ada legal update.</p>
+                ) : (
                 <div className="max-w-4xl mx-auto space-y-6">
                   {legalUpdateItems.map((item, index) => (
                     <motion.div
-                      key={index}
+                      key={item.id}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
@@ -223,11 +261,11 @@ const Insight = () => {
                       <div className="flex-1 px-6 pb-6 md:px-0 md:pb-0 md:py-6 md:pr-6">
                         <div className="flex items-center gap-3 mb-3">
                           <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-                            {item.tag}
+                            {item.category}
                           </span>
                           <span className="flex items-center gap-1 text-gray-500 text-xs">
                             <Calendar className="h-3.5 w-3.5" />
-                            {item.date}
+                            {item.post_date}
                           </span>
                         </div>
                         <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">
@@ -246,6 +284,7 @@ const Insight = () => {
                     </motion.div>
                   ))}
                 </div>
+                )}
               </div>
             </motion.section>
           )}
