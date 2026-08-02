@@ -4,11 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   BookOpen,
   Scale,
-  Download,
   Calendar,
   User,
   ChevronRight,
-  FileText,
   ArrowRight
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,7 +14,13 @@ import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-const Resources = () => {
+// Thumbnail sementara untuk semua blog & legal update.
+// TODO: ganti per-item nanti dengan menambahkan field "thumbnail" di masing-masing
+// post/item pada file locale (src/locales/*/translation.json), lalu pakai
+// post.thumbnail di bawah sebagai pengganti DEFAULT_THUMBNAIL.
+const DEFAULT_THUMBNAIL = 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80';
+
+const Insight = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
   const navigate = useNavigate();
@@ -125,8 +129,15 @@ const Resources = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.6, delay: index * 0.08 }}
-                      className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col"
+                      className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col"
                     >
+                      <div className="aspect-video overflow-hidden bg-gray-100">
+                        <img
+                          src={post.thumbnail || DEFAULT_THUMBNAIL}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
                       <div className="p-6 flex-1 flex flex-col">
                         <div className="flex items-center justify-between mb-4">
                           <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
@@ -200,9 +211,16 @@ const Resources = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: index * 0.08 }}
-                      className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+                      className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row md:items-center gap-4 md:gap-6"
                     >
-                      <div className="flex-1">
+                      <div className="w-full md:w-48 h-40 md:h-32 shrink-0 overflow-hidden bg-gray-100 md:rounded-xl">
+                        <img
+                          src={item.thumbnail || DEFAULT_THUMBNAIL}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="flex-1 px-6 pb-6 md:px-0 md:pb-0 md:py-6 md:pr-6">
                         <div className="flex items-center gap-3 mb-3">
                           <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
                             {item.tag}
@@ -219,66 +237,12 @@ const Resources = () => {
                       </div>
                       <Button
                         variant="ghost"
-                        className="text-blue-600 hover:text-blue-700 shrink-0 self-start md:self-center"
+                        className="text-blue-600 hover:text-blue-700 shrink-0 self-start md:self-center mx-6 mb-6 md:mx-0 md:mb-0 md:mr-6"
                         onClick={handleUnimplemented}
                       >
                         {t('resources.legalUpdates.readMore')}
                         <ChevronRight className="ml-1 h-4 w-4" />
                       </Button>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </motion.section>
-          )}
-
-          {activeTab === 'freeGuides' && (
-            <motion.section
-              key="freeGuides"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="py-20 bg-white"
-            >
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    {t('resources.freeGuides.sectionTitle')}
-                  </h2>
-                  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    {t('resources.freeGuides.sectionSubtitle')}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {guideItems.map((guide, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: index * 0.08 }}
-                      className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col"
-                    >
-                      <div className="bg-blue-600 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <FileText className="h-7 w-7 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">{guide.title}</h3>
-                      <p className="text-gray-600 mb-6 flex-1">{guide.description}</p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-gray-500">
-                          {guide.fileType} &middot; {guide.pages}
-                        </span>
-                        <Button
-                          size="sm"
-                          className="bg-blue-600 hover:bg-blue-700 text-white"
-                          onClick={handleUnimplemented}
-                        >
-                          <Download className="mr-1.5 h-4 w-4" />
-                          {t('resources.freeGuides.downloadLabel')}
-                        </Button>
-                      </div>
                     </motion.div>
                   ))}
                 </div>
@@ -318,4 +282,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default Insight;
