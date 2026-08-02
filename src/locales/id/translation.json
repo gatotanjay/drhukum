@@ -774,5 +774,17 @@
     "ctaTitle": "Butuh Bantuan Hukum Lebih Lanjut?",
     "ctaSubtitle": "Tim DrHukum siap membantu Anda dengan konsultasi hukum yang praktis dan sesuai kebutuhan Anda.",
     "ctaButton": "Konsultasi Sekarang"
+  },
+  "pagination": {
+    "previous": "Sebelumnya",
+    "next": "Berikutnya",
+    "page": "Halaman {{current}} dari {{total}}"
+  },
+  "articleDetail": {
+    "backToArticles": "Kembali ke Artikel",
+    "backToResources": "Kembali ke Wawasan",
+    "notFoundTitle": "Artikel Tidak Ditemukan",
+    "notFoundDesc": "Artikel yang Anda cari mungkin sudah dihapus atau tidak tersedia.",
+    "loading": "Memuat artikel..."
   }
 }

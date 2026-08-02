@@ -1,22 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Search, Calendar, User, ChevronRight, Filter, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { publicApi } from '@/lib/adminApi';
+import ArticlePagination from '@/components/ArticlePagination';
 
 const DEFAULT_THUMBNAIL = 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80';
 
+// Jumlah artikel per halaman di grid "Semua Artikel"
+const ARTICLES_PAGE_SIZE = 9;
+
 const Articles = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('Semua');
   const [searchTerm, setSearchTerm] = useState('');
   const { toast } = useToast();
 
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const gridRef = useRef(null);
 
   const locale = ['id', 'en', 'zh'].includes(i18n.language) ? i18n.language : 'id';
 
@@ -34,10 +42,9 @@ const Articles = () => {
     return () => { cancelled = true; };
   }, [locale]);
 
-  const handleReadMore = () => {
-    toast({
-      title: "🚧 Fitur ini belum diimplementasikan—tapi jangan khawatir! Anda bisa memintanya di prompt berikutnya! 🚀"
-    });
+  const handleReadMore = (articleId) => {
+    window.scrollTo(0, 0);
+    navigate(`/artikel/${articleId}`);
   };
 
   // Kategori dibangun dinamis dari artikel yang ada (bukan hardcoded lagi),
@@ -52,6 +59,17 @@ const Articles = () => {
   });
 
   const featuredArticles = articles.filter((article) => !!article.featured);
+
+  // Reset ke halaman 1 setiap kali filter/pencarian/data berubah
+  useEffect(() => {
+    setPage(1);
+  }, [selectedCategory, searchTerm, articles]);
+
+  const totalPages = Math.max(1, Math.ceil(filteredArticles.length / ARTICLES_PAGE_SIZE));
+  const paginatedArticles = filteredArticles.slice(
+    (page - 1) * ARTICLES_PAGE_SIZE,
+    page * ARTICLES_PAGE_SIZE
+  );
 
   return (
     <>
@@ -174,7 +192,7 @@ const Articles = () => {
                         <Button
                           variant="ghost"
                           className="text-blue-600 hover:text-blue-700"
-                          onClick={handleReadMore}
+                          onClick={() => handleReadMore(article.id)}
                         >
                           {t('articles.readMore')}
                           <ChevronRight className="ml-1 h-4 w-4" />
@@ -189,7 +207,7 @@ const Articles = () => {
         )}
 
         <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div ref={gridRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +223,7 @@ const Articles = () => {
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredArticles.map((article, index) => (
+              {paginatedArticles.map((article, index) => (
                 <motion.article
                   key={article.id}
                   initial={{ opacity: 0, y: 50 }}
@@ -241,7 +259,7 @@ const Articles = () => {
                     <Button
                       variant="ghost"
                       className="w-full text-blue-600 hover:text-blue-700 hover:bg-blue-50"
-                      onClick={handleReadMore}
+                      onClick={() => handleReadMore(article.id)}
                     >
                       {t('articles.readMore')}
                       <ChevronRight className="ml-1 h-4 w-4" />
@@ -250,6 +268,17 @@ const Articles = () => {
                 </motion.article>
               ))}
             </div>
+
+            {filteredArticles.length > 0 && (
+              <div className="mt-14">
+                <ArticlePagination
+                  currentPage={page}
+                  totalPages={totalPages}
+                  onPageChange={setPage}
+                  scrollTargetRef={gridRef}
+                />
+              </div>
+            )}
 
             {filteredArticles.length === 0 && (
               <motion.div

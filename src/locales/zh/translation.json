@@ -718,5 +718,17 @@
     "ctaTitle": "需要进一步的法律协助吗？",
     "ctaSubtitle": "DrHukum团队随时准备为您提供符合您需求的实用法律咨询。",
     "ctaButton": "立即咨询"
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页",
+    "page": "第 {{current}} 页，共 {{total}} 页"
+  },
+  "articleDetail": {
+    "backToArticles": "返回文章列表",
+    "backToResources": "返回资源中心",
+    "notFoundTitle": "未找到文章",
+    "notFoundDesc": "您查找的文章可能已被删除或暂不可用。",
+    "loading": "正在加载文章..."
   }
 }

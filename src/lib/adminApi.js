@@ -58,4 +58,6 @@ export const adminApi = {
 export const publicApi = {
   getPosts: (type, locale, featuredOnly = false) =>
     request(`/posts.php?type=${type}&locale=${locale}${featuredOnly ? '&featured=1' : ''}`),
+
+  getPost: (id, locale) => request(`/posts.php?id=${id}&locale=${locale}`),
 };

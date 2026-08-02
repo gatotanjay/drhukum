@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -7,26 +7,29 @@ import {
   Calendar,
   User,
   ChevronRight,
-  ArrowRight,
   Loader2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { publicApi } from '@/lib/adminApi';
+import ArticlePagination from '@/components/ArticlePagination';
 
 // Thumbnail sementara untuk post yang belum diisi thumbnail lewat admin panel.
 const DEFAULT_THUMBNAIL = 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80';
 
+// Jumlah artikel blog yang ditampilkan per halaman (menggantikan tombol "Lihat Semua Artikel").
+const BLOG_PAGE_SIZE = 6;
+
 const Insight = () => {
   const { t, i18n } = useTranslation();
-  const { toast } = useToast();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('blog');
   const [blogPosts, setBlogPosts] = useState([]);
   const [legalUpdateItems, setLegalUpdateItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [blogPage, setBlogPage] = useState(1);
+  const blogSectionRef = useRef(null);
 
   const locale = ['id', 'en', 'zh'].includes(i18n.language) ? i18n.language : 'id';
 
@@ -41,6 +44,7 @@ const Insight = () => {
         if (cancelled) return;
         setBlogPosts(blogRes.posts);
         setLegalUpdateItems(legalRes.posts);
+        setBlogPage(1);
       })
       .catch(() => {
         if (!cancelled) {
@@ -52,10 +56,9 @@ const Insight = () => {
     return () => { cancelled = true; };
   }, [locale]);
 
-  const handleUnimplemented = () => {
-    toast({
-      title: "!!"
-    });
+  const handleReadMore = (postId) => {
+    window.scrollTo(0, 0);
+    navigate(`/artikel/${postId}`);
   };
 
   const handleConsultation = () => {
@@ -67,6 +70,13 @@ const Insight = () => {
     { id: 'blog', label: t('resources.tabs.blog'), icon: BookOpen },
     { id: 'legalUpdates', label: t('resources.tabs.legalUpdates'), icon: Scale },
   ];
+
+  // Pagination untuk daftar artikel blog (menggantikan tombol "Lihat Semua Artikel").
+  const blogTotalPages = Math.max(1, Math.ceil(blogPosts.length / BLOG_PAGE_SIZE));
+  const paginatedBlogPosts = blogPosts.slice(
+    (blogPage - 1) * BLOG_PAGE_SIZE,
+    blogPage * BLOG_PAGE_SIZE
+  );
 
   return (
     <>
@@ -134,7 +144,7 @@ const Insight = () => {
               transition={{ duration: 0.5 }}
               className="py-20 bg-white"
             >
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div ref={blogSectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
                 <div className="text-center mb-16">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     {t('resources.blog.sectionTitle')}
@@ -152,7 +162,7 @@ const Insight = () => {
                   <p className="text-center text-gray-500 py-16">Belum ada artikel blog.</p>
                 ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {blogPosts.map((post, index) => (
+                  {paginatedBlogPosts.map((post, index) => (
                     <motion.article
                       key={post.id}
                       initial={{ opacity: 0, y: 30 }}
@@ -188,7 +198,7 @@ const Insight = () => {
                             variant="ghost"
                             size="sm"
                             className="text-blue-600 hover:text-blue-700"
-                            onClick={handleUnimplemented}
+                            onClick={() => handleReadMore(post.id)}
                           >
                             {t('articles.readMore')}
                             <ChevronRight className="ml-1 h-4 w-4" />
@@ -200,17 +210,16 @@ const Insight = () => {
                 </div>
                 )}
 
-                <div className="text-center mt-12">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50"
-                    onClick={handleUnimplemented}
-                  >
-                    {t('resources.blog.viewAll')}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
+                {!isLoading && blogPosts.length > 0 && (
+                  <div className="mt-14">
+                    <ArticlePagination
+                      currentPage={blogPage}
+                      totalPages={blogTotalPages}
+                      onPageChange={setBlogPage}
+                      scrollTargetRef={blogSectionRef}
+                    />
+                  </div>
+                )}
               </div>
             </motion.section>
           )}
@@ -276,7 +285,7 @@ const Insight = () => {
                       <Button
                         variant="ghost"
                         className="text-blue-600 hover:text-blue-700 shrink-0 self-start md:self-center mx-6 mb-6 md:mx-0 md:mb-0 md:mr-6"
-                        onClick={handleUnimplemented}
+                        onClick={() => handleReadMore(item.id)}
                       >
                         {t('resources.legalUpdates.readMore')}
                         <ChevronRight className="ml-1 h-4 w-4" />

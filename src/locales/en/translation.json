@@ -789,5 +789,17 @@
     "ctaTitle": "Need Further Legal Assistance?",
     "ctaSubtitle": "The DrHukum team is ready to help you with practical legal consultation tailored to your needs.",
     "ctaButton": "Consult Now"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{current}} of {{total}}"
+  },
+  "articleDetail": {
+    "backToArticles": "Back to Articles",
+    "backToResources": "Back to Resources",
+    "notFoundTitle": "Article Not Found",
+    "notFoundDesc": "The article you're looking for may have been removed or is unavailable.",
+    "loading": "Loading article..."
   }
 }

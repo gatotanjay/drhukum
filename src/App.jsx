@@ -10,6 +10,7 @@ import Insight from '@/pages/Insight.jsx';
 import Contact from '@/pages/Contact.jsx';
 import Terms from '@/pages/Terms.jsx';
 import Articles from '@/pages/Articles.jsx';
+import ArticleDetail from '@/pages/ArticleDetail.jsx';
 import AdminLogin from '@/pages/admin/AdminLogin.jsx';
 import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
@@ -39,6 +40,7 @@ function App() {
           <Route path="/kontak" element={<Contact />} />
           <Route path="/syarat-ketentuan" element={<Terms />} />
           <Route path="/artikel" element={<Articles />} />
+          <Route path="/artikel/:id" element={<ArticleDetail />} />
         </Route>
 
         {/* Halaman admin (layout terpisah, tanpa Navbar/Footer situs) */}
