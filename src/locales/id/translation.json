@@ -28,9 +28,9 @@
     "resources": "Sumber Daya"
   },
   "home": {
-    "heroTitle1": "Your Trusted",
-    "heroTitle2": "Legal Advisor",
-    "heroTitle3": "in Bali",
+    "heroTitle1": "Konsultan Hukum",
+    "heroTitle2": "Terpercaya",
+    "heroTitle3": "di Bali",
     "heroSubtitle": "Solusi hukum komprehensif untuk melindungi hak dan kepentingan Anda. Dengan pengalaman lebih dari 10 tahun, kami siap membantu menyelesaikan berbagai permasalahan hukum Anda.",
     "bookConsultation": "Booking Konsultasi Gratis",
     "ourServices": "Lihat Layanan Kami",
@@ -129,6 +129,7 @@
     "title": "Tentang Kami",
     "subtitle": "Firma hukum terpercaya di Bali yang telah melayani klien selama lebih dari 15 tahun dengan komitmen memberikan solusi hukum terbaik dan profesional.",
     "ourJourneyTitle": "Perjalanan Kami",
+    "ourJourneyp":"Dr. Hukum berawal dari tim kecil yang terdiri dari para pengacara berdedikasi dengan komitmen bersama untuk memberikan layanan hukum yang jelas, andal, dan berkualitas tinggi. Seiring waktu, kami telah berkembang menjadi firma hukum tepercaya yang didukung oleh tim profesional berpengalaman. Kepercayaan klien tetap menjadi aset terbesar kami, dan kami terus fokus pada penyediaan solusi hukum dengan integritas, ketelitian, dan profesionalisme.",
     "ourJourneyP1": "DrHukum didirikan pada tahun 2009 dengan visi menjadi firma hukum terdepan di Bali yang memberikan layanan hukum berkualitas tinggi. Berawal dari kantor kecil dengan 3 lawyer, kini kami telah berkembang menjadi firma hukum terpercaya dengan tim profesional yang berpengalaman.",
     "ourJourneyP2": "Selama perjalanan kami, kami telah menangani lebih dari 500 kasus dengan tingkat keberhasilan 95%. Kepercayaan klien adalah aset terbesar kami, dan kami terus berkomitmen untuk memberikan layanan terbaik.",
     "ourJourneyP3": "Kami bangga menjadi mitra hukum bagi individu, perusahaan multinasional, UMKM, dan berbagai organisasi di Bali dan seluruh Indonesia.",
@@ -598,39 +599,54 @@
     "members": [
       {
         "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
-        "role": "Role1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Direktur",
+        "description": "Memimpin dan bertanggung jawab penuh atas arah strategis, operasional, dan kinerja perusahaan secara keseluruhan. Direktur adalah pengambil keputusan tertinggi dalam operasional sehari-hari dan mewakili perusahaan dalam hubungan bisnis, hukum, dan kelembagaan. "
       },
       {
         "name": "Tjokorda Alit Budi Wijaya, S.H.",
-        "role": "Role2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Komisaris",
+        "description": "Berperan sebagai pengawas independen terhadap kinerja Direktur dan jalannya perusahaan, tanpa terlibat dalam operasional harian. Komisaris memastikan perusahaan dikelola sesuai dengan kepentingan pemegang saham, prinsip tata kelola yang baik, dan kepatuhan hukum."
       },
       {
         "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
-        "role": "Role3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Supervisor",
+        "description": "Bertanggung jawab atas pengawasan operasional harian tim, memastikan kualitas pekerjaan (dokumen hukum, layanan klien, proses administrasi) sesuai standar, serta menjadi jembatan komunikasi antara Direktur dan staf pelaksana (Admin, Drafter, Field Staff)."
       },
       {
         "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
-        "role": "Role4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Admin",
+        "description": "Bertanggung jawab atas dukungan administratif, dokumentasi, dan operasional kantor sehari-hari, termasuk pengelolaan data klien, korespondensi, dan penjadwalan. "
       },
       {
         "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
-        "role": "Role5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Wakil Supervisor",
+        "description": "Membantu Supervisor dalam mengawasi operasional tim sehari-hari, serta menggantikan peran Supervisor ketika berhalangan. Berfungsi sebagai penghubung tambahan antara Supervisor dan staf pelaksana untuk memastikan kelancaran operasional."
       },
       {
         "name": "Putu Adelia Indirawati, S.H.",
-        "role": "Role6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Drafter",
+        "description": "Bertanggung jawab menyusun (drafting) dokumen-dokumen hukum dan legal seperti kontrak, perjanjian, surat kuasa, legal opinion, serta dokumen pendukung permohonan visa/izin/perpajakan, sesuai kebutuhan klien dan regulasi yang berlaku. "
+      },
+      {
+        "name": "Ni Ketut Dewi Alda Parwati, S.H.",
+        "role": "Admin",
+        "description": "Bertanggung jawab atas dukungan administratif, dokumentasi, dan operasional kantor sehari-hari, termasuk pengelolaan data klien, korespondensi, dan penjadwalan. "
+      },
+      {
+        "name": "Komang D. Satria Wiguna, S.H.",
+        "role": "Staf Lapangan",
+        "description": "Bertanggung jawab menangani proses-proses yang memerlukan kehadiran fisik di luar kantor, seperti pengurusan dokumen ke instansi pemerintah (Imigrasi, Kantor Pajak, Notaris, Dinas terkait), pengambilan/penyerahan dokumen, dan representasi lapangan lainnya."
+      },
+      {
+        "name": "I Gusti Ayu Putu Audrey Frangipani, S.H.",
+        "role": "Drafter",
+        "description": "Bertanggung jawab menyusun (drafting) dokumen-dokumen hukum dan legal seperti kontrak, perjanjian, surat kuasa, legal opinion, serta dokumen pendukung permohonan visa/izin/perpajakan, sesuai kebutuhan klien dan regulasi yang berlaku. "
       }
     ]
   },
   "resources": {
     "title": "Sumber Daya Hukum",
-    "subtitle": "Kumpulan artikel, update regulasi, dan panduan gratis untuk membantu Anda memahami hukum di Indonesia.",
+    "subtitle": "Kumpulan artikel dan update regulasi terbaru",
     "tabs": {
       "blog": "Blog",
       "legalUpdates": "Update Hukum",
@@ -639,6 +655,7 @@
     "blog": {
       "sectionTitle": "Blog & Artikel",
       "sectionSubtitle": "Wawasan praktis dan analisis hukum dari tim ahli DrHukum.",
+      "article1":"Belum ada artikel blog.",
       "viewAll": "Lihat Semua Artikel",
       "posts": [
         {
@@ -688,6 +705,7 @@
     "legalUpdates": {
       "sectionTitle": "Update Regulasi Terbaru",
       "sectionSubtitle": "Tetap up-to-date dengan perubahan hukum dan regulasi yang berlaku di Indonesia.",
+      "legal":"Belum ada legal update.",
       "readMore": "Baca Selengkapnya",
       "items": [
         {

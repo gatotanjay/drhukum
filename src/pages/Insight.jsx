@@ -159,7 +159,7 @@ const Insight = () => {
                     <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
                   </div>
                 ) : blogPosts.length === 0 ? (
-                  <p className="text-center text-gray-500 py-16">Belum ada artikel blog.</p>
+                  <p className="text-center text-gray-500 py-16">{t('resources.blog.article1')}</p>
                 ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {paginatedBlogPosts.map((post, index) => (
@@ -248,7 +248,7 @@ const Insight = () => {
                     <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
                   </div>
                 ) : legalUpdateItems.length === 0 ? (
-                  <p className="text-center text-gray-500 py-16">Belum ada legal update.</p>
+                  <p className="text-center text-gray-500 py-16">{t('resources.legalUpdates.legal')}</p>
                 ) : (
                 <div className="max-w-4xl mx-auto space-y-6">
                   {legalUpdateItems.map((item, index) => (

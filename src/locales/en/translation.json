@@ -129,6 +129,7 @@
     "title": "About Us",
     "subtitle": "A trusted law firm in Bali that has served clients for over 15 years with a commitment to providing the best and most professional legal solutions.",
     "ourJourneyTitle": "Our Journey",
+    "ourJourneyp":"Dr. Hukum began as a small team of dedicated lawyers with a shared commitment to delivering clear, reliable, and high-quality legal services. Over time, we have grown into a trusted law firm supported by an experienced professional team. Client trust remains our greatest asset, and we continue to focus on providing legal solutions with integrity, precision, and professionalism.",
     "ourJourneyP1": "DrHukum was founded in 2009 with a vision to become the leading law firm in Bali providing high-quality legal services. Starting from a small office with 3 lawyers, we have now grown into a trusted law firm with an experienced professional team.",
     "ourJourneyP2": "During our journey, we have handled more than 500 cases with a 95% success rate. Client trust is our greatest asset, and we continue to be committed to providing the best service.",
     "ourJourneyP3": "We are proud to be a legal partner for individuals, multinational companies, SMEs, and various organizations in Bali and throughout Indonesia.",
@@ -598,54 +599,54 @@
     "members": [
       {
         "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
-        "role": "Role1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Director",
+        "description": "Leads and holds full responsibility for the company's overall strategic direction, operations, and performance. The Director is the highest decision maker in daily operations and represents the company in business, legal, and institutional matters. "
       },
       {
         "name": "Tjokorda Alit Budi Wijaya, S.H.",
-        "role": "Role2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Commisioner",
+        "description": "Acts as an independent supervisor of the Director’s performance and the overall management of the company, without being involved in day-to-day operations. The Commissioner ensures that the company is managed in accordance with shareholders’ interests, good corporate governance principles, and legal compliance."
       },
       {
         "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
-        "role": "Role3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Supervisor",
+        "description": "Responsible for overseeing the team’s daily operations, ensuring the quality of work (legal documents, client services, and administrative processes) meets established standards, and serving as a communication bridge between the Director and operational staff (Admin, Drafter, Field Staff). "
       },
       {
         "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
-        "role": "Role4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Admin",
+        "description": "Responsible for administrative support, documentation, and day-to-day office operations, including managing client data, correspondence, and scheduling. "
       },
       {
         "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
-        "role": "Role5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Vice Supervisor",
+        "description": "Assists the Supervisor in overseeing the team’s daily operations and assumes the Supervisor’s responsibilities when they are unavailable. Also serves as an additional liaison between the Supervisor and operational staff to ensure smooth day-to-day operations. "
       },
       {
         "name": "Putu Adelia Indirawati, S.H.",
-        "role": "Role6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Drafter",
+        "description": "Responsible for drafting legal documents such as contracts, agreements, powers of attorney, legal opinions, and supporting documents for visa, licensing, and taxation applications, in accordance with client needs and applicable regulations. "
       },
       {
         "name": "Ni Ketut Dewi Alda Parwati, S.H.",
-        "role": "Role7",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Admin",
+        "description": "Responsible for administrative support, documentation, and day-to-day office operations, including managing client data, correspondence, and scheduling."
       },
       {
         "name": "Komang D. Satria Wiguna, S.H.",
-        "role": "Role8",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Field Staff",
+        "description": "Responsible for handling processes that require physical presence outside the office, such as processing documents with government institutions (Immigration Office, Tax Office, Notary, and relevant agencies), collecting and delivering documents, and providing other forms of field representation. "
       },
       {
         "name": "I Gusti Ayu Putu Audrey Frangipani, S.H.",
-        "role": "Role9",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "Drafter",
+        "description": "Responsible for drafting legal documents such as contracts, agreements, powers of attorney, legal opinions, and supporting documents for visa, licensing, and taxation applications, in accordance with client needs and applicable regulations. "
       }
     ]
   },
   "resources": {
     "title": "Insight ",
-    "subtitle": "A collection of articles, regulatory updates, and free guides to help you understand the law in Indonesia.",
+    "subtitle": "Latest articles and regulatory updates ",
     "tabs": {
       "blog": "Blog",
       "legalUpdates": "Legal Updates",
@@ -654,6 +655,7 @@
     "blog": {
       "sectionTitle": "Blog & Articles",
       "sectionSubtitle": "Practical insights and legal analysis from the DrHukum expert team.",
+      "article1":"There are no blog articles yet.",
       "viewAll": "View All Articles",
       "posts": [
         {
@@ -703,6 +705,7 @@
     "legalUpdates": {
       "sectionTitle": "Latest Regulatory Updates",
       "sectionSubtitle": "Stay up to date with the latest changes in Indonesian law and regulations.",
+      "legal":"There is no legal update yet.",
       "readMore": "Read More",
       "items": [
         {

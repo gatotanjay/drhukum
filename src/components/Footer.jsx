@@ -38,11 +38,11 @@ const Footer = () => {
               <Link to="/layanan" className="block text-stone-300 hover:text-white transition-colors">
                 {t('nav.services')}
               </Link>
-              <Link to="/industri" className="block text-stone-300 hover:text-white transition-colors">
-                {t('nav.industries')}
-              </Link>
-              <Link to="/sumber-daya" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/wawasan" className="block text-stone-300 hover:text-white transition-colors">
                 {t('nav.resources')}
+              </Link>
+              <Link to="/kontak" className="block text-stone-300 hover:text-white transition-colors">
+                {t('nav.contact')}
               </Link>
             </div>
           </div>

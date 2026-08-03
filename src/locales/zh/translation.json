@@ -129,6 +129,7 @@
     "title": "关于我们",
     "subtitle": "一家值得信赖的巴厘岛律师事务所，致力于为客户提供超过15年的最佳和最专业的法律解决方案。",
     "ourJourneyTitle": "我们的历程",
+    "ourJourneyp":"Dr. Hukum 最初由一支由敬业律师组成的小型团队创立，大家共同致力于提供清晰、可靠且高质量的法律服务。随着时间的发展，我们已成长为一家值得信赖的律师事务所，并由经验丰富的专业团队提供支持。客户的信任始终是我们最宝贵的资产，我们持续专注于以诚信、严谨和专业精神提供法律解决方案。",
     "ourJourneyP1": "DrHukum成立于2009年，其愿景是成为巴厘岛领先的律师事务所，提供高质量的法律服务。从一个只有3名律师的小办公室开始，我们现已发展成为一支拥有经验丰富专业团队的值得信赖的律师事务所。",
     "ourJourneyP2": "在我们的发展历程中，我们处理了500多起案件，成功率高达95%。客户的信任是我们最大的资产，我们将继续致力于提供最好的服务。",
     "ourJourneyP3": "我们很自豪能成为巴厘岛及全印度尼西亚个人、跨国公司、中小企业和各种组织的法律合作伙伴。",
@@ -173,53 +174,109 @@
     }
   },
   "services": {
-    "title": "我们的法律服务",
+    "title": "我们的法律服务 ",
     "subtitle": "为您的各种法律需求提供全面的法律解决方案。从咨询到法庭代理，我们随时准备提供帮助。",
     "services": {
       "civil": {
-        "title": "民法",
-        "desc": "解决民事纠纷、合同、违约和保护公民权利"
+        "title": "民事法",
+        "desc": "处理民事纠纷、合同、违约及公民权利保护",
+        "features": [
+          "合同起草与审查",
+          "合同纠纷解决",
+          "违约诉讼",
+          "调解与仲裁",
+          "法院判决执行"
+        ]
       },
       "criminal": {
-        "title": "刑法",
-        "desc": "为刑事案件提供法律援助，保护嫌疑人/被告人的权利"
+        "title": "刑事法",
+        "desc": "为刑事案件提供法律协助及保障嫌疑人/被告的权利",
+        "features": [
+          "侦查阶段陪同（笔录）",
+          "法庭辩护",
+          "刑事法律咨询",
+          "反腐案件处理",
+          "嫌疑人权利维护"
+        ]
       },
       "business": {
         "title": "商业与公司法",
-        "desc": "为公司、并购和合规提供法律咨询"
+        "desc": "提供公司法律咨询、并购及合规服务",
+        "features": [
+          "公司设立（PT/CV）",
+          "并购（M&A）",
+          "公司合规",
+          "商业合同",
+          "公司重组"
+        ]
       },
       "family": {
         "title": "家庭法",
-        "desc": "处理家庭法问题、离婚和子女监护权"
+        "desc": "处理家庭法律问题、离婚及子女监护权",
+        "features": [
+          "离婚程序",
+          "夫妻共同财产分割",
+          "子女抚养权",
+          "收养程序",
+          "家庭暴力案件"
+        ]
       },
       "property": {
-        "title": "财产法",
-        "desc": "财产交易、土地纠纷和财产文件合法化"
+        "title": "房地产法",
+        "desc": "房地产交易、土地纠纷及相关法律文件办理",
+        "features": [
+          "房地产买卖",
+          "土地纠纷",
+          "证书合法化",
+          "证书分割",
+          "建筑使用权（HGB）"
+        ]
       },
       "labor": {
         "title": "劳动法",
-        "desc": "解决劳动争议和起草雇佣合同"
+        "desc": "解决劳动争议及起草劳动合同",
+        "features": [
+          "劳动合同起草",
+          "解雇与补偿",
+          "劳资关系纠纷",
+          "员工权益保护",
+          "劳动合规"
+        ]
       },
       "admin": {
         "title": "行政法",
-        "desc": "管理法律文件、许可证和法律行政事务"
+        "desc": "办理法律文件、许可及行政事务",
+        "features": [
+          "营业许可办理",
+          "文件合法化",
+          "公证与PPAT",
+          "授权书",
+          "法律行政事务"
+        ]
       },
       "general": {
-        "title": "一般法律咨询",
-        "desc": "为各种日常法律问题提供法律咨询"
+        "title": "般法律咨询",
+        "desc": "为日常各种法律问题提供咨询服务",
+        "features": [
+          "线上/线下咨询",
+          "法律意见（Legal Opinion）",
+          "法律风险分析",
+          "谈判支持",
+          "第二意见"
+        ]
       },
       "companyEstablishment": {
         "title": "公司设立",
-        "desc": "为在印度尼西亚设立合法商业实体提供全流程协助",
+        "desc": "为在印度尼西亚设立合法企业提供全程协助",
         "features": [
-          "实体结构建议",
-          "公司文件准备",
-          "NIB 和 OSS 注册"
+          "公司结构建议",
+          "公司章程起草",
+          "NIB及OSS注册"
         ]
       },
       "legalConsultation": {
         "title": "法律咨询",
-        "desc": "为商业、个人和监管事务提供实用法律指导",
+        "desc": "为商业、个人及合规需求提供实用法律指导",
         "features": [
           "初步法律评估",
           "法律意见",
@@ -228,7 +285,7 @@
       },
       "corporateLegal": {
         "title": "公司法律服务",
-        "desc": "为公司治理、合同和交易提供持续法律支持",
+        "desc": "为公司治理、合同及交易提供持续法律支持",
         "features": [
           "公司治理",
           "商业合同",
@@ -237,58 +294,58 @@
       },
       "taxAccounting": {
         "title": "税务与会计",
-        "desc": "提供税务和会计支持，帮助企业保持合规记录",
+        "desc": "提供税务与会计支持，确保企业账务规范合规",
         "features": [
           "税务登记支持",
           "月度记账",
-          "财务报告"
+          "财务报表"
         ]
       },
       "licensingCompliance": {
         "title": "许可与合规",
-        "desc": "为受监管业务活动提供许可办理和合规协助",
+        "desc": "协助企业办理许可并确保符合相关法规",
         "features": [
-          "许可证申请支持",
-          "OSS 合规",
-          "许可证续期"
+          "许可申请",
+          "OSS合规",
+          "许可续期"
         ]
       },
       "visaImmigration": {
         "title": "签证与移民",
-        "desc": "为外国投资者、专业人士和家庭提供移民支持",
+        "desc": "为外国投资者、专业人士及家庭提供移民支持",
         "features": [
           "签证咨询",
-          "KITAS 支持",
+          "KITAS办理支持",
           "文件准备"
         ]
       },
       "lkpmReporting": {
-        "title": "LKPM 报告",
-        "desc": "为有 LKPM 义务的公司提供投资活动报告支持",
+        "title": "LKPM申报",
+        "desc": "为需履行LKPM义务的企业提供投资活动申报支持",
         "features": [
-          "LKPM 义务审查",
-          "季度报告",
-          "OSS 提交支持"
+          "LKPM义务审核",
+          "季度申报",
+          "OSS提交支持"
         ]
       },
       "permit": {
-        "title": "许可证",
-        "desc":"全面协助获取必要的营业执照和监管许可证，以确保您的公司合法运营",
+        "title": "许可办理",
+        "desc": "提供全面协助办理企业许可及法规事务，确保企业合法运营",
         "features": [
-          "营业执照注册",
-          "合规性审查",
-          "许可证更新与延期",
+          "营业许可申请",
+          "法规合规审核",
+          "许可更新与续期",
           "文件准备与提交"
         ]
       },
       "retainerLawyer": {
-        "title": "常年法律顾问 ",
-        "desc": "持续、专属的法律支持，以保障您的业务运营并降低长期法律风险",
+        "title": "常年法律顾问",
+        "desc": "提供持续法律支持，保护企业运营并降低长期法律风险",
         "features": [
           "专属法律顾问",
           "合同起草与审查",
           "优先法律咨询",
-          "日常合规监控",
+          "定期合规监控",
           "争议解决支持"
         ]
       }
@@ -542,38 +599,53 @@
     "members": [
       {
         "name": "Rhenaldho Nen Yunani, S.H., M.Kn., C.Me., CTA.",
-        "role": "Role1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "董事",
+        "description": "全面领导并负责公司的战略方向、运营及整体绩效。董事是日常运营中的最高决策者，并代表公司处理商业、法律及机构关系事务。"
       },
       {
         "name": "Tjokorda Alit Budi Wijaya, S.H.",
-        "role": "Role2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "监事",
+        "description": "作为独立监督者，负责监督董事的绩效及公司运作，但不参与日常运营。监事确保公司按照股东利益、良好公司治理原则及法律合规进行管理。"
       },
       {
         "name": "A.A. Gde Agung Ksatria Prabu Canakya, S.H.",
-        "role": "Role3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "主管",
+        "description": "负责团队日常运营监督，确保工作质量（法律文件、客户服务、行政流程）符合标准，并作为董事与执行员工（行政、起草员、外勤人员）之间的沟通桥梁。"
       },
       {
         "name": "Putu Ayu Sintya Pradnya Dewi, S.H.",
-        "role": "Role4",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "行政",
+        "description": "负责行政支持、文件管理及日常办公室运营，包括客户数据管理、往来函件及日程安排。"
       },
       {
         "name": "I Gusti Ngurah Bagus Ryan Nugraha, S.H.",
-        "role": "Role5",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "副主管",
+        "description": "协助主管监督团队日常运营，并在主管无法履职时代理其职责。作为主管与执行员工之间的辅助沟通桥梁，确保运营顺畅。"
       },
       {
         "name": "Putu Adelia Indirawati, S.H.",
-        "role": "Role6",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        "role": "法律文书起草员",
+        "description": "负责起草各类法律文件，如合同、协议、授权书、法律意见书，以及签证/许可/税务申请所需的支持文件，依据客户需求及相关法规完成。"
+      },
+      {
+        "name": "Ni Ketut Dewi Alda Parwati, S.H.",
+        "role": "行政",
+        "description": "负责行政支持、文件管理及日常办公室运营，包括客户数据管理、往来函件及日程安排。"
+      },
+      {
+        "name": "Komang D. Satria Wiguna, S.H.",
+        "role": "外勤人员",
+        "description": "负责处理需要在办公室外进行的事务，例如前往政府机构（移民局、税务局、公证处及相关部门）办理文件、文件取送及其他外勤事务。"
+      },
+      {
+        "name": "I Gusti Ayu Putu Audrey Frangipani, S.H.",
+        "role": "法律文书起草员",
+        "description": "负责起草各类法律文件，如合同、协议、授权书、法律意见书，以及签证/许可/税务申请所需的支持文件，依据客户需求及相关法规完成。"
       }
     ]
   },
   "resources": {
-    "title": "法律资源",
+    "title": "法律资源 ",
     "subtitle": "汇集文章、法规更新和免费指南，帮助您了解印度尼西亚的法律。",
     "tabs": {
       "blog": "博客",
@@ -583,6 +655,7 @@
     "blog": {
       "sectionTitle": "博客与文章",
       "sectionSubtitle": "来自DrHukum专家团队的实用见解和法律分析。",
+      "article1":"目前还没有博客文章。",
       "viewAll": "查看所有文章",
       "posts": [
         {
@@ -632,6 +705,7 @@
     "legalUpdates": {
       "sectionTitle": "最新法规更新",
       "sectionSubtitle": "及时了解印度尼西亚法律法规的最新变化。",
+      "legal":"目前尚无法律方面的更新。",
       "readMore": "阅读更多",
       "items": [
         {

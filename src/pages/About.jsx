@@ -81,7 +81,7 @@ const About = () => {
                   {t('about.ourJourneyTitle')}
                 </h2>
                 <div className="space-y-6 text-gray-600">
-                  <p>Dr. Hukum began as a small team of dedicated lawyers with a shared commitment to delivering clear, reliable, and high-quality legal services. Over time, we have grown into a trusted law firm supported by an experienced professional team. Client trust remains our greatest asset, and we continue to focus on providing legal solutions with integrity, precision, and professionalism.</p>
+                  <p>{t('about.ourJourneyp')}</p>
                 </div>
               </motion.div>
               
