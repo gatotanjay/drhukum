@@ -191,7 +191,7 @@ const About = () => {
                 </div>
               </section>
       
-              <section className="py-20 bg-white">
+              <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {Array.isArray(members) && members.map((member, index) => (

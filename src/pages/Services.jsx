@@ -204,7 +204,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -221,7 +221,7 @@ const Services = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
                   size="lg" 
-                  className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={handleConsultation}
                 >
                   {t('services.freeConsultation')}

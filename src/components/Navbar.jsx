@@ -27,7 +27,7 @@ const Navbar = () => {
     //{ name: t('nav.industries'), path: '/industri' },
     { name: t('nav.resources'), path: '/wawasan' },
     //{ name: t('nav.team'), path: '/tim-kami' },
-    { name: t('nav.contact'), path: '/kontak' },
+    //{ name: t('nav.contact'), path: '/kontak' },
     //{ name: t('nav.terms'), path: '/syarat-ketentuan' }
   ];
 
@@ -62,8 +62,8 @@ const Navbar = () => {
               </Link>
             ))}
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="http://wa.me/6281252525966" target="_blank" rel="noopener noreferrer">
-                {t('nav.bookConsultation')}
+              <a href="/kontak" rel="noopener noreferrer">
+                {t('nav.contact')}
               </a>
             </Button>
             <LanguageSwitcher />

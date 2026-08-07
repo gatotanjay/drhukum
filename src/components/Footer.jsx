@@ -11,37 +11,37 @@ const Footer = () => {
   const handleSocialClick = url => {
     window.open(url, '_blank');
   };
-  return <footer className="bg-stone-900 text-white">
+  return <footer className="bg-white/95 backdrop-blur-md shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <img src={logoUrl} alt="Logo DrHukum" className="h-20" />
             </Link>
-            <p className="text-stone-300 text-sm">
+            <p className=" text-sm text-gray-700">
               {t('footer.description')}
             </p>
             <div className="flex space-x-4">
-              <Instagram className="h-5 w-5 text-stone-400 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.instagram.com/drhukumofficial/')} />
+              <Instagram className="h-5 text-gray-700 hover:text-primary cursor-pointer transition-colors" onClick={() => handleSocialClick('https://www.instagram.com/drhukumofficial/')} />
             </div>
           </div>
 
           <div className="space-y-4">
             <span className="text-lg font-semibold">{t('footer.navigation')}</span>
             <div className="space-y-2">
-              <Link to="/" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.home')}
               </Link>
-              <Link to="/tentang-kami" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/tentang-kami" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.about')}
               </Link>
-              <Link to="/layanan" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/layanan" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.services')}
               </Link>
-              <Link to="/wawasan" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/wawasan" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.resources')}
               </Link>
-              <Link to="/kontak" className="block text-stone-300 hover:text-white transition-colors">
+              <Link to="/kontak" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.contact')}
               </Link>
             </div>
@@ -50,11 +50,11 @@ const Footer = () => {
           <div className="space-y-4">
             <span className="text-lg font-semibold">{t('footer.mainServices')}</span>
             <div className="space-y-2">
-              <p className="text-stone-300">{t('footer.legalService')}</p>
-              <p className="text-stone-300">{t('footer.visaImmigration')}</p>
-              <p className="text-stone-300">{t('footer.taxAccounting')}</p>
-              <p className="text-stone-300">{t('footer.permit')}</p>
-              <p className="text-stone-300">{t('footer.retainerLawyer')}</p>
+              <p className="text-gray-700">{t('footer.legalService')}</p>
+              <p className="text-gray-700">{t('footer.visaImmigration')}</p>
+              <p className="text-gray-700">{t('footer.taxAccounting')}</p>
+              <p className="text-gray-700">{t('footer.permit')}</p>
+              <p className="text-gray-700">{t('footer.retainerLawyer')}</p>
             </div>
           </div>
 
@@ -63,22 +63,22 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <p className="text-stone-300 text-sm">Jl Buana Kubu No.47, Kel/Desa Tegal Harum, Kecamatan Denpasar Barat, Kota Denpasar, Provinsi Bali - 80119</p>
+                <p className="text-gray-700 text-sm">Jl Buana Kubu No.47, Kel/Desa Tegal Harum, Kecamatan Denpasar Barat, Kota Denpasar, Provinsi Bali - 80119</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <p className="text-stone-300">+62 853 5353 6667</p>
+                <p className="text-gray-700">+62 853 5353 6667</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <p className="text-stone-300">info@drhukum.com</p>
+                <p className="text-gray-700">info@drhukum.com</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-stone-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-stone-400 text-sm">
+        <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-700 text-sm">
             {t('footer.copyright')}
           </p>
         </div>
