@@ -16,6 +16,18 @@ module.exports = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				serif: ['"Playfair Display"', 'Georgia', 'serif'],
+			},
+			colors: {
+				admin: {
+					navy: '#0a0f1c',
+					navyLight: '#141b2e',
+					gold: '#C9A24B',
+					goldLight: '#D4AF5A',
+					goldDark: '#B8923F',
+				},
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

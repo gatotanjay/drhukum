@@ -12,9 +12,11 @@ import Terms from '@/pages/Terms.jsx';
 import Articles from '@/pages/Articles.jsx';
 import ArticleDetail from '@/pages/ArticleDetail.jsx';
 import AdminLogin from '@/pages/admin/AdminLogin.jsx';
+import AdminHome from '@/pages/admin/AdminHome.jsx';
 import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
 import AdminProtectedRoute from '@/components/admin/AdminProtectedRoute.jsx';
+import AdminLayout from '@/components/admin/AdminLayout.jsx';
 
 // Layout untuk halaman publik (pakai Navbar & Footer situs)
 const PublicLayout = () => (
@@ -45,9 +47,18 @@ function App() {
 
         {/* Halaman admin (layout terpisah, tanpa Navbar/Footer situs) */}
         <Route path="/admin/login" element={<AdminLogin />} />
-        <Route path="/admin" element={<AdminProtectedRoute><AdminDashboard /></AdminProtectedRoute>} />
-        <Route path="/admin/posts/new" element={<AdminProtectedRoute><AdminPostForm /></AdminProtectedRoute>} />
-        <Route path="/admin/posts/:id/edit" element={<AdminProtectedRoute><AdminPostForm /></AdminProtectedRoute>} />
+        <Route
+          element={
+            <AdminProtectedRoute>
+              <AdminLayout />
+            </AdminProtectedRoute>
+          }
+        >
+          <Route path="/admin" element={<AdminHome />} />
+          <Route path="/admin/posts" element={<AdminDashboard />} />
+          <Route path="/admin/posts/new" element={<AdminPostForm />} />
+          <Route path="/admin/posts/:id/edit" element={<AdminPostForm />} />
+        </Route>
       </Routes>
       <Toaster />
     </Router>

@@ -59,6 +59,46 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Tema khusus admin panel (navy & gold) — hanya berlaku di dalam .admin-theme,
+   tidak memengaruhi warna situs publik. Komponen shadcn (Switch, Select, Tabs,
+   focus ring) otomatis mengikuti karena mereka memakai variabel CSS ini. */
+.admin-theme {
+  --primary: 41 54% 54%;
+  --primary-foreground: 223 47% 7%;
+  --ring: 41 54% 54%;
+  --accent: 41 54% 96%;
+  --accent-foreground: 41 49% 30%;
+}
+
+/* Selaraskan warna toolbar Quill (rich text editor artikel) dengan tema admin */
+.admin-theme .ql-toolbar.ql-snow .ql-stroke {
+  stroke: #4b5563;
+}
+.admin-theme .ql-toolbar.ql-snow .ql-fill {
+  fill: #4b5563;
+}
+.admin-theme .ql-toolbar.ql-snow button:hover .ql-stroke,
+.admin-theme .ql-toolbar.ql-snow button.ql-active .ql-stroke,
+.admin-theme .ql-toolbar.ql-snow .ql-picker-label:hover .ql-stroke,
+.admin-theme .ql-toolbar.ql-snow .ql-picker-item:hover {
+  stroke: #B8923F;
+}
+.admin-theme .ql-toolbar.ql-snow button:hover .ql-fill,
+.admin-theme .ql-toolbar.ql-snow button.ql-active .ql-fill {
+  fill: #B8923F;
+}
+.admin-theme .ql-toolbar.ql-snow button:hover,
+.admin-theme .ql-toolbar.ql-snow button.ql-active,
+.admin-theme .ql-toolbar.ql-snow .ql-picker-label:hover {
+  color: #B8923F;
+}
+.admin-theme .ql-container.ql-snow {
+  border-color: #e5e7eb;
+}
+.admin-theme .ql-toolbar.ql-snow {
+  border-color: #e5e7eb;
+}
+
 .hero-pattern {
   background-image: 
     radial-gradient(circle at 25% 25%, rgba(195, 155, 117, 0.1) 0%, transparent 50%),

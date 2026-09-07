@@ -4,14 +4,17 @@
  * require di setiap endpoint admin/*.php yang butuh proteksi login.
  */
 
-function startSecureSession()
+function startSecureSession($rememberDays = null)
 {
     if (session_status() === PHP_SESSION_ACTIVE) {
         return;
     }
     $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off');
+    // rememberDays null/0 = cookie sesi biasa (hilang saat browser ditutup)
+    // rememberDays > 0 = cookie bertahan sekian hari (fitur "Remember Me")
+    $lifetime = $rememberDays ? $rememberDays * 24 * 60 * 60 : 0;
     session_set_cookie_params([
-        'lifetime' => 0,
+        'lifetime' => $lifetime,
         'path' => '/',
         'httponly' => true,
         'samesite' => 'Lax',

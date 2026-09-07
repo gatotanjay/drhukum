@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $data = json_decode(file_get_contents('php://input'), true);
 $username = trim($data['username'] ?? '');
 $password = (string) ($data['password'] ?? '');
+$remember = !empty($data['remember']);
 
 if ($username === '' || $password === '') {
     http_response_code(422);
@@ -39,7 +40,7 @@ if (!$admin || !password_verify($password, $admin['password_hash'])) {
     exit;
 }
 
-startSecureSession();
+startSecureSession($remember ? 30 : null);
 session_regenerate_id(true);
 $_SESSION['admin_id'] = $admin['id'];
 $_SESSION['admin_username'] = $admin['username'];

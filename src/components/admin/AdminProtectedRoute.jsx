@@ -29,7 +29,7 @@ const AdminProtectedRoute = ({ children }) => {
   if (status === 'checking') {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+        <Loader2 className="h-8 w-8 animate-spin text-admin-gold" />
       </div>
     );
   }

@@ -21,10 +21,10 @@ async function request(path, options = {}) {
 export const adminApi = {
   checkSession: () => request('/admin/session.php'),
 
-  login: (username, password) =>
+  login: (username, password, remember = false) =>
     request('/admin/login.php', {
       method: 'POST',
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username, password, remember }),
     }),
 
   logout: () => request('/admin/logout.php', { method: 'POST' }),

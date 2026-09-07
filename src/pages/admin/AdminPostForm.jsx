@@ -103,7 +103,7 @@ const AdminPostForm = () => {
         translations,
       });
       toast({ title: isEdit ? 'Post berhasil diperbarui' : 'Post berhasil dibuat' });
-      navigate('/admin');
+      navigate('/admin/posts');
     } catch (err) {
       toast({ title: 'Gagal menyimpan', description: err.message, variant: 'destructive' });
     } finally {
@@ -114,7 +114,7 @@ const AdminPostForm = () => {
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+        <Loader2 className="h-8 w-8 animate-spin text-admin-gold" />
       </div>
     );
   }
@@ -124,20 +124,15 @@ const AdminPostForm = () => {
       <Helmet>
         <title>{isEdit ? 'Edit Post' : 'Tambah Post'} - Admin DrHukum</title>
       </Helmet>
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
-            <Link to="/admin">
-              <Button variant="ghost" size="icon"><ArrowLeft className="h-5 w-5" /></Button>
-            </Link>
-            <h1 className="text-xl font-bold text-gray-900">{isEdit ? 'Edit Post' : 'Tambah Post Baru'}</h1>
-          </div>
-        </header>
+      <div className="space-y-6">
+        <Link to="/admin/posts" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700">
+          <ArrowLeft className="h-4 w-4" />
+          Kembali ke daftar post
+        </Link>
 
-        <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
-          {/* Info Umum */}
-          <div className="bg-white rounded-xl shadow p-6 space-y-4">
-            <h2 className="font-semibold text-gray-900">Info Umum</h2>
+        {/* Info Umum */}
+        <div className="bg-white rounded-xl shadow p-6 space-y-4">
+          <h2 className="font-semibold text-gray-900">Info Umum</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <Label>Tipe Post</Label>
@@ -264,17 +259,16 @@ const AdminPostForm = () => {
 
           {/* Actions */}
           <div className="flex items-center justify-end gap-3 pb-8">
-            <Button variant="outline" onClick={() => navigate('/admin')} disabled={isSaving}>
+            <Button variant="outline" onClick={() => navigate('/admin/posts')} disabled={isSaving}>
               Batal
             </Button>
             <Button variant="outline" onClick={() => handleSave('draft')} disabled={isSaving}>
               {isSaving ? 'Menyimpan...' : 'Simpan sebagai Draft'}
             </Button>
-            <Button onClick={() => handleSave('published')} disabled={isSaving} className="bg-blue-600 hover:bg-blue-700">
+            <Button onClick={() => handleSave('published')} disabled={isSaving} className="bg-admin-navy hover:bg-admin-navyLight">
               {isSaving ? 'Menyimpan...' : 'Publish'}
             </Button>
           </div>
-        </main>
       </div>
     </>
   );
