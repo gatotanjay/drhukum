@@ -98,9 +98,10 @@ if ($method === 'POST') {
         respond(['success' => false, 'message' => 'action harus create/update/delete'], 422);
     }
 
-    $type = in_array($data['type'] ?? '', ['blog', 'legal_update'], true) ? $data['type'] : null;
+    $type = in_array($data['type'] ?? '', ['blog', 'legal_update', 'tutorial'], true) ? $data['type'] : null;
     $category = clean($data['category'] ?? '');
     $thumbnail = clean($data['thumbnail'] ?? '');
+    $videoUrl = clean($data['video_url'] ?? '');
     $postDate = clean($data['post_date'] ?? '');
     $readTime = clean($data['read_time'] ?? '');
     $author = clean($data['author'] ?? '');
@@ -130,10 +131,10 @@ if ($method === 'POST') {
 
         if ($action === 'create') {
             $stmt = $pdo->prepare('
-                INSERT INTO posts (type, category, thumbnail, post_date, read_time, author, featured, status)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO posts (type, category, thumbnail, video_url, post_date, read_time, author, featured, status)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ');
-            $stmt->execute([$type, $category, $thumbnail ?: null, $postDate, $readTime ?: null, $author ?: null, $featured, $status]);
+            $stmt->execute([$type, $category, $thumbnail ?: null, $videoUrl ?: null, $postDate, $readTime ?: null, $author ?: null, $featured, $status]);
             $postId = (int) $pdo->lastInsertId();
         } else {
             $postId = (int) ($data['id'] ?? 0);
@@ -142,10 +143,10 @@ if ($method === 'POST') {
                 respond(['success' => false, 'message' => 'ID wajib diisi untuk update'], 422);
             }
             $stmt = $pdo->prepare('
-                UPDATE posts SET type=?, category=?, thumbnail=?, post_date=?, read_time=?, author=?, featured=?, status=?
+                UPDATE posts SET type=?, category=?, thumbnail=?, video_url=?, post_date=?, read_time=?, author=?, featured=?, status=?
                 WHERE id=?
             ');
-            $stmt->execute([$type, $category, $thumbnail ?: null, $postDate, $readTime ?: null, $author ?: null, $featured, $status, $postId]);
+            $stmt->execute([$type, $category, $thumbnail ?: null, $videoUrl ?: null, $postDate, $readTime ?: null, $author ?: null, $featured, $status, $postId]);
         }
 
         $upsertStmt = $pdo->prepare('

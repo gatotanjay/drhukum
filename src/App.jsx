@@ -55,9 +55,12 @@ function App() {
           }
         >
           <Route path="/admin" element={<AdminHome />} />
-          <Route path="/admin/posts" element={<AdminDashboard />} />
+          <Route path="/admin/posts" element={<AdminDashboard mode="posts" />} />
           <Route path="/admin/posts/new" element={<AdminPostForm />} />
           <Route path="/admin/posts/:id/edit" element={<AdminPostForm />} />
+          <Route path="/admin/tutorials" element={<AdminDashboard mode="tutorial" />} />
+          <Route path="/admin/tutorials/new" element={<AdminPostForm defaultType="tutorial" />} />
+          <Route path="/admin/tutorials/:id/edit" element={<AdminPostForm />} />
         </Route>
       </Routes>
       <Toaster />

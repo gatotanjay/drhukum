@@ -27,8 +27,6 @@ module.exports = {
 					goldLight: '#D4AF5A',
 					goldDark: '#B8923F',
 				},
-			},
-			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

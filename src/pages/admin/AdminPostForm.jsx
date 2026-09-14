@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ArrowLeft, Loader2, Upload, X } from 'lucide-react';
+import { ArrowLeft, Loader2, Upload, X, Video } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -23,7 +23,10 @@ const LOCALES = [
 
 const emptyTranslations = { id: { title: '', excerpt: '', content: '' }, en: { title: '', excerpt: '', content: '' }, zh: { title: '', excerpt: '', content: '' } };
 
-const AdminPostForm = () => {
+// Menentukan halaman daftar mana yang jadi "rumah" untuk tiap tipe post
+const listPathForType = (t) => (t === 'tutorial' ? '/admin/tutorials' : '/admin/posts');
+
+const AdminPostForm = ({ defaultType }) => {
   const { id } = useParams();
   const isEdit = !!id;
   const navigate = useNavigate();
@@ -34,9 +37,10 @@ const AdminPostForm = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [activeLocale, setActiveLocale] = useState('id');
 
-  const [type, setType] = useState('blog');
+  const [type, setType] = useState(defaultType || 'blog');
   const [category, setCategory] = useState('');
   const [thumbnail, setThumbnail] = useState('');
+  const [videoUrl, setVideoUrl] = useState('');
   const [postDate, setPostDate] = useState(new Date().toISOString().slice(0, 10));
   const [readTime, setReadTime] = useState('');
   const [author, setAuthor] = useState('');
@@ -52,6 +56,7 @@ const AdminPostForm = () => {
         setType(p.type);
         setCategory(p.category || '');
         setThumbnail(p.thumbnail || '');
+        setVideoUrl(p.video_url || '');
         setPostDate(p.post_date);
         setReadTime(p.read_time || '');
         setAuthor(p.author || '');
@@ -95,6 +100,7 @@ const AdminPostForm = () => {
         type,
         category,
         thumbnail,
+        video_url: videoUrl,
         post_date: postDate,
         read_time: readTime,
         author,
@@ -103,7 +109,7 @@ const AdminPostForm = () => {
         translations,
       });
       toast({ title: isEdit ? 'Post berhasil diperbarui' : 'Post berhasil dibuat' });
-      navigate('/admin/posts');
+      navigate(listPathForType(type));
     } catch (err) {
       toast({ title: 'Gagal menyimpan', description: err.message, variant: 'destructive' });
     } finally {
@@ -119,15 +125,18 @@ const AdminPostForm = () => {
     );
   }
 
+  const categoryLabel = type === 'blog' ? 'Kategori' : type === 'tutorial' ? 'Kategori Tutorial' : 'Tag';
+  const categoryPlaceholder = type === 'blog' ? 'mis. Legal Service' : type === 'tutorial' ? 'mis. Panduan Sistem' : 'mis. Imigrasi';
+
   return (
     <>
       <Helmet>
         <title>{isEdit ? 'Edit Post' : 'Tambah Post'} - Admin DrHukum</title>
       </Helmet>
       <div className="space-y-6">
-        <Link to="/admin/posts" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700">
+        <Link to={listPathForType(type)} className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700">
           <ArrowLeft className="h-4 w-4" />
-          Kembali ke daftar post
+          Kembali ke daftar
         </Link>
 
         {/* Info Umum */}
@@ -141,12 +150,13 @@ const AdminPostForm = () => {
                   <SelectContent>
                     <SelectItem value="blog">Blog</SelectItem>
                     <SelectItem value="legal_update">Legal Update</SelectItem>
+                    <SelectItem value="tutorial">Tutorial</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <div>
-                <Label>{type === 'blog' ? 'Kategori' : 'Tag'}</Label>
-                <Input value={category} onChange={(e) => setCategory(e.target.value)} className="mt-1" placeholder={type === 'blog' ? 'mis. Legal Service' : 'mis. Imigrasi'} />
+                <Label>{categoryLabel}</Label>
+                <Input value={category} onChange={(e) => setCategory(e.target.value)} className="mt-1" placeholder={categoryPlaceholder} />
               </div>
               <div>
                 <Label>Tanggal</Label>
@@ -162,17 +172,36 @@ const AdminPostForm = () => {
                   </SelectContent>
                 </Select>
               </div>
-              {type === 'blog' && (
+              {(type === 'blog' || type === 'tutorial') && (
                 <>
                   <div>
-                    <Label>Waktu Baca</Label>
-                    <Input value={readTime} onChange={(e) => setReadTime(e.target.value)} className="mt-1" placeholder="mis. 8 menit baca" />
+                    <Label>{type === 'tutorial' ? 'Durasi' : 'Waktu Baca'}</Label>
+                    <Input
+                      value={readTime}
+                      onChange={(e) => setReadTime(e.target.value)}
+                      className="mt-1"
+                      placeholder={type === 'tutorial' ? 'mis. 12 menit' : 'mis. 8 menit baca'}
+                    />
                   </div>
                   <div>
-                    <Label>Penulis</Label>
+                    <Label>{type === 'tutorial' ? 'Dibuat oleh' : 'Penulis'}</Label>
                     <Input value={author} onChange={(e) => setAuthor(e.target.value)} className="mt-1" placeholder="mis. Dr. Made Sutrisna" />
                   </div>
                 </>
+              )}
+              {type === 'tutorial' && (
+                <div className="md:col-span-2">
+                  <Label className="flex items-center gap-1.5">
+                    <Video className="h-3.5 w-3.5" /> Link Video (YouTube/Vimeo)
+                  </Label>
+                  <Input
+                    value={videoUrl}
+                    onChange={(e) => setVideoUrl(e.target.value)}
+                    className="mt-1"
+                    placeholder="https://www.youtube.com/watch?v=..."
+                  />
+                  <p className="text-xs text-gray-400 mt-1">Opsional. Kosongkan kalau tutorial ini cuma berupa teks/panduan tertulis.</p>
+                </div>
               )}
             </div>
 
@@ -244,7 +273,7 @@ const AdminPostForm = () => {
                     />
                   </div>
                   <div>
-                    <Label>Isi Artikel Lengkap ({l.label})</Label>
+                    <Label>Isi Lengkap ({l.label})</Label>
                     <div className="mt-1 border border-gray-200 rounded-lg overflow-hidden">
                       <QuillEditor
                         value={translations[l.code].content}
@@ -259,13 +288,13 @@ const AdminPostForm = () => {
 
           {/* Actions */}
           <div className="flex items-center justify-end gap-3 pb-8">
-            <Button variant="outline" onClick={() => navigate('/admin/posts')} disabled={isSaving}>
+            <Button variant="outline" onClick={() => navigate(listPathForType(type))} disabled={isSaving}>
               Batal
             </Button>
             <Button variant="outline" onClick={() => handleSave('draft')} disabled={isSaving}>
               {isSaving ? 'Menyimpan...' : 'Simpan sebagai Draft'}
             </Button>
-            <Button onClick={() => handleSave('published')} disabled={isSaving} className="bg-admin-navy hover:bg-admin-navyLight">
+            <Button onClick={() => handleSave('published')} disabled={isSaving} className="bg-admin-navy hover:bg-admin-navyLight text-white">
               {isSaving ? 'Menyimpan...' : 'Publish'}
             </Button>
           </div>

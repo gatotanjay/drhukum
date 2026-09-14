@@ -43,4 +43,10 @@ return [
     // Domain frontend kamu (untuk keamanan CORS), contoh: https://drhukum.id
     // Isi "*" kalau mau izinkan semua origin (tidak disarankan untuk produksi)
     'allowed_origin' => 'https://drhukum.id',
+
+    // Konfigurasi Database (untuk sistem admin panel artikel/blog)
+    'db_host' => 'localhost',
+    'db_name' => 'ISI_NAMA_DATABASE_DI_SINI',
+    'db_user' => 'ISI_USERNAME_DATABASE_DI_SINI',
+    'db_pass' => 'ISI_PASSWORD_DATABASE_DI_SINI',
 ];

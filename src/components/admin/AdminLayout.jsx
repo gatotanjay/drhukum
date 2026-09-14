@@ -10,13 +10,13 @@ import { adminApi } from '@/lib/adminApi';
 const NAV_ITEMS = [
   { path: '/admin', label: 'Dashboard', icon: LayoutDashboard, end: true },
   { path: '/admin/posts', label: 'Artikel & Blog', icon: FileText },
+  { path: '/admin/tutorials', label: 'Tutorial', icon: GraduationCap },
 ];
 
 // Fitur yang direncanakan untuk franchise, belum dibangun — ditampilkan sebagai preview
 const UPCOMING_ITEMS = [
   { label: 'Manajemen Kantor', icon: Building2 },
   { label: 'Update Client', icon: Megaphone },
-  { label: 'Tutorial', icon: GraduationCap },
 ];
 
 // Judul halaman ditentukan dari path aktif, ditampilkan di header atas
@@ -25,6 +25,9 @@ const getPageTitle = (pathname) => {
   if (pathname === '/admin/posts') return 'Artikel & Blog';
   if (pathname === '/admin/posts/new') return 'Tambah Artikel Baru';
   if (/^\/admin\/posts\/[^/]+\/edit$/.test(pathname)) return 'Edit Artikel';
+  if (pathname === '/admin/tutorials') return 'Tutorial';
+  if (pathname === '/admin/tutorials/new') return 'Tambah Tutorial Baru';
+  if (/^\/admin\/tutorials\/[^/]+\/edit$/.test(pathname)) return 'Edit Tutorial';
   return 'Admin Panel';
 };
 
