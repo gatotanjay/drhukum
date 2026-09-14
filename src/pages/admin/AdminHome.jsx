@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import {
-  FileText, Scale, CheckCircle2, FileEdit, Star, Loader2, Plus, Pencil, GraduationCap,
+  FileText, Scale, CheckCircle2, FileEdit, Star, Loader2, Plus, Pencil, GraduationCap, Building2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -46,7 +46,14 @@ const AdminHome = () => {
   const blogCount = posts.filter((p) => p.type === 'blog').length;
   const legalCount = posts.filter((p) => p.type === 'legal_update').length;
   const tutorialCount = posts.filter((p) => p.type === 'tutorial').length;
+  const sopCount = posts.filter((p) => p.type === 'sop').length;
   const recentPosts = posts.slice(0, 5);
+
+  const editPathForType = (type, id) => {
+    if (type === 'tutorial') return `/admin/tutorials/${id}/edit`;
+    if (type === 'sop') return `/admin/office/${id}/edit`;
+    return `/admin/posts/${id}/edit`;
+  };
 
   if (isLoading) {
     return (
@@ -59,7 +66,7 @@ const AdminHome = () => {
   return (
     <>
       <Helmet>
-        <title>Dashboard -- Admin DrHukum</title>
+        <title>Dashboard - Admin DrHukum</title>
       </Helmet>
 
       <div className="space-y-8">
@@ -87,26 +94,24 @@ const AdminHome = () => {
               </span>
               <span className="font-semibold text-gray-900">{legalCount}</span>
             </div>
-            <div className="flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-2 border-b border-gray-100">
               <span className="inline-flex items-center gap-2 text-sm text-gray-600">
                 <GraduationCap className="h-4 w-4" /> Tutorial
               </span>
               <span className="font-semibold text-gray-900">{tutorialCount}</span>
             </div>
-            <div className="grid grid-cols-2 gap-2 mt-2">
-              <Link to="/admin/posts/new">
-                <Button variant="outline" className="w-full">
-                  <Plus className="h-4 w-4 mr-1.5" />
-                  Post
-                </Button>
-              </Link>
-              <Link to="/admin/tutorials/new">
-                <Button className="w-full bg-admin-navy hover:bg-admin-navyLight text-white">
-                  <Plus className="h-4 w-4 mr-1.5" />
-                  Tutorial
-                </Button>
-              </Link>
+            <div className="flex items-center justify-between py-2">
+              <span className="inline-flex items-center gap-2 text-sm text-gray-600">
+                <Building2 className="h-4 w-4" /> SOP
+              </span>
+              <span className="font-semibold text-gray-900">{sopCount}</span>
             </div>
+            <Link to="/admin/posts/new">
+              <Button className="w-full bg-admin-navy hover:bg-admin-navyLight text-white mt-2">
+                <Plus className="h-4 w-4 mr-2" />
+                Tambah Post Baru
+              </Button>
+            </Link>
           </div>
 
           {/* Post terbaru */}
@@ -135,7 +140,7 @@ const AdminHome = () => {
                         className={post.status === 'published' ? 'bg-green-100 text-green-700 hover:bg-green-100' : ''}>
                         {post.status === 'published' ? 'Published' : 'Draft'}
                       </Badge>
-                      <Link to={`${post.type === 'tutorial' ? '/admin/tutorials' : '/admin/posts'}/${post.id}/edit`}>
+                      <Link to={editPathForType(post.type, post.id)}>
                         <Button variant="ghost" size="icon" className="h-8 w-8">
                           <Pencil className="h-4 w-4" />
                         </Button>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Endpoint kelola artikel/blog/legal-update untuk admin panel.
+ * Endpoint kelola artikel/blog/legal-update/tutorial untuk admin panel.
  *
  * GET  /api/admin/posts.php            -> daftar semua post (draft + published)
  * GET  /api/admin/posts.php?id=5       -> detail 1 post + terjemahan 3 bahasa
@@ -61,9 +61,9 @@ if ($method === 'GET') {
         respond(['success' => true, 'post' => $post]);
     }
 
-    // List semua post (untuk tabel admin), sertakan judul versi ID sebagai preview
+    // List semua post (untuk tabel/kartu admin), sertakan judul & ringkasan versi ID sebagai preview
     $stmt = $pdo->query("
-        SELECT p.*, pt.title AS title_id
+        SELECT p.*, pt.title AS title_id, pt.excerpt AS excerpt_id
         FROM posts p
         LEFT JOIN post_translations pt ON pt.post_id = p.id AND pt.locale = 'id'
         ORDER BY p.created_at DESC
@@ -98,7 +98,7 @@ if ($method === 'POST') {
         respond(['success' => false, 'message' => 'action harus create/update/delete'], 422);
     }
 
-    $type = in_array($data['type'] ?? '', ['blog', 'legal_update', 'tutorial'], true) ? $data['type'] : null;
+    $type = in_array($data['type'] ?? '', ['blog', 'legal_update', 'tutorial', 'sop'], true) ? $data['type'] : null;
     $category = clean($data['category'] ?? '');
     $thumbnail = clean($data['thumbnail'] ?? '');
     $videoUrl = clean($data['video_url'] ?? '');
@@ -111,14 +111,32 @@ if ($method === 'POST') {
 
     // --- Validasi ---
     $errors = [];
-    if (!$type) $errors[] = 'Tipe post (blog/legal_update) wajib dipilih';
-    if ($category === '') $errors[] = 'Kategori/tag wajib diisi';
+    if (!$type) $errors[] = 'Tipe post wajib dipilih';
+    // Kategori hanya wajib untuk blog & legal_update; tutorial/sop boleh kosong
+    if ($category === '' && in_array($type, ['blog', 'legal_update'], true)) {
+        $errors[] = 'Kategori/tag wajib diisi';
+    }
     if ($postDate === '' || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $postDate)) $errors[] = 'Tanggal wajib diisi (format YYYY-MM-DD)';
 
-    foreach ($LOCALES as $locale) {
+    // Tutorial & SOP: hanya wajib mengisi bahasa Indonesia; EN & ZH akan di-fallback otomatis
+    $requiredLocales = in_array($type, ['tutorial', 'sop'], true) ? ['id'] : $LOCALES;
+    foreach ($requiredLocales as $locale) {
         $t = $translations[$locale] ?? null;
         if (!$t || clean($t['title'] ?? '') === '' || clean($t['excerpt'] ?? '') === '') {
             $errors[] = "Judul & ringkasan bahasa '$locale' wajib diisi";
+        }
+    }
+
+    // Untuk tutorial/sop: isi EN & ZH dengan fallback dari ID jika kosong
+    if (in_array($type, ['tutorial', 'sop'], true)) {
+        $idTrans = $translations['id'] ?? [];
+        foreach (['en', 'zh'] as $locale) {
+            $t = $translations[$locale] ?? [];
+            if (clean($t['title'] ?? '') === '') {
+                $translations[$locale]['title']   = $idTrans['title']   ?? '';
+                $translations[$locale]['excerpt']  = $idTrans['excerpt']  ?? '';
+                $translations[$locale]['content']  = $idTrans['content']  ?? '';
+            }
         }
     }
 

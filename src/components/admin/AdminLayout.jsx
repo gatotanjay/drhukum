@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
-  Scale, LayoutDashboard, FileText, Building2, Megaphone, GraduationCap, LogOut, Menu, X, User,
+  Scale, LayoutDashboard, FileText, Building2, Megaphone, GraduationCap, LogOut, Menu, X, User, FileEdit,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { adminApi } from '@/lib/adminApi';
@@ -9,13 +9,14 @@ import { adminApi } from '@/lib/adminApi';
 // Item navigasi yang sudah aktif/bisa diklik
 const NAV_ITEMS = [
   { path: '/admin', label: 'Dashboard', icon: LayoutDashboard, end: true },
-  { path: '/admin/posts', label: 'Artikel & Blog', icon: FileText },
+  { path: '/admin/office', label: 'Manajemen Kantor', icon: Building2 },
   { path: '/admin/tutorials', label: 'Tutorial', icon: GraduationCap },
+  { path: '/admin/posts', label: 'Artikel & Blog', icon: FileText },
 ];
 
 // Fitur yang direncanakan untuk franchise, belum dibangun — ditampilkan sebagai preview
 const UPCOMING_ITEMS = [
-  { label: 'Manajemen Kantor', icon: Building2 },
+  { label: 'Draft', icon: FileEdit },
   { label: 'Update Client', icon: Megaphone },
 ];
 
@@ -28,6 +29,9 @@ const getPageTitle = (pathname) => {
   if (pathname === '/admin/tutorials') return 'Tutorial';
   if (pathname === '/admin/tutorials/new') return 'Tambah Tutorial Baru';
   if (/^\/admin\/tutorials\/[^/]+\/edit$/.test(pathname)) return 'Edit Tutorial';
+  if (pathname === '/admin/office') return 'Manajemen Kantor';
+  if (pathname === '/admin/office/new') return 'Tambah SOP';
+  if (/^\/admin\/office\/[^/]+\/edit$/.test(pathname)) return 'Edit SOP';
   return 'Admin Panel';
 };
 

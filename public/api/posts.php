@@ -52,7 +52,7 @@ if (isset($_GET['id']) && $_GET['id'] !== '') {
 }
 
 // Mode daftar: ambil semua post published berdasarkan type
-$type = in_array($_GET['type'] ?? '', ['blog', 'legal_update', 'tutorial'], true) ? $_GET['type'] : 'blog';
+$type = in_array($_GET['type'] ?? '', ['blog', 'legal_update', 'tutorial', 'sop'], true) ? $_GET['type'] : 'blog';
 $featuredOnly = !empty($_GET['featured']);
 
 $sql = "

@@ -14,8 +14,9 @@ import ArticleDetail from '@/pages/ArticleDetail.jsx';
 import AdminLogin from '@/pages/admin/AdminLogin.jsx';
 import AdminHome from '@/pages/admin/AdminHome.jsx';
 import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
+import AdminTutorials from '@/pages/admin/AdminTutorials.jsx';
+import AdminOffice from '@/pages/admin/AdminOffice.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
-import AdminTutorialForm from '@/pages/admin/AdminTutorialForm.jsx';
 import AdminProtectedRoute from '@/components/admin/AdminProtectedRoute.jsx';
 import AdminLayout from '@/components/admin/AdminLayout.jsx';
 
@@ -56,12 +57,15 @@ function App() {
           }
         >
           <Route path="/admin" element={<AdminHome />} />
-          <Route path="/admin/posts" element={<AdminDashboard mode="posts" />} />
+          <Route path="/admin/posts" element={<AdminDashboard />} />
           <Route path="/admin/posts/new" element={<AdminPostForm />} />
           <Route path="/admin/posts/:id/edit" element={<AdminPostForm />} />
-          <Route path="/admin/tutorials" element={<AdminDashboard mode="tutorial" />} />
-          <Route path="/admin/tutorials/new" element={<AdminTutorialForm />} />
-          <Route path="/admin/tutorials/:id/edit" element={<AdminTutorialForm />} />
+          <Route path="/admin/tutorials" element={<AdminTutorials />} />
+          <Route path="/admin/tutorials/new" element={<AdminPostForm defaultType="tutorial" />} />
+          <Route path="/admin/tutorials/:id/edit" element={<AdminPostForm />} />
+          <Route path="/admin/office" element={<AdminOffice />} />
+          <Route path="/admin/office/new" element={<AdminPostForm defaultType="sop" />} />
+          <Route path="/admin/office/:id/edit" element={<AdminPostForm />} />
         </Route>
       </Routes>
       <Toaster />

@@ -24,7 +24,11 @@ const LOCALES = [
 const emptyTranslations = { id: { title: '', excerpt: '', content: '' }, en: { title: '', excerpt: '', content: '' }, zh: { title: '', excerpt: '', content: '' } };
 
 // Menentukan halaman daftar mana yang jadi "rumah" untuk tiap tipe post
-const listPathForType = (t) => (t === 'tutorial' ? '/admin/tutorials' : '/admin/posts');
+const listPathForType = (t) => {
+  if (t === 'tutorial') return '/admin/tutorials';
+  if (t === 'sop') return '/admin/office';
+  return '/admin/posts';
+};
 
 const AdminPostForm = ({ defaultType }) => {
   const { id } = useParams();
@@ -125,8 +129,8 @@ const AdminPostForm = ({ defaultType }) => {
     );
   }
 
-  const categoryLabel = type === 'blog' ? 'Kategori' : type === 'tutorial' ? 'Kategori Tutorial' : 'Tag';
-  const categoryPlaceholder = type === 'blog' ? 'mis. Legal Service' : type === 'tutorial' ? 'mis. Panduan Sistem' : 'mis. Imigrasi';
+  const categoryLabel = type === 'blog' ? 'Kategori' : type === 'tutorial' ? 'Kategori Tutorial' : type === 'sop' ? 'Kategori SOP' : 'Tag';
+  const categoryPlaceholder = type === 'blog' ? 'mis. Legal Service' : type === 'tutorial' ? 'mis. Panduan Sistem' : type === 'sop' ? 'mis. Klien' : 'mis. Imigrasi';
 
   return (
     <>
@@ -151,6 +155,7 @@ const AdminPostForm = ({ defaultType }) => {
                     <SelectItem value="blog">Blog</SelectItem>
                     <SelectItem value="legal_update">Legal Update</SelectItem>
                     <SelectItem value="tutorial">Tutorial</SelectItem>
+                    <SelectItem value="sop">SOP (Manajemen Kantor)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -212,7 +217,8 @@ const AdminPostForm = ({ defaultType }) => {
               </div>
             )}
 
-            {/* Thumbnail */}
+            {/* Thumbnail (tidak relevan untuk SOP) */}
+            {type !== 'sop' && (
             <div>
               <Label>Thumbnail</Label>
               <div className="mt-1 flex items-start gap-4">
@@ -242,6 +248,7 @@ const AdminPostForm = ({ defaultType }) => {
               </div>
               <p className="text-xs text-gray-400 mt-1">JPG, PNG, WEBP, atau GIF. Maks 5MB.</p>
             </div>
+            )}
           </div>
 
           {/* Konten per bahasa */}
