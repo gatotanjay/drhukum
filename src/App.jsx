@@ -15,6 +15,7 @@ import AdminLogin from '@/pages/admin/AdminLogin.jsx';
 import AdminHome from '@/pages/admin/AdminHome.jsx';
 import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
+import AdminTutorialForm from '@/pages/admin/AdminTutorialForm.jsx';
 import AdminProtectedRoute from '@/components/admin/AdminProtectedRoute.jsx';
 import AdminLayout from '@/components/admin/AdminLayout.jsx';
 
@@ -59,8 +60,8 @@ function App() {
           <Route path="/admin/posts/new" element={<AdminPostForm />} />
           <Route path="/admin/posts/:id/edit" element={<AdminPostForm />} />
           <Route path="/admin/tutorials" element={<AdminDashboard mode="tutorial" />} />
-          <Route path="/admin/tutorials/new" element={<AdminPostForm defaultType="tutorial" />} />
-          <Route path="/admin/tutorials/:id/edit" element={<AdminPostForm />} />
+          <Route path="/admin/tutorials/new" element={<AdminTutorialForm />} />
+          <Route path="/admin/tutorials/:id/edit" element={<AdminTutorialForm />} />
         </Route>
       </Routes>
       <Toaster />
