@@ -59,7 +59,7 @@ const AdminHome = () => {
   return (
     <>
       <Helmet>
-        <title>Dashboard - Admin DrHukum</title>
+        <title>Dashboard -- Admin DrHukum</title>
       </Helmet>
 
       <div className="space-y-8">
