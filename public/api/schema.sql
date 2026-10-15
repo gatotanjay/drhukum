@@ -14,9 +14,10 @@ CREATE TABLE IF NOT EXISTS admins (
 -- Tabel utama post (blog & legal update pakai tabel yang sama, dibedakan lewat kolom "type")
 CREATE TABLE IF NOT EXISTS posts (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  type ENUM('blog', 'legal_update') NOT NULL,
+  type ENUM('blog', 'legal_update', 'tutorial', 'sop', 'client_update') NOT NULL,
   category VARCHAR(100) NOT NULL,       -- kategori (blog) atau tag (legal update)
   thumbnail VARCHAR(500) DEFAULT NULL,  -- path/URL gambar thumbnail
+  video_url VARCHAR(500) DEFAULT NULL,  -- khusus tutorial, link YouTube/Vimeo
   post_date DATE NOT NULL,
   read_time VARCHAR(50) DEFAULT NULL,   -- khusus blog, contoh: "8 menit baca"
   author VARCHAR(100) DEFAULT NULL,     -- khusus blog

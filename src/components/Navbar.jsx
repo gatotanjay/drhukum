@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: t('nav.services'), path: '/layanan' },
     //{ name: t('nav.industries'), path: '/industri' },
     { name: t('nav.resources'), path: '/wawasan' },
+    { name: t('nav.clientUpdates'), path: '/update-klien' },
     //{ name: t('nav.team'), path: '/tim-kami' },
     //{ name: t('nav.contact'), path: '/kontak' },
     //{ name: t('nav.terms'), path: '/syarat-ketentuan' }

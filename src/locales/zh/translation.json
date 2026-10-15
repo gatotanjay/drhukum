@@ -9,7 +9,18 @@
     "terms": "条款与条件",
     "bookConsultation": "预约咨询",
     "team": "我们的团队",
-    "resources": "资源"
+    "resources": "资源",
+    "clientUpdates": "客户更新"
+  },
+  "clientUpdates": {
+    "title": "客户更新",
+    "subtitle": "及时了解案件处理的最新进展和信息。",
+    "searchPlaceholder": "搜索更新...",
+    "allCategories": "所有类别",
+    "readMore": "阅读更多",
+    "found": "条更新",
+    "empty": "尚无已发布的更新。",
+    "noResults": "没有符合您搜索或筛选条件的更新。"
   },
   "footer": {
     "description": "巴厘岛值得信赖的律师事务所，为个人和公司提供全面的法律解决方案，拥有超过10年的经验。",

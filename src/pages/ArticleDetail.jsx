@@ -38,7 +38,7 @@ const ArticleDetail = () => {
     return () => { cancelled = true; };
   }, [id, locale]);
 
-  const backPath = post?.type === 'legal_update' ? '/wawasan' : '/wawasan';
+  const backPath = post?.type === 'client_update' ? '/update-klien' : '/wawasan';
 
   if (isLoading) {
     return (

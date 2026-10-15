@@ -12,12 +12,12 @@ const NAV_ITEMS = [
   { path: '/admin/office', label: 'Manajemen Kantor', icon: Building2 },
   { path: '/admin/tutorials', label: 'Tutorial', icon: GraduationCap },
   { path: '/admin/posts', label: 'Artikel & Blog', icon: FileText },
+  { path: '/admin/client-updates', label: 'Update Client', icon: Megaphone },
 ];
 
 // Fitur yang direncanakan untuk franchise, belum dibangun — ditampilkan sebagai preview
 const UPCOMING_ITEMS = [
   { label: 'Draft', icon: FileEdit },
-  { label: 'Update Client', icon: Megaphone },
 ];
 
 // Judul halaman ditentukan dari path aktif, ditampilkan di header atas
@@ -32,6 +32,9 @@ const getPageTitle = (pathname) => {
   if (pathname === '/admin/office') return 'Manajemen Kantor';
   if (pathname === '/admin/office/new') return 'Tambah SOP';
   if (/^\/admin\/office\/[^/]+\/edit$/.test(pathname)) return 'Edit SOP';
+  if (pathname === '/admin/client-updates') return 'Update Client';
+  if (pathname === '/admin/client-updates/new') return 'Tambah Update Client';
+  if (/^\/admin\/client-updates\/[^/]+\/edit$/.test(pathname)) return 'Edit Update Client';
   return 'Admin Panel';
 };
 

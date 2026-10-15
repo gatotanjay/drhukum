@@ -41,6 +41,9 @@ const Footer = () => {
               <Link to="/wawasan" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.resources')}
               </Link>
+              <Link to="/update-klien" className="block text-gray-700 transition-colors hover:text-primary">
+                {t('nav.clientUpdates')}
+              </Link>
               <Link to="/kontak" className="block text-gray-700 transition-colors hover:text-primary">
                 {t('nav.contact')}
               </Link>

@@ -9,7 +9,18 @@
     "terms": "Terms & Conditions",
     "bookConsultation": "Book Consultation",
     "team": "Our Team",
-    "resources": "Insight"
+    "resources": "Insight",
+    "clientUpdates": "Client Updates"
+  },
+  "clientUpdates": {
+    "title": "Client Updates",
+    "subtitle": "Stay informed with the latest developments and updates on your case handling.",
+    "searchPlaceholder": "Search updates...",
+    "allCategories": "All Categories",
+    "readMore": "Read More",
+    "found": "updates found",
+    "empty": "No updates published yet.",
+    "noResults": "No updates match your search or filter."
   },
   "footer": {
     "description": "A trusted law firm in Bali providing comprehensive legal solutions for individuals and companies with over 10 years of experience.",

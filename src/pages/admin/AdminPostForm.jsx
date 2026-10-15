@@ -27,6 +27,7 @@ const emptyTranslations = { id: { title: '', excerpt: '', content: '' }, en: { t
 const listPathForType = (t) => {
   if (t === 'tutorial') return '/admin/tutorials';
   if (t === 'sop') return '/admin/office';
+  if (t === 'client_update') return '/admin/client-updates';
   return '/admin/posts';
 };
 
@@ -129,8 +130,8 @@ const AdminPostForm = ({ defaultType }) => {
     );
   }
 
-  const categoryLabel = type === 'blog' ? 'Kategori' : type === 'tutorial' ? 'Kategori Tutorial' : type === 'sop' ? 'Kategori SOP' : 'Tag';
-  const categoryPlaceholder = type === 'blog' ? 'mis. Legal Service' : type === 'tutorial' ? 'mis. Panduan Sistem' : type === 'sop' ? 'mis. Klien' : 'mis. Imigrasi';
+  const categoryLabel = type === 'blog' ? 'Kategori' : type === 'tutorial' ? 'Kategori Tutorial' : type === 'sop' ? 'Kategori SOP' : type === 'client_update' ? 'Kategori' : 'Tag';
+  const categoryPlaceholder = type === 'blog' ? 'mis. Legal Service' : type === 'tutorial' ? 'mis. Panduan Sistem' : type === 'sop' ? 'mis. Klien' : type === 'client_update' ? 'mis. Perdata' : 'mis. Imigrasi';
 
   return (
     <>
@@ -156,6 +157,7 @@ const AdminPostForm = ({ defaultType }) => {
                     <SelectItem value="legal_update">Legal Update</SelectItem>
                     <SelectItem value="tutorial">Tutorial</SelectItem>
                     <SelectItem value="sop">SOP (Manajemen Kantor)</SelectItem>
+                    <SelectItem value="client_update">Update Client</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

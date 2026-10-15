@@ -98,7 +98,7 @@ if ($method === 'POST') {
         respond(['success' => false, 'message' => 'action harus create/update/delete'], 422);
     }
 
-    $type = in_array($data['type'] ?? '', ['blog', 'legal_update', 'tutorial', 'sop'], true) ? $data['type'] : null;
+    $type = in_array($data['type'] ?? '', ['blog', 'legal_update', 'tutorial', 'sop', 'client_update'], true) ? $data['type'] : null;
     $category = clean($data['category'] ?? '');
     $thumbnail = clean($data['thumbnail'] ?? '');
     $videoUrl = clean($data['video_url'] ?? '');

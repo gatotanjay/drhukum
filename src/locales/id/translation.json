@@ -9,7 +9,18 @@
     "terms": "Syarat & Ketentuan",
     "bookConsultation": "Buat Janji Konsultasi",
     "team": "Tim Kami",
-    "resources": "Sumber Daya"
+    "resources": "Sumber Daya",
+    "clientUpdates": "Update Client"
+  },
+  "clientUpdates": {
+    "title": "Update Client",
+    "subtitle": "Pantau perkembangan dan informasi terbaru seputar penanganan perkara Anda.",
+    "searchPlaceholder": "Cari update...",
+    "allCategories": "Semua Kategori",
+    "readMore": "Baca Selengkapnya",
+    "found": "update ditemukan",
+    "empty": "Belum ada update yang dipublikasikan.",
+    "noResults": "Tidak ada update yang cocok dengan pencarian atau filter Anda."
   },
   "footer": {
     "description": "Firma hukum terpercaya di Bali yang memberikan solusi hukum komprehensif untuk individu dan perusahaan dengan pengalaman lebih dari 10 tahun.",

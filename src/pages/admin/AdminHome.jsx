@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import {
-  FileText, Scale, CheckCircle2, FileEdit, Star, Loader2, Plus, Pencil, GraduationCap, Building2,
+  FileText, Scale, CheckCircle2, FileEdit, Star, Loader2, Plus, Pencil, GraduationCap, Building2, Megaphone,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -47,11 +47,13 @@ const AdminHome = () => {
   const legalCount = posts.filter((p) => p.type === 'legal_update').length;
   const tutorialCount = posts.filter((p) => p.type === 'tutorial').length;
   const sopCount = posts.filter((p) => p.type === 'sop').length;
+  const clientUpdateCount = posts.filter((p) => p.type === 'client_update').length;
   const recentPosts = posts.slice(0, 5);
 
   const editPathForType = (type, id) => {
     if (type === 'tutorial') return `/admin/tutorials/${id}/edit`;
     if (type === 'sop') return `/admin/office/${id}/edit`;
+    if (type === 'client_update') return `/admin/client-updates/${id}/edit`;
     return `/admin/posts/${id}/edit`;
   };
 
@@ -100,11 +102,17 @@ const AdminHome = () => {
               </span>
               <span className="font-semibold text-gray-900">{tutorialCount}</span>
             </div>
-            <div className="flex items-center justify-between py-2">
+            <div className="flex items-center justify-between py-2 border-b border-gray-100">
               <span className="inline-flex items-center gap-2 text-sm text-gray-600">
                 <Building2 className="h-4 w-4" /> SOP
               </span>
               <span className="font-semibold text-gray-900">{sopCount}</span>
+            </div>
+            <div className="flex items-center justify-between py-2">
+              <span className="inline-flex items-center gap-2 text-sm text-gray-600">
+                <Megaphone className="h-4 w-4" /> Update Client
+              </span>
+              <span className="font-semibold text-gray-900">{clientUpdateCount}</span>
             </div>
             <Link to="/admin/posts/new">
               <Button className="w-full bg-admin-navy hover:bg-admin-navyLight text-white mt-2">

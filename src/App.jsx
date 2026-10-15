@@ -11,11 +11,13 @@ import Contact from '@/pages/Contact.jsx';
 import Terms from '@/pages/Terms.jsx';
 import Articles from '@/pages/Articles.jsx';
 import ArticleDetail from '@/pages/ArticleDetail.jsx';
+import ClientUpdates from '@/pages/ClientUpdates.jsx';
 import AdminLogin from '@/pages/admin/AdminLogin.jsx';
 import AdminHome from '@/pages/admin/AdminHome.jsx';
 import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
 import AdminTutorials from '@/pages/admin/AdminTutorials.jsx';
 import AdminOffice from '@/pages/admin/AdminOffice.jsx';
+import AdminClientUpdates from '@/pages/admin/AdminClientUpdates.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
 import AdminProtectedRoute from '@/components/admin/AdminProtectedRoute.jsx';
 import AdminLayout from '@/components/admin/AdminLayout.jsx';
@@ -45,6 +47,7 @@ function App() {
           <Route path="/syarat-ketentuan" element={<Terms />} />
           <Route path="/artikel" element={<Articles />} />
           <Route path="/artikel/:id" element={<ArticleDetail />} />
+          <Route path="/update-klien" element={<ClientUpdates />} />
         </Route>
 
         {/* Halaman admin (layout terpisah, tanpa Navbar/Footer situs) */}
@@ -66,6 +69,9 @@ function App() {
           <Route path="/admin/office" element={<AdminOffice />} />
           <Route path="/admin/office/new" element={<AdminPostForm defaultType="sop" />} />
           <Route path="/admin/office/:id/edit" element={<AdminPostForm />} />
+          <Route path="/admin/client-updates" element={<AdminClientUpdates />} />
+          <Route path="/admin/client-updates/new" element={<AdminPostForm defaultType="client_update" />} />
+          <Route path="/admin/client-updates/:id/edit" element={<AdminPostForm />} />
         </Route>
       </Routes>
       <Toaster />
