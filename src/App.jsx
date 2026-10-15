@@ -18,6 +18,7 @@ import AdminDashboard from '@/pages/admin/AdminDashboard.jsx';
 import AdminTutorials from '@/pages/admin/AdminTutorials.jsx';
 import AdminOffice from '@/pages/admin/AdminOffice.jsx';
 import AdminClientUpdates from '@/pages/admin/AdminClientUpdates.jsx';
+import AdminDrafts from '@/pages/admin/AdminDrafts.jsx';
 import AdminPostForm from '@/pages/admin/AdminPostForm.jsx';
 import AdminProtectedRoute from '@/components/admin/AdminProtectedRoute.jsx';
 import AdminLayout from '@/components/admin/AdminLayout.jsx';
@@ -72,6 +73,7 @@ function App() {
           <Route path="/admin/client-updates" element={<AdminClientUpdates />} />
           <Route path="/admin/client-updates/new" element={<AdminPostForm defaultType="client_update" />} />
           <Route path="/admin/client-updates/:id/edit" element={<AdminPostForm />} />
+          <Route path="/admin/drafts" element={<AdminDrafts />} />
         </Route>
       </Routes>
       <Toaster />

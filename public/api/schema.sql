@@ -40,3 +40,15 @@ CREATE TABLE IF NOT EXISTS post_translations (
   FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
   UNIQUE KEY unique_post_locale (post_id, locale)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Tabel draft dokumen pekerjaan hukum (dipantau lewat menu "Draft" di admin panel)
+CREATE TABLE IF NOT EXISTS drafts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,           -- judul draft dokumen
+  jenis VARCHAR(100) NOT NULL,           -- jenis dokumen hukum, mis. Surat Perjanjian, Akta, Kontrak
+  status ENUM('proses', 'draft', 'selesai') NOT NULL DEFAULT 'draft',
+  notes TEXT DEFAULT NULL,               -- catatan internal (opsional)
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

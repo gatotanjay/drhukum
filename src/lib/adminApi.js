@@ -45,6 +45,22 @@ export const adminApi = {
       body: JSON.stringify({ action: 'delete', id }),
     }),
 
+  listDrafts: () => request('/admin/drafts.php'),
+
+  getDraft: (id) => request(`/admin/drafts.php?id=${id}`),
+
+  saveDraft: (payload) =>
+    request('/admin/drafts.php', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+
+  deleteDraft: (id) =>
+    request('/admin/drafts.php', {
+      method: 'POST',
+      body: JSON.stringify({ action: 'delete', id }),
+    }),
+
   uploadThumbnail: (file) => {
     const formData = new FormData();
     formData.append('thumbnail', file);

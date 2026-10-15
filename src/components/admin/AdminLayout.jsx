@@ -13,11 +13,7 @@ const NAV_ITEMS = [
   { path: '/admin/tutorials', label: 'Tutorial', icon: GraduationCap },
   { path: '/admin/posts', label: 'Artikel & Blog', icon: FileText },
   { path: '/admin/client-updates', label: 'Update Client', icon: Megaphone },
-];
-
-// Fitur yang direncanakan untuk franchise, belum dibangun — ditampilkan sebagai preview
-const UPCOMING_ITEMS = [
-  { label: 'Draft', icon: FileEdit },
+  { path: '/admin/drafts', label: 'Draft', icon: FileEdit },
 ];
 
 // Judul halaman ditentukan dari path aktif, ditampilkan di header atas
@@ -35,6 +31,7 @@ const getPageTitle = (pathname) => {
   if (pathname === '/admin/client-updates') return 'Update Client';
   if (pathname === '/admin/client-updates/new') return 'Tambah Update Client';
   if (/^\/admin\/client-updates\/[^/]+\/edit$/.test(pathname)) return 'Edit Update Client';
+  if (pathname === '/admin/drafts') return 'Draft';
   return 'Admin Panel';
 };
 
@@ -105,20 +102,6 @@ const AdminLayout = () => {
               <item.icon className="h-4 w-4" />
               {item.label}
             </NavLink>
-          ))}
-
-          <p className="px-3 pt-5 pb-1 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-            Segera Hadir
-          </p>
-          {UPCOMING_ITEMS.map((item) => (
-            <div
-              key={item.label}
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-gray-500 cursor-not-allowed"
-              title="Fitur ini sedang dikembangkan"
-            >
-              <item.icon className="h-4 w-4" />
-              {item.label}
-            </div>
           ))}
         </nav>
 
